@@ -6,7 +6,7 @@ import os
 
 def fetch_latest_articles():
     # Fetching the sitemap XML file
-    sitemap_url = os.environ.get('geturlid')  # Read sitemap URL from environment variable
+    sitemap_url = os.environ.get('GETURLID')  # Read sitemap URL from environment variable
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
