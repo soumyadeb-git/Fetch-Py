@@ -6,7 +6,7 @@ import os
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
-    sitemap_url = "https://www.karmasandhan.com/post-sitemap.xml"  # Update this URL
+    sitemap_url = os.getenv('SITEMAP_URL')
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
@@ -15,7 +15,7 @@ def fetch_latest_articles():
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
         latest_articles_data = []
-        for article in articles[:10]:  # Get the latest 10 articles
+        for article in articles[:40]:  # Get the latest 40 articles
             loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
             response = requests.get(loc)
             if response.status_code == 200:
