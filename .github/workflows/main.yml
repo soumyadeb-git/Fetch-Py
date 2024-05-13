@@ -2,8 +2,13 @@ name: Run main.py
 
 on:
   schedule:
-    - cron: '30 6,9,12,15,18 * * *'  # 11:30 AM, 02:30 PM, 05:30 PM, 08:30 PM, and 11:00 PM (IST)
-  
+    # Run daily at specific times
+    - cron: '40 11 * * *'  # 11:40 AM
+    - cron: '6 14 * * *'   # 2:06 PM
+    - cron: '9 17 * * *'   # 5:09 PM
+    - cron: '35 20 * * *'  # 8:10 PM
+    - cron: '20 22 * * *'  # 10:20 PM
+ 
 jobs:
   build:
     runs-on: ubuntu-latest
