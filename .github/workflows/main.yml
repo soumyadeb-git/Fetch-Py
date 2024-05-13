@@ -28,5 +28,5 @@ jobs:
 
       - name: Run script
         env:
-          geturlid: ${{ secrets.geturlid }}
+          geturlid: ${{ secrets.GETURLID }}
         run: python data.py
