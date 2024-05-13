@@ -6,7 +6,7 @@ import os
 
 def fetch_latest_articles():
     # Fetching the sitemap XML file
-    os.getenv["SITEMAP_URL"]
+    sitemap_url = os.getenv("SITEMAP_URL")  # Corrected line
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
@@ -73,3 +73,4 @@ def determine_category(title):
 
 # Calling the function
 fetch_latest_articles()
+print(os.getenv("SITEMAP_URL"))  # Added for debugging
