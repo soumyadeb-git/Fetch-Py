@@ -6,7 +6,7 @@ import os
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
-    sitemap_url = "https://www.karmasandhan.com/post-sitemap.xml"
+    sitemap_url = "https://www.%6B%61%72%6D%61%73%61%6E%64%68%61%6E.%63%6F%6D/post-sitemap.xml"
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
