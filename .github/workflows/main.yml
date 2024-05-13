@@ -26,10 +26,11 @@ jobs:
       
       - name: Commit changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || git commit -m "Update data" --allow-empty
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add data/latest_articles.json
+          git commit -m "Update latest_articles.json" || echo "No changes to commit"
+          git push
           
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
