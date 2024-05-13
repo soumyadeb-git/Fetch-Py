@@ -7,8 +7,6 @@ on:
 jobs:
   run_script:
     runs-on: ubuntu-latest
-    env:
-      SITEMAP_URL: ${{ secrets.SIURL }}  # Use the correct secret name
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -17,6 +15,12 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'
+      
+      - name: Set up URL parts as secrets
+        run: |
+          echo "URL_PROTOCOL=https" >> $GITHUB_ENV
+          echo "URL_DOMAIN=www.karmasandhan.com" >> $GITHUB_ENV
+          echo "URL_PATH=/post-sitemap.xml" >> $GITHUB_ENV
       
       - name: Install dependencies
         run: |
