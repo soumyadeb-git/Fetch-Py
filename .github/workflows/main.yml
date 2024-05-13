@@ -7,6 +7,8 @@ on:
 jobs:
   run_script:
     runs-on: ubuntu-latest
+    env:
+      SITEMAP_URL: ${{ secrets.SIURL }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -22,8 +24,6 @@ jobs:
           pip install requests beautifulsoup4
       
       - name: Run Python script
-        env:
-          SITEMAP_URL: ${{ secrets.SIURL }}
         run: python data.py
       
       - name: Commit changes
