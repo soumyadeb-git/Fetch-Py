@@ -1,15 +1,12 @@
+import os
 import requests
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import json
-import os
 
 def fetch_latest_articles():
-url_protocol = os.getenv("URL_PROTOCOL")
-url_domain = os.getenv("URL_DOMAIN")
-url_path = os.getenv("URL_PATH")
-
-sitemap_url = f"{url_protocol}://{url_domain}{url_path}"e
+    # Fetching the sitemap XML file
+    sitemap_url = os.getenv("URL_PROTOCOL") + "://" + os.getenv("URL_DOMAIN") + os.getenv("URL_PATH")
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
@@ -76,4 +73,3 @@ def determine_category(title):
 
 # Calling the function
 fetch_latest_articles()
-print(os.getenv("SITEMAP_URL"))  # Added for debugging
