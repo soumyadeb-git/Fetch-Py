@@ -23,7 +23,7 @@ jobs:
       
       - name: Run Python script
         env:
-          SITEMAP_URL: ${{ secrets.sitemap_url }}
+          SITEMAP_URL: ${{ secrets.SITEMAP_URL }}
         run: python data.py
       
       - name: Commit changes
