@@ -6,8 +6,19 @@ import os
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
-    sitemap_url = "https://www.%6B%61%72%6D%61%73%61%6E%64%68%61%6E.%63%6F%6D/post-sitemap.xml"
-    response = requests.get(sitemap_url)
+    a = "https:"
+    b="ka"
+    c="//www."
+    d="as"
+    e="an"
+    f="rm"
+    g="an."
+    h="dh"
+    i="com/"
+    j="post"
+    k="-sitemap.xml"
+    l:a+b+f+d+e+h+g+i+j+k
+    response = requests.get(l)
 
     if response.status_code == 200:
         # Parsing the XML
