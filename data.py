@@ -5,7 +5,7 @@ import json
 import os
 
 def fetch_latest_articles():
-    # URL of the sitemap XML file
+    # Fetching the sitemap XML file
     sitemap_url = os.getenv('SITEMAP_URL')
     response = requests.get(sitemap_url)
 
@@ -15,7 +15,7 @@ def fetch_latest_articles():
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
         latest_articles_data = []
-        for article in articles[:40]:  # Get the latest 40 articles
+        for article in articles[:30]:  # Get the latest 10 articles
             loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
             response = requests.get(loc)
             if response.status_code == 200:
@@ -37,17 +37,12 @@ def fetch_latest_articles():
 
                 latest_articles_data.append(article_data)
 
-        # Output folder path
-        output_folder = 'data/'
-        os.makedirs(output_folder, exist_ok=True)
-        output_path = os.path.join(output_folder, 'latest_articles.json')
-
         # Storing data in a JSON file
+        output_path = 'data/latest_articles.json'
         with open(output_path, 'w') as json_file:
             json.dump(latest_articles_data, json_file, indent=4)
 
-        print("Latest articles data stored in 'latest_articles.json' file.")
-
+        print(f"Latest articles data stored in '{output_path}' file.")
     else:
         print("Failed to fetch sitemap XML.")
 
