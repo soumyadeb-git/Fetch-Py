@@ -8,7 +8,7 @@ jobs:
   run_script:
     runs-on: ubuntu-latest
     env:
-      SITEMAP_URL: ${{ secrets.SIURL }}
+      SITEMAP_URL: ${{ secrets.SIURL }}  # Use the correct secret name
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
