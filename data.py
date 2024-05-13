@@ -5,8 +5,11 @@ import json
 import os
 
 def fetch_latest_articles():
-    # Fetching the sitemap XML file
-    sitemap_url = os.getenv("SITEMAP_URL")  # Corrected line
+url_protocol = os.getenv("URL_PROTOCOL")
+url_domain = os.getenv("URL_DOMAIN")
+url_path = os.getenv("URL_PATH")
+
+sitemap_url = f"{url_protocol}://{url_domain}{url_path}"e
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
