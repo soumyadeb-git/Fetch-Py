@@ -23,3 +23,11 @@ jobs:
 
       - name: Run script
         run: python data.py
+
+      - name: Commit output JSON file
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add data/latest_articles.json
+          git commit -m "Update latest_articles.json" || echo "No changes to commit"
+          git push
