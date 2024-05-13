@@ -29,13 +29,15 @@ jobs:
       - name: Execute Python script
         run: python data.py
           
-      - name: Commit files
-        run: |
+          - name: Push changes
+          run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "Updated logs" --allow-empty)
-          
+          git commit -m "Updated logs" --allow-empty
+          git pull origin main --rebase
+          git push origin main
+
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
