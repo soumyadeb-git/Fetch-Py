@@ -16,18 +16,14 @@ jobs:
         with:
           python-version: '3.9'
       
-      - name: Set up URL parts as secrets
-        run: |
-          echo "URL_PROTOCOL=https" >> $GITHUB_ENV
-          echo "URL_DOMAIN=www.karmasandhan.com" >> $GITHUB_ENV
-          echo "URL_PATH=/post-sitemap.xml" >> $GITHUB_ENV
-      
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
       
-      - name: Run Python script
+      - name: Run Python script with secret URL
+        env:
+          SITEMAP_URL_SECRET: ${{ secrets.SITEMAP_URL }}
         run: python data.py
       
       - name: Commit changes
