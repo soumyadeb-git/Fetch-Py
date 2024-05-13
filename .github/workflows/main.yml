@@ -1,13 +1,7 @@
 name: Fetch Latest Articles
 
 on:
-  schedule:
-    # Run daily at specific times
-    - cron: '40 11 * * *'  # 11:40 AM
-    - cron: '6 14 * * *'   # 2:06 PM
-    - cron: '9 17 * * *'   # 5:09 PM
-    - cron: '10 20 * * *'  # 8:10 PM
-    - cron: '20 22 * * *'  # 10:20 PM
+  workflow_dispatch:  # Allow manual triggering of the workflow
 
 jobs:
   fetch_articles:
