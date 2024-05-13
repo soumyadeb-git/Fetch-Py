@@ -1,12 +1,12 @@
-import os
 import requests
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import json
+import os
 
-
-def fetch_latest_articles(sitemap_url):
+def fetch_latest_articles():
     # Fetching the sitemap XML file
+    sitemap_url = os.environ.get('geturlid')  # Read sitemap URL from environment variable
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
@@ -15,7 +15,7 @@ def fetch_latest_articles(sitemap_url):
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
         latest_articles_data = []
-        for article in articles[:30]:  # Get the latest 10 articles
+        for article in articles[:30]:  # Get the latest 30 articles
             loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
             response = requests.get(loc)
             if response.status_code == 200:
@@ -37,28 +37,19 @@ def fetch_latest_articles(sitemap_url):
 
                 latest_articles_data.append(article_data)
 
-        # Path to output JSON file
-        output_file = 'latest_articles.json'
+        # Output folder path
+        output_folder = 'data/'
+        os.makedirs(output_folder, exist_ok=True)
+        output_path = os.path.join(output_folder, 'latest_articles.json')
 
-        # Check if output file exists
-        if os.path.exists(output_file):
-            # Load existing data
-            with open(output_file, 'r') as json_file:
-                existing_data = json.load(json_file)
-            # Extend existing data with new data
-            existing_data.extend(latest_articles_data)
-            # Remove duplicates
-            existing_data = [dict(t) for t in {tuple(d.items()) for d in existing_data}]
-            latest_articles_data = existing_data
-
-        # Storing data in the JSON file
-        with open(output_file, 'w') as json_file:
+        # Storing data in a JSON file
+        with open(output_path, 'w') as json_file:
             json.dump(latest_articles_data, json_file, indent=4)
 
-        print("Latest articles data updated in 'latest_articles.json' file.")
+        print("Latest articles data stored in 'latest_articles.json' file.")
+
     else:
         print("Failed to fetch sitemap XML.")
-
 
 def fetch_and_analyze_post_title(soup):
     # Find and analyze post title
@@ -71,7 +62,6 @@ def fetch_and_analyze_post_title(soup):
             if keyword in post_title:
                 return post_title.split(keyword)[0] + keyword
     return None
-
 
 def determine_category(title):
     # Determine category based on title content
@@ -86,9 +76,5 @@ def determine_category(title):
     else:
         return "Other"
 
-
-# Get the sitemap URL from GitHub repository secrets
-sitemap_url = os.environ.get('geturlid')
-
 # Calling the function
-fetch_latest_articles(sitemap_url)
+fetch_latest_articles()
