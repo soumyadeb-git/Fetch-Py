@@ -5,48 +5,51 @@ import json
 import os
 
 def fetch_latest_articles():
-    # Fetching the sitemap XML file
-    sitemap_url_secret = os.getenv("SITEMAP_URL_SECRET")
-    if sitemap_url_secret:
-        response = requests.get(sitemap_url_secret)
-        if response.status_code == 200:
-            # Parsing the XML
-            root = ET.fromstring(response.content)
-            articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
+    # URL of the sitemap XML file
+    sitemap_url = "https://www.karmasandhan.com/post-sitemap.xml"
+    response = requests.get(sitemap_url)
 
-            latest_articles_data = []
-            for article in articles[:30]:  # Get the latest 10 articles
-                loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
-                response = requests.get(loc)
-                if response.status_code == 200:
-                    soup = BeautifulSoup(response.content, 'html.parser')
-                    # Find last updated information using CSS selector or any other method
-                    last_updated = soup.find(class_='posted-on').find('time').text.strip()
-                    # Fetch and analyze post title
-                    post_title = fetch_and_analyze_post_title(soup)
-                    if post_title:
-                        category = determine_category(post_title)
-                    else:
-                        category = "Other"
-                    article_data = {
-                        'Last Updated': last_updated,
-                        'Category': category
-                    }
-                    if post_title:
-                        article_data['Title'] = post_title
+    if response.status_code == 200:
+        # Parsing the XML
+        root = ET.fromstring(response.content)
+        articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
-                    latest_articles_data.append(article_data)
+        latest_articles_data = []
+        for article in articles[:10]:  # Get the latest 10 articles
+            loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
+            response = requests.get(loc)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, 'html.parser')
+                # Find last updated information using CSS selector or any other method
+                last_updated = soup.find(class_='posted-on').find('time').text.strip()
+                # Fetch and analyze post title
+                post_title = fetch_and_analyze_post_title(soup)
+                if post_title:
+                    category = determine_category(post_title)
+                else:
+                    category = "Other"
+                article_data = {
+                    'Last Updated': last_updated,
+                    'Category': category
+                }
+                if post_title:
+                    article_data['Title'] = post_title
 
-            # Storing data in a JSON file
-            output_path = 'data/latest_articles.json'
-            with open(output_path, 'w') as json_file:
-                json.dump(latest_articles_data, json_file, indent=4)
+                latest_articles_data.append(article_data)
 
-            print(f"Latest articles data stored in '{output_path}' file.")
-        else:
-            print("Failed to fetch sitemap XML.")
+        # Output folder path
+        output_folder = 'data/'
+        os.makedirs(output_folder, exist_ok=True)
+        output_path = os.path.join(output_folder, 'latest_articles.json')
+
+        # Storing data in a JSON file
+        with open(output_path, 'w') as json_file:
+            json.dump(latest_articles_data, json_file, indent=4)
+
+        print("Latest articles data stored in 'latest_articles.json' file.")
+
     else:
-        print("Sitemap URL secret not found.")
+        print("Failed to fetch sitemap XML.")
 
 def fetch_and_analyze_post_title(soup):
     # Find and analyze post title
