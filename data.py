@@ -15,7 +15,7 @@ def fetch_latest_articles():
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
         latest_articles_data = []
-        for article in articles[:20]:  # Get the latest 10 articles
+        for article in articles[:20]:  # Get the latest 20 articles
             loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
             response = requests.get(loc)
             if response.status_code == 200:
@@ -38,10 +38,10 @@ def fetch_latest_articles():
                 latest_articles_data.append(article_data)
 
         # Storing data in a JSON file
-        with open('latest_articles.json', 'w') as json_file:
+        with open('articles.json', 'w') as json_file:
             json.dump(latest_articles_data, json_file, indent=4)
 
-        print("Latest 10 articles data stored in 'latest_articles.json' file.")
+        print("Latest articles data stored in 'articles.json' file.")
     else:
         print("Failed to fetch sitemap XML.")
 
