@@ -22,8 +22,6 @@ jobs:
           pip install requests beautifulsoup4
       
       - name: Run Python script with secret URL
-        env:
-          SITEMAP_URL_SECRET: ${{ secrets.SITEMAP_URL }}
         run: python data.py
       
       - name: Commit changes
