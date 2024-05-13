@@ -3,7 +3,6 @@ name: Run Python script
 on:
   schedule:
     - cron: '30 6,9,12,15,18,21 * * *'  # Runs at 11:30 AM, 2:30 PM, 5:30 PM, 8:30 PM, and 11:00 PM (Indian Time)
-  workflow_dispatch:
 
 jobs:
   run_script:
@@ -23,6 +22,8 @@ jobs:
           pip install requests beautifulsoup4
       
       - name: Run Python script
+        env:
+          SITEMAP_URL: ${{ secrets.sitemap_url }}
         run: python data.py
       
       - name: Commit changes
@@ -30,9 +31,8 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add data/latest_articles.json
-          git diff-index --quiet HEAD || git commit -m "Update latest_articles.json" || echo "No changes to commit"
-          git pull origin main --rebase
-          git push origin main
+          git commit -m "Update latest_articles.json" || echo "No changes to commit"
+          git push
           
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
