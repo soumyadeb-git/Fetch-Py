@@ -6,19 +6,8 @@ import os
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
-    a = "https:"
-    b="ka"
-    c="//www."
-    d="as"
-    e="an"
-    f="rm"
-    g="an."
-    h="dh"
-    i="com/"
-    j="post"
-    k="-sitemap.xml"
-    l=a+b+f+d+e+h+g+i+j+k
-    response = requests.get(l)
+    sitemap_url = "https://www.karmasandhan.com/post-sitemap.xml"
+    response = requests.get(sitemap_url)
 
     if response.status_code == 200:
         # Parsing the XML
@@ -35,10 +24,7 @@ def fetch_latest_articles():
                 last_updated = soup.find(class_='posted-on').find('time').text.strip()
                 # Fetch and analyze post title
                 post_title = fetch_and_analyze_post_title(soup)
-                if post_title:
-                    category = determine_category(post_title)
-                else:
-                    category = "Other"
+                category = determine_category(post_title) if post_title else "Other"
                 article_data = {
                     'Last Updated': last_updated,
                     'Category': category
@@ -76,16 +62,16 @@ def fetch_and_analyze_post_title(soup):
 
 def determine_category(title):
     # Determine category based on title content
-    if "Recruitment 2024" in title:
-        return "Recruitment"
-    elif "Notification" in title:
-        return "Notification"
-    elif "Admit Card 2024" in title:
-        return "Admit Card"
-    elif "Result" in title:
-        return "Result"
-    else:
-        return "Other"
+    if title:
+        if "Recruitment 2024" in title:
+            return "Recruitment"
+        elif "Notification" in title:
+            return "Notification"
+        elif "Admit Card 2024" in title:
+            return "Admit Card"
+        elif "Result" in title:
+            return "Result"
+    return "Other"
 
 # Calling the function
 fetch_latest_articles()
