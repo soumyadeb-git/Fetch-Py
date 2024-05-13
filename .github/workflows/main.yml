@@ -1,32 +1,33 @@
-name: Update Articles
+name: Fetch Latest Articles
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight UTC
+    # Run daily at specific times
+    - cron: '40 11 * * *'  # 11:40 AM
+    - cron: '6 14 * * *'   # 2:06 PM
+    - cron: '9 17 * * *'   # 5:09 PM
+    - cron: '10 20 * * *'  # 8:10 PM
+    - cron: '20 22 * * *'  # 10:20 PM
 
 jobs:
-  build:
+  fetch_articles:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
 
-    - name: Install dependencies
-      run: pip install requests beautifulsoup4
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
 
-    - name: Run Python script
-      run: python fetch_articles.py
-
-    - name: Commit and push changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add latest_articles.json
-        git commit -m "Update latest_articles.json"
-        git push
+      - name: Run script
+        env:
+          geturlid: ${{ secrets.geturlid }}
+        run: python data.py
