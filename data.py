@@ -17,7 +17,7 @@ def fetch_latest_articles():
     i="com/"
     j="post"
     k="-sitemap.xml"
-    l:a+b+f+d+e+h+g+i+j+k
+    l=a+b+f+d+e+h+g+i+j+k
     response = requests.get(l)
 
     if response.status_code == 200:
