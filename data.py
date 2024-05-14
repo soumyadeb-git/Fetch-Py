@@ -3,7 +3,8 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
+import pytz  # Import the pytz module for time zone conversion
 
 def fetch_sitemap_url():
     # URL of the repository file containing the sitemap URL
@@ -58,8 +59,12 @@ def fetch_latest_articles():
             os.makedirs(output_folder, exist_ok=True)
             output_path = os.path.join(output_folder, 'latest_articles.json')
 
-            # Adding main tag for last update time
-            main_tag = {'Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+            # Convert the current time to Indian Standard Time (IST)
+            ist = pytz.timezone('Asia/Kolkata')
+            current_time = datetime.now().astimezone(ist).strftime("%Y-%m-%d %H:%M:%S")
+
+            # Adding main tag for last update time in IST
+            main_tag = {'Time': current_time}
             latest_articles_data.insert(0, main_tag)
 
             # Storing data in a JSON file
