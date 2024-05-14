@@ -7,7 +7,7 @@ from datetime import datetime
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
-    sitemap_url = os.getenv("SM_URL")  # Fetching sitemap URL from environment variable
+    sitemap_url = "https://www.karmasandhan.com/post-sitemap.xml"
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
@@ -41,7 +41,7 @@ def fetch_latest_articles():
         output_path = os.path.join(output_folder, 'latest_articles.json')
 
         # Adding main tag for last update time
-        main_tag = {'Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+        main_tag = {'Last Fetch Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
         latest_articles_data.insert(0, main_tag)
 
         # Storing data in a JSON file
