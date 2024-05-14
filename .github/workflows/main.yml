@@ -27,7 +27,7 @@ jobs:
       - name: Fetch sitemap URL
         run: |
           sitemap_url=$(curl -s https://raw.githubusercontent.com/soumyadeb-git/Fetch-Py/main/data/a.txt)
-          echo "::set-env name=SM_URL::$sitemap_url"
+          echo "SM_URL=$sitemap_url" >> $GITHUB_ENV
 
       - name: Run script
         run: python data.py
