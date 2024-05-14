@@ -4,15 +4,10 @@ from bs4 import BeautifulSoup
 import json
 import os
 from datetime import datetime
-import os
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
-    sitemap_url = os.getenv("SM_URL")
-    if not sitemap_url:
-        print("Sitemap URL not found. Exiting.")
-        return
-
+    sitemap_url = os.getenv("SM_URL")  # Fetching sitemap URL from environment variable
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
