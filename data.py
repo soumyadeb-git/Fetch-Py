@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import json
 import os
+from datetime import datetime
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
@@ -38,6 +39,10 @@ def fetch_latest_articles():
         output_folder = 'data/'
         os.makedirs(output_folder, exist_ok=True)
         output_path = os.path.join(output_folder, 'latest_articles.json')
+
+        # Adding main tag for last update time
+        main_tag = {'Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+        latest_articles_data.insert(0, main_tag)
 
         # Storing data in a JSON file
         with open(output_path, 'w') as json_file:
