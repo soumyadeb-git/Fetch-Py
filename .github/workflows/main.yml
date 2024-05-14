@@ -23,18 +23,13 @@ jobs:
           pip install requests beautifulsoup4
       
       - name: Run Python script
-        run: python Fetch-Py/data.py  # Update path to data.py here
+        run: python data.py
       
-      - name: Commit and Push changes
+      - name: Commit changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add .
+          git add Fetch-Py/data/latest_articles.json || git add -A
           git commit -m "Update latest_articles.json" || echo "No changes to commit"
+          git pull origin main || echo "No remote changes to pull"
           git push origin main
-
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
