@@ -3,80 +3,60 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import json
 import os
-from datetime import datetime, timedelta
-import pytz  # Import the pytz module for time zone conversion
-
-def fetch_sitemap_url():
-    # URL of the repository file containing the sitemap URL
-    url = "https://raw.githubusercontent.com/soumyadeb-git/Fetch-Py/main/data/a.txt"
-    
-    # Fetching the sitemap URL from the repository
-    response = requests.get(url)
-    
-    # Checking if the request was successful
-    if response.status_code == 200:
-        sitemap_url = response.text.strip()  # Extracting the sitemap URL from the response
-        return sitemap_url
-    else:
-        print("Failed to fetch sitemap URL.")
-        return None
+from datetime import datetime
+import os
 
 def fetch_latest_articles():
-    # Fetching the sitemap XML file URL
-    sitemap_url = fetch_sitemap_url()
-    
-    # Checking if the sitemap URL is fetched successfully
-    if sitemap_url:
-        response = requests.get(sitemap_url)
+    # URL of the sitemap XML file
+    sitemap_url = os.getenv("SM_URL")
+    if not sitemap_url:
+        print("Sitemap URL not found. Exiting.")
+        return
 
-        if response.status_code == 200:
-            # Parsing the XML
-            root = ET.fromstring(response.content)
-            articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
+    response = requests.get(sitemap_url)
 
-            latest_articles_data = []
-            for article in articles[:30]:
-                loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
-                response = requests.get(loc)
-                if response.status_code == 200:
-                    soup = BeautifulSoup(response.content, 'html.parser')
-                    # Find last updated information using CSS selector or any other method
-                    last_updated = soup.find(class_='posted-on').find('time').text.strip()
-                    # Fetch and analyze post title
-                    post_title = fetch_and_analyze_post_title(soup)
-                    category = determine_category(post_title) if post_title else "Other"
-                    article_data = {
-                        'Last Updated': last_updated,
-                        'Category': category
-                    }
-                    if post_title:
-                        article_data['Title'] = post_title
+    if response.status_code == 200:
+        # Parsing the XML
+        root = ET.fromstring(response.content)
+        articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
-                    latest_articles_data.append(article_data)
+        latest_articles_data = []
+        for article in articles[:30]:
+            loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
+            response = requests.get(loc)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.content, 'html.parser')
+                # Find last updated information using CSS selector or any other method
+                last_updated = soup.find(class_='posted-on').find('time').text.strip()
+                # Fetch and analyze post title
+                post_title = fetch_and_analyze_post_title(soup)
+                category = determine_category(post_title) if post_title else "Other"
+                article_data = {
+                    'Last Updated': last_updated,
+                    'Category': category
+                }
+                if post_title:
+                    article_data['Title'] = post_title
 
-            # Output folder path
-            output_folder = 'data/'
-            os.makedirs(output_folder, exist_ok=True)
-            output_path = os.path.join(output_folder, 'latest_articles.json')
+                latest_articles_data.append(article_data)
 
-            # Convert the current time to Indian Standard Time (IST)
-            ist = pytz.timezone('Asia/Kolkata')
-            current_time = datetime.now().astimezone(ist).strftime("%Y-%m-%d %H:%M:%S")
+        # Output folder path
+        output_folder = 'data/'
+        os.makedirs(output_folder, exist_ok=True)
+        output_path = os.path.join(output_folder, 'latest_articles.json')
 
-            # Adding main tag for last update time in IST
-            main_tag = {'Time': current_time}
-            latest_articles_data.insert(0, main_tag)
+        # Adding main tag for last update time
+        main_tag = {'Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+        latest_articles_data.insert(0, main_tag)
 
-            # Storing data in a JSON file
-            with open(output_path, 'w') as json_file:
-                json.dump(latest_articles_data, json_file, indent=4)
+        # Storing data in a JSON file
+        with open(output_path, 'w') as json_file:
+            json.dump(latest_articles_data, json_file, indent=4)
 
-            print("Latest articles data stored in 'latest_articles.json' file.")
+        print("Latest articles data stored in 'latest_articles.json' file.")
 
-        else:
-            print("Failed to fetch sitemap XML.")
     else:
-        print("Failed to fetch sitemap URL.")
+        print("Failed to fetch sitemap XML.")
 
 def fetch_and_analyze_post_title(soup):
     # Find and analyze post title
