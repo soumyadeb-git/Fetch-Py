@@ -1,4 +1,4 @@
-name: Fetch Latest Articles
+name: Run Python script
 
 on:
   schedule:
@@ -6,37 +6,34 @@ on:
   workflow_dispatch:  # Allow manual triggering of the workflow
 
 jobs:
-  fetch_articles:
+  run_script:
     runs-on: ubuntu-latest
-
-    env:
-      SM_URL: ${{ secrets.SM_URL }}
-
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v2
-
+      
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
-
+          python-version: '3.9'
+      
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
-
-      - name: Run script
+      
+      - name: Run Python script
         run: python data.py
 
-      - name: Commit output JSON file
+      - name: Commit changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/latest_articles.json
+          git add data/latest_articles.json || git commit -m "Create latest_articles.json"
           git commit -m "Update latest_articles.json" || echo "No changes to commit"
-          git push
-
+          git pull origin main || echo "No remote changes to pull"
+          git push origin main
+          
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
