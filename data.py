@@ -15,7 +15,7 @@ def fetch_latest_articles():
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
         latest_articles_data = []
-        for article in articles[:10]:  # Get the latest 10 articles
+        for article in articles[:30]:
             loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
             response = requests.get(loc)
             if response.status_code == 200:
