@@ -6,52 +6,69 @@ import os
 from datetime import datetime
 
 def fetch_latest_articles():
-    # URL of the sitemap XML file
-    sitemap_url = "https://www.karmasandhan.com/post-sitemap.xml"
-    response = requests.get(sitemap_url)
+    # Fetching sitemap URL from another GitHub repository
+    sitemap_url = fetch_sitemap_url()
 
-    if response.status_code == 200:
-        # Parsing the XML
-        root = ET.fromstring(response.content)
-        articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
+    if sitemap_url:
+        response = requests.get(sitemap_url)
 
-        latest_articles_data = []
-        for article in articles[:30]:
-            loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
-            response = requests.get(loc)
-            if response.status_code == 200:
-                soup = BeautifulSoup(response.content, 'html.parser')
-                # Find last updated information using CSS selector or any other method
-                last_updated = soup.find(class_='posted-on').find('time').text.strip()
-                # Fetch and analyze post title
-                post_title = fetch_and_analyze_post_title(soup)
-                category = determine_category(post_title) if post_title else "Other"
-                article_data = {
-                    'Last Updated': last_updated,
-                    'Category': category
-                }
-                if post_title:
-                    article_data['Title'] = post_title
+        if response.status_code == 200:
+            # Parsing the XML
+            root = ET.fromstring(response.content)
+            articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
-                latest_articles_data.append(article_data)
+            latest_articles_data = []
+            for article in articles[:30]:
+                loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
+                response = requests.get(loc)
+                if response.status_code == 200:
+                    soup = BeautifulSoup(response.content, 'html.parser')
+                    # Find last updated information using CSS selector or any other method
+                    last_updated = soup.find(class_='posted-on').find('time').text.strip()
+                    # Fetch and analyze post title
+                    post_title = fetch_and_analyze_post_title(soup)
+                    category = determine_category(post_title) if post_title else "Other"
+                    article_data = {
+                        'Last Updated': last_updated,
+                        'Category': category
+                    }
+                    if post_title:
+                        article_data['Title'] = post_title
 
-        # Output folder path
-        output_folder = 'data/'
-        os.makedirs(output_folder, exist_ok=True)
-        output_path = os.path.join(output_folder, 'latest_articles.json')
+                    latest_articles_data.append(article_data)
 
-        # Adding main tag for last update time
-        main_tag = {'Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-        latest_articles_data.insert(0, main_tag)
+            # Output folder path
+            output_folder = 'data/'
+            os.makedirs(output_folder, exist_ok=True)
+            output_path = os.path.join(output_folder, 'latest_articles.json')
 
-        # Storing data in a JSON file
-        with open(output_path, 'w') as json_file:
-            json.dump(latest_articles_data, json_file, indent=4)
+            # Adding main tag for last update time
+            main_tag = {'Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+            latest_articles_data.insert(0, main_tag)
 
-        print("Latest articles data stored in 'latest_articles.json' file.")
+            # Storing data in a JSON file
+            with open(output_path, 'w') as json_file:
+                json.dump(latest_articles_data, json_file, indent=4)
 
+            print("Latest articles data stored in 'latest_articles.json' file.")
+
+        else:
+            print("Failed to fetch sitemap XML.")
     else:
-        print("Failed to fetch sitemap XML.")
+        print("Failed to fetch sitemap URL.")
+
+def fetch_sitemap_url():
+    # URL of the file containing sitemap URL in another GitHub repository
+    sitemap_url_file_url = "https://raw.githubusercontent.com/soumyadeb-git/government-job-portal-sites/4102341f16057ef96af5947a36d2b1a96879d436/All%20State/a.txt"
+
+    # Fetching the content of the file
+    response = requests.get(sitemap_url_file_url)
+    if response.status_code == 200:
+        # Extracting the sitemap URL from the response content
+        sitemap_url = response.text.strip()
+        return sitemap_url
+    else:
+        return None
 
 def fetch_and_analyze_post_title(soup):
     # Find and analyze post title
