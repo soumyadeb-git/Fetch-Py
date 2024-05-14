@@ -26,10 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
-      - name: Fetch sitemap URL from environment variable
-        run: |
-          echo "Sitemap URL: $SM_URL"
-
       - name: Run script
         run: python data.py
 
@@ -40,6 +36,7 @@ jobs:
           git add data/latest_articles.json
           git commit -m "Update latest_articles.json" || echo "No changes to commit"
           git push
+
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
