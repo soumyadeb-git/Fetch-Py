@@ -2,7 +2,7 @@ name: Telegram Bot Update
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Run the script every day at midnight (UTC)
+    - cron: '2 */6 * * *'  # Run the script every day at midnight (UTC)
   workflow_dispatch:
 
 jobs:
@@ -24,6 +24,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         echo "Dependencies installed successfully."
+      
+    - name: Print secret value
+      run: echo $TOKEN  # Print the value of the secret TOKEN
+      env:
+        TOKEN: ${{ secrets.TOKEN }}
       
     - name: Run script
       run: python data.py
