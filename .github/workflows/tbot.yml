@@ -26,7 +26,7 @@ jobs:
         echo "Dependencies installed successfully."
       
     - name: Print secret value
-      run: echo "Token: ${{ secrets.TOKEN }}"
+      run: echo "${{ secrets.TOKEN }}"
       env:
         TOKEN: ${{ secrets.TOKEN }}
       
