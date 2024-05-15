@@ -3,6 +3,7 @@ name: Telegram Bot Update
 on:
   schedule:
     - cron: '0 0 * * *'  # Run the script every day at midnight (UTC)
+  workflow_dispatch:
 
 jobs:
   fetch_and_send:
