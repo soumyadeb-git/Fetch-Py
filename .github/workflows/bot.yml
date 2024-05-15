@@ -3,7 +3,6 @@ name: Telegram Bot Update
 on:
   schedule:
     - cron: '0 0 * * *'  # Run the script every day at midnight (UTC)
-  workflow_dispatch: 
 
 jobs:
   fetch_and_send:
@@ -21,9 +20,9 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python-telegram-bot==13.7
+        pip install -r requirements.txt
       
     - name: Run script
-      run: python /bot/data.py
+      run: python data.py
       env:
         TOKEN: ${{ secrets.TOKEN }}
