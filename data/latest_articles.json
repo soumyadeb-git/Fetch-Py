@@ -1,210 +1,279 @@
 [
     {
-        "Last Fetch Time": "2024-05-15 06:32:40"
+        "Last Fetch Time": "2024-05-15 12:55:35"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "IIMC Recruitment 2024",
+        "Last Date": "June 06, 2024",
+        "Link": "https://iimc.nic.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "Indian Overseas Bank Attender Recruitment 2024",
+        "Last Date": "June 04, 2024",
+        "Link": "http://www.iob.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "TATA STEEL Recruitment 2024",
+        "Last Date": "June 05, 2024",
+        "Link": "https://www.tatasteel.com/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "Mahatma Gandhi University Recruitment 2024",
+        "Last Date": "June 05, 2024",
+        "Link": "https://www.mgu.ac.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "IICA Recruitment 2024",
+        "Last Date": "June 07, 2024",
+        "Link": "https://iica.nic.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "TANUVAS Recruitment 2024",
+        "Last Date": "June 13, 2024",
+        "Link": "https://www.tanuvas.ac.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "AAICLAS Recruitment 2024",
+        "Last Date": "June 14, 2024",
+        "Link": "https://www.becil.com/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "BSF Recruitment 2024",
+        "Last Date": "June 05, 2024",
+        "Link": "https://rectt.bsf.gov.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Notification",
+        "Title": "UPSC NDA 2 2024 Notification",
+        "Last Date": "June 09, 2024",
+        "Link": "https://upsc.gov.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "BCAS Recruitment 2024",
+        "Last Date": "June 05, 2024",
+        "Link": "https://www.bcasindia.gov.in/#!/hi_home"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Notification",
+        "Title": "UPSC CDS 2 Notification",
+        "Last Date": "June 09, 2024",
+        "Link": "https://upsc.gov.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Other",
+        "Last Date": "June 13, 2024",
+        "Link": "https://mppsc.mp.gov.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "CSIR-NEERI Recruitment 2024",
+        "Last Date": "June 14, 2024",
+        "Link": "https://recruitment.neeri.res.in/appform/index.php"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "PGIMER Recruitment 2024",
+        "Last Date": "June 03, 2024",
+        "Link": "https://pgimer.edu.in/PGIMER_PORTAL/PGIMERPORTAL/home.jsp"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Other",
+        "Last Date": "June 03, 2024",
+        "Link": "https://www.wbpolice.gov.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "South Indian Bank Recruitment 2024",
+        "Last Date": "June 05, 2024",
+        "Link": "https://www.southindianbank.com/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "APSSB Recruitment 2024",
+        "Last Date": "June 09, 2024",
+        "Link": "https://apssb.nic.in/Index/institute_home/ins/RECINS001"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "NIPGR Recruitment 2024",
+        "Last Date": "June 14, 2024",
+        "Link": "https://nipgr.ac.in/home/home.php"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Other",
+        "Last Date": "June 04, 2024",
+        "Link": "https://sts.karnataka.gov.in/TET/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "BECIL Recruitment 2024",
+        "Last Date": "June 06, 2024",
+        "Link": "https://www.becil.com/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "J&K Bank Recruitment 2024",
+        "Last Date": "June 13, 2024",
+        "Link": "https://apprenticeshipindia.gov.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Other",
+        "Last Date": "June 11, 2024",
+        "Link": "https://mrb.tn.gov.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "NCERT Recruitment 2024",
+        "Last Date": "June 06, 2024",
+        "Link": "https://ncert.nic.in/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "AAI Recruitment 2024",
+        "Last Date": "June 04, 2024",
+        "Link": "https://www.aai.aero/"
+    },
+    {
+        "Updated On": "May 15, 2024",
+        "Category": "Recruitment",
+        "Title": "St. Xavier\u2019s College Recruitment 2024",
+        "Last Date": "June 03, 2024",
+        "Link": "https://sxccal.edu/"
     },
     {
         "Updated On": "May 15, 2024",
         "Category": "Recruitment",
         "Title": "IPPB Executive Recruitment 2024",
-        "Last Date": "June 02, 2024",
+        "Last Date": "June 03, 2024",
         "Link": "https://www.ippbonline.com/"
     },
     {
         "Updated On": "May 15, 2024",
         "Category": "Admit Card",
         "Title": "SSC CHSL Admit Card 2024",
-        "Last Date": "June 11, 2024",
+        "Last Date": "June 06, 2024",
         "Link": "https://ssc.nic.in/"
     },
     {
         "Updated On": "May 15, 2024",
         "Category": "Recruitment",
         "Title": "HAL Recruitment 2024",
-        "Last Date": "June 10, 2024",
+        "Last Date": "June 14, 2024",
         "Link": "https://www.hal-india.co.in/home"
     },
     {
         "Updated On": "May 15, 2024",
         "Category": "Recruitment",
         "Title": "BARC Recruitment 2024",
-        "Last Date": "June 12, 2024",
+        "Last Date": "June 11, 2024",
         "Link": "https://www.barc.gov.in/"
     },
     {
         "Updated On": "May 15, 2024",
         "Category": "Result",
         "Title": "AAI Junior Executive ATC Result",
-        "Last Date": "June 02, 2024",
+        "Last Date": "June 03, 2024",
         "Link": "http://www.aai.aero/"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Recruitment",
         "Title": "Orissa High Court Recruitment 2024",
-        "Last Date": "June 12, 2024",
+        "Last Date": "June 05, 2024",
         "Link": "https://www.orissahighcourt.nic.in/"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Recruitment",
         "Title": "Railway Group D Recruitment 2024",
-        "Last Date": "June 12, 2024",
+        "Last Date": "June 11, 2024",
         "Link": "https://nr.indianrailways.gov.in/"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Recruitment",
         "Title": "RCFL Recruitment 2024",
-        "Last Date": "June 08, 2024",
+        "Last Date": "June 13, 2024",
         "Link": "https://www.rcfltd.com/"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Recruitment",
         "Title": "IGI Aviation CSA Recruitment 2024",
-        "Last Date": "June 06, 2024",
+        "Last Date": "June 04, 2024",
         "Link": "https://igiaviationdelhi.com/"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Recruitment",
         "Title": "RCFL Recruitment 2024",
-        "Last Date": "June 06, 2024",
+        "Last Date": "June 07, 2024",
         "Link": "https://www.rcfltd.com/"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Other",
-        "Last Date": "June 05, 2024"
+        "Last Date": "June 11, 2024"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Recruitment",
         "Title": "CSIR NEERI Recruitment 2024",
-        "Last Date": "June 12, 2024",
+        "Last Date": "June 13, 2024",
         "Link": "https://www.neeri.res.in/#googtrans(en|en)"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Recruitment",
         "Title": "ICAR-IARI Recruitment 2024",
-        "Last Date": "June 12, 2024",
+        "Last Date": "June 06, 2024",
         "Link": "https://iari.res.in/en/index.php"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Notification",
         "Title": "SSC CGL 2024 Notification",
-        "Last Date": "June 07, 2024",
+        "Last Date": "June 04, 2024",
         "Link": "https://ssc.nic.in/"
     },
     {
         "Updated On": "May 14, 2024",
         "Category": "Recruitment",
         "Title": "ITR Chandipur Recruitment 2024",
-        "Last Date": "June 12, 2024",
+        "Last Date": "June 05, 2024",
         "Link": "https://www.drdo.gov.in/drdo/labs-and-establishments/integrated-test-range-itr"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "Odisha High Court Recruitment 2024",
-        "Last Date": "June 05, 2024",
-        "Link": "https://www.orissahighcourt.nic.in/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "MTS, Office Assistant and Other Posts Recruitment 2024",
-        "Last Date": "June 04, 2024",
-        "Link": "https://www.becil.com/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "AIIMS Raipur Recruitment 2024",
-        "Last Date": "June 10, 2024",
-        "Link": "https://www.aiimsraipur.edu.in/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "NCLT\u00a0Recruitment 2024",
-        "Last Date": "June 03, 2024",
-        "Link": "https://nclt.gov.in/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Other",
-        "Last Date": "June 10, 2024",
-        "Link": "https://esb.mp.gov.in/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "Gauhati High Court Recruitment 2024",
-        "Last Date": "June 11, 2024",
-        "Link": "https://ghconline.gov.in/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "Bombay High Court Clerk Recruitment 2024",
-        "Last Date": "June 11, 2024",
-        "Link": "https://bombayhighcourt.nic.in/index.php"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "Ministry of Environment Recruitment 2024",
-        "Last Date": "June 07, 2024",
-        "Link": "https://moef.gov.in/moef/index.html"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "NCLAT Recruitment 2024",
-        "Last Date": "June 02, 2024",
-        "Link": "https://nclat.nic.in/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Other",
-        "Last Date": "June 02, 2024",
-        "Link": "https://upsconline.nic.in/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Notification",
-        "Title": "DRDO CEPTAM Recruitment Notification",
-        "Last Date": "June 08, 2024",
-        "Link": "https://drdo.gov.in/drdo/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Other",
-        "Last Date": "June 08, 2024",
-        "Link": "https://rpf.indianrailways.gov.in/"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "APTEL Recruitment 2024",
-        "Last Date": "June 04, 2024",
-        "Link": "https://aptel.gov.in/old-judgement-data"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "MOEF Recruitment 2024",
-        "Last Date": "June 01, 2024",
-        "Link": "https://moef.gov.in/moef/index.html"
-    },
-    {
-        "Updated On": "May 14, 2024",
-        "Category": "Recruitment",
-        "Title": "SGPGIMS Recruitment 2024",
-        "Last Date": "June 05, 2024",
-        "Link": "https://sgpgims.org.in/"
     }
 ]
