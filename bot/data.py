@@ -1,8 +1,15 @@
+import os
 import requests
 import json
 import asyncio
 import random
+import logging
 from telegram import Bot
+from datetime import datetime, timedelta
+from time import sleep
+
+# Set up logging
+logging.basicConfig(filename='telegram_bot.log', level=logging.INFO, format='%(asctime)s - %(levelname)s: %(message)s')
 
 async def fetch_and_send_data():
     try:
@@ -12,8 +19,8 @@ async def fetch_and_send_data():
         if response.status_code == 200:
             data = json.loads(response.text)
             
-            # Your Telegram Bot token
-            bot_token = "${{ secret.TOKEN }}"
+            # Your Telegram Bot token (retrieved from environment variable)
+            bot_token = os.environ.get('TOKEN')
             
             # Your Telegram Channel ID
             channel_id = "@government_job_hunter"
@@ -23,7 +30,10 @@ async def fetch_and_send_data():
             
             # Emojis and reactions for posts
             emojis = ["💼", "📝", "👩‍💼", "👨‍💼", "💻", "📅", "🏢", "👉", "🔍", "✅", "➡️"]
-            reactions = ["Great opportunity!", "Thanks for sharing!", "Good luck to all applicants!", "Keep up the good work!", "Helpful information!", "Appreciate the update!"]
+            reactions = ["Great opportunity!", "Thanks for sharing!", "Good luck to all applicants!", 
+                         "Keep up the good work!", "Helpful information!", "Appreciate the update!",
+                         "Exciting opportunity!", "Valuable insights!", "Fantastic news!",
+                         "Impressive job listing!", "Informative post!", "Excellent find!"]
             
             # Sending messages one by one to the Telegram channel
             for article in data:
@@ -38,11 +48,24 @@ async def fetch_and_send_data():
                     # Introduce a delay between messages (optional)
                     await asyncio.sleep(1)  # Adjust the delay time as needed
                 else:
-                    print("Skipping article as it is missing required fields")
+                    logging.warning("Skipping article as it is missing required fields")
         else:
-            print("Failed to fetch data from GitHub")
+            logging.error("Failed to fetch data from GitHub")
     except Exception as e:
-        print(f"An error occurred: {e}")
+        logging.error(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    asyncio.run(fetch_and_send_data())
+    # Set up retry mechanism with exponential backoff
+    retries = 3
+    for attempt in range(retries):
+        try:
+            asyncio.run(fetch_and_send_data())
+            break
+        except Exception as e:
+            logging.error(f"Error in attempt {attempt + 1}: {e}")
+            if attempt < retries - 1:
+                delay = 2 ** attempt
+                logging.info(f"Retrying in {delay} seconds...")
+                sleep(delay)
+            else:
+                logging.error("Maximum retries reached. Exiting...")
