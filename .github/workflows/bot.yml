@@ -22,6 +22,7 @@ jobs:
       run: |
         echo "Installing dependencies..."
         python -m pip install --upgrade pip
+        pip install python-telegram-bot
         pip install -r requirements.txt
         echo "Dependencies installed successfully."
       
