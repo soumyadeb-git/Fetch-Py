@@ -1,3 +1,4 @@
+import os
 import requests
 import json
 import asyncio
@@ -18,8 +19,8 @@ async def fetch_and_send_data():
         if response.status_code == 200:
             data = json.loads(response.text)
             
-            # Your Telegram Bot token
-            bot_token = "6741806828:AAFcSnSJlKgfnW5gWsE7bJEitHjejZYXSL0"
+            # Your Telegram Bot token (retrieved from environment variable)
+            bot_token = os.environ.get('TOKEN')
             
             # Your Telegram Channel ID
             channel_id = "@government_job_hunter"
@@ -51,7 +52,7 @@ async def fetch_and_send_data():
         else:
             logging.error("Failed to fetch data from GitHub")
     except Exception as e:
-        logging.error(f"An error occurred: {e}")
+        logging.error(f"An error occurred: {e}", exc_info=True)
 
 if __name__ == "__main__":
     # Set up retry mechanism with exponential backoff
