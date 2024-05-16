@@ -1,0 +1,32 @@
+name: Telegram Bot Update
+
+on:
+  schedule:
+    - cron: '2 */6 * * *'  # Run the script every day at midnight (UTC)
+  workflow_dispatch:
+
+jobs:
+  fetch_and_send:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+      
+    - name: Install dependencies
+      run: |
+        echo "Installing dependencies..."
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        echo "Dependencies installed successfully."
+      
+    - name: Run script
+      run: |
+        python data.py
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TOKEN }}
