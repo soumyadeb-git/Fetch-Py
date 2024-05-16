@@ -12,26 +12,27 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}  # Replace with your token if needed
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-      
+
     - name: Install dependencies
       run: |
         echo "Installing dependencies..."
         python -m pip install --upgrade pip
-        pip install python-telegram-bot
         pip install -r requirements.txt
         echo "Dependencies installed successfully."
-      
-    - name: Print Telegram Bot Token
-      run: |
-        echo "Telegram Bot Token: ${{ secrets.TOKEN }}"
-      
+
     - name: Run script
-      run: |
-        python bot.py
+      run: python bot.py
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TOKEN }}
