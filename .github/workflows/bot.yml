@@ -25,6 +25,10 @@ jobs:
         pip install -r requirements.txt
         echo "Dependencies installed successfully."
       
+    - name: Print Telegram Bot Token
+      run: |
+        echo "Telegram Bot Token: ${{ secrets.TOKEN }}"
+      
     - name: Run script
       run: |
         python bot.py
