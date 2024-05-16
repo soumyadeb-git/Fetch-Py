@@ -20,7 +20,7 @@ async def fetch_and_send_data():
             data = json.loads(response.text)
             
             # Your Telegram Bot token (retrieved from environment variable)
-            bot_token = os.environ.get('TOKEN')
+            bot_token = os.environ('TOKEN')
             
             # Your Telegram Channel ID
             channel_id = "@government_job_hunter"
