@@ -1,8 +1,6 @@
 [![Run Python script](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/main.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/main.yml) 
 # Fetch-Py
 
-# Govt Job Data
-
 This repository contains a Python script designed to automate the extraction of specific information from a series of URLs listed in an XML sitemap. The extracted data is stored in a structured JSON format for easy access and further processing.
 
 ## Features
