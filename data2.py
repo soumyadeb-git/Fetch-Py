@@ -4,7 +4,6 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import json
 import re
-import subprocess
 
 # Function to fetch and parse the sitemap
 def fetch_sitemap(sitemap_url):
@@ -63,12 +62,6 @@ def prioritize_urls(urls):
     priorities = ['.gov.in', '.nic.in', '.ac.in', '.org.in', '.in']
     return sorted(urls, key=lambda url: next((i for i, domain in enumerate(priorities) if domain in url), len(priorities)))
 
-# Function to check if JSON file is empty or does not exist
-def is_json_file_empty(file_path):
-    if os.path.exists(file_path):
-        return os.path.getsize(file_path) == 0
-    return True
-
 # Function to check if title already exists in data
 def check_existing_title(title, data):
     for entry in data:
@@ -78,11 +71,10 @@ def check_existing_title(title, data):
 
 # Main function to execute the scraping and saving process
 def main():
-    # Fetching URL from GitHub secret
+    # Fetching URL from environment variable
     sitemap_url = os.getenv('SIURL')
     post_urls = fetch_sitemap(sitemap_url)
     prioritized_urls = prioritize_urls(post_urls)
-    
     scraped_data = []
     for url in prioritized_urls:
         print(f"Scraping {url}")
@@ -94,9 +86,8 @@ def main():
     
     # Load existing data from the file, if any
     output_path = os.path.join('data', 'data2.json')
-    if is_json_file_empty(output_path):
-        existing_data = []
-    else:
+    existing_data = []
+    if os.path.exists(output_path) and os.path.getsize(output_path) > 0:
         with open(output_path, 'r', encoding='utf-8') as f:
             existing_data = json.load(f)
     
