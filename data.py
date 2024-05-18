@@ -24,7 +24,7 @@ def fetch_latest_articles():
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
         latest_articles_data = []
-        for article in articles[:6]:
+        for article in articles[:20]:
             loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
             response = requests.get(loc)
             if response.status_code == 200:
@@ -57,6 +57,22 @@ def fetch_latest_articles():
         output_folder = 'data/'
         os.makedirs(output_folder, exist_ok=True)
         output_path = os.path.join(output_folder, 'data1.json')
+
+        # Reading existing data from the file
+        existing_data = []
+        if os.path.exists(output_path) and os.path.getsize(output_path) > 0:  # Check if file exists and not empty
+            with open(output_path, 'r') as json_file:
+                existing_data = json.load(json_file)
+
+        # Update existing data for specific entries
+        for new_article in latest_articles_data:
+            for existing_article in existing_data:
+                if 'Title' in new_article and 'Title' in existing_article:
+                    if new_article['Title'] == existing_article['Title']:
+                        existing_article.update(new_article)
+                        break
+            else:
+                existing_data.append(new_article)
 
         # Adding main tag for last update time
         main_tag = {'Last Fetch Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
