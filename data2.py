@@ -35,14 +35,14 @@ def scrape_post(url):
                 if key == "Department":
                     data['Title'] = value
                 elif key == "Total Vacancies":
-                    data['Total Vacancies'] = value
+                    data['Vacancies'] = value
                 elif key == "Notification No.":
-                    data['Notification No.'] = value
+                    data['Avdt. No.'] = value
                 elif key == "Deadlines":
                     # Extract only the date from the cell
                     date_match = re.search(r'\d{2}/\d{2}/\d{4}', value)
                     if date_match:
-                        data['Deadlines'] = date_match.group(0)
+                        data['Last Date'] = date_match.group(0)
                 elif key == "Notification Published on":
                     data['Notification Published on'] = value
 
