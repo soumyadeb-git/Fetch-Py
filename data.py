@@ -66,8 +66,10 @@ def fetch_latest_articles():
 
         print("Latest articles data stored in 'data1.json' file.")
 
-        # Run JsonManager.py after fetching the articles
-        subprocess.run(['python', 'data2.py'], check=True)
+        # Run data2.py after fetching the articles and pass SITEMAP_URL environment variable
+        env = os.environ.copy()
+        env['SITEMAP_URL'] = os.getenv('SITEMAP_URL')
+        subprocess.run(['python', 'data2.py'], check=True, env=env)
 
     else:
         print("Failed to fetch sitemap XML.")
