@@ -10,7 +10,12 @@ import subprocess
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
-    sitemap_url = "https://www.karmasandhan.com/post-sitemap.xml"
+    sitemap_url = os.environ.get('KARM_URL')  # Accessing GitHub Actions secret variable
+
+    if not sitemap_url:
+        print("Error: KARM_URL secret variable is not set.")
+        return
+        
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
