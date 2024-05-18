@@ -1,4 +1,4 @@
-name: Run Action Python scripts
+name: Run Python scripts
 
 on:
   schedule:
@@ -23,12 +23,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
-      - name: Verify SIURL environment variable
-        run: echo "SIURL=${{ secrets.SIURL }}"
-
       - name: Run data.py script
         env:
           SIURL: ${{ secrets.SIURL }}
+          SITEMAP_URL: ${{ secrets.SITEMAP_URL }}
         run: |
           echo "Running data.py with SIURL=$SIURL"
           python data.py
@@ -41,9 +39,6 @@ jobs:
           git commit -m "Update data1.json" || echo "No changes to commit"
           git pull origin main || echo "No remote changes to pull"
           git push origin main
-
-      - name: Verify SITEMAP_URL environment variable
-        run: echo "SITEMAP_URL=${{ secrets.SITEMAP_URL }}"
 
       - name: Run data2.py script
         env:
