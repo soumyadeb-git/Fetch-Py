@@ -1,0 +1,34 @@
+name: Merge JSON Files
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  merge_json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Use the Python version required for your script
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt  # If you have any requirements
+
+      - name: Run Python script
+        run: python json_merger.py
+        working-directory: ${{ github.workspace }}  # Ensure the script runs in the correct directory
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add merged_data.json
+          git commit -m "Merge and update JSON files"
+          git push
