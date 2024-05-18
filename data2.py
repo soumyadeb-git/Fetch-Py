@@ -7,8 +7,8 @@ import re
 import subprocess
 
 # Function to fetch and parse the sitemap
-def fetch_sitemap(site_url):
-    response = requests.get(site_url)
+def fetch_sitemap(sitemap_url):
+    response = requests.get(sitemap_url)
     response.raise_for_status()  # Raise an error for bad status codes
     root = ET.fromstring(response.content)
     namespaces = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
@@ -16,8 +16,8 @@ def fetch_sitemap(site_url):
     return urls[:15]  # Get the latest 10 URLs
 
 # Function to scrape data from a post URL
-def scrape_post(post_url):
-    response = requests.get(post_url)
+def scrape_post(url):
+    response = requests.get(url)
     response.raise_for_status()  # Raise an error for bad status codes
     soup = BeautifulSoup(response.content, 'html.parser')
     
@@ -63,14 +63,24 @@ def prioritize_urls(urls):
     priorities = ['.gov.in', '.nic.in', '.ac.in', '.org.in', '.in']
     return sorted(urls, key=lambda url: next((i for i, domain in enumerate(priorities) if domain in url), len(priorities)))
 
+# Function to check if JSON file is empty or does not exist
+def is_json_file_empty(file_path):
+    if os.path.exists(file_path):
+        return os.path.getsize(file_path) == 0
+    return True
+
+# Function to check if title already exists in data
+def check_existing_title(title, data):
+    for entry in data:
+        if 'Title' in entry and entry['Title'] == title:
+            return True
+    return False
+
 # Main function to execute the scraping and saving process
 def main():
-    site_url = os.environ.get('SIURL')  # Accessing GitHub Actions secret variable
-    if not site_url:
-        print("Error: SIURL secret variable is not set.")
-        return
-
-    post_urls = fetch_sitemap(site_url)
+    # Fetching URL from GitHub secret
+    sitemap_url = os.getenv('SIURL')
+    post_urls = fetch_sitemap(sitemap_url)
     prioritized_urls = prioritize_urls(post_urls)
     
     scraped_data = []
@@ -78,12 +88,24 @@ def main():
         print(f"Scraping {url}")
         post_data = scrape_post(url)
         if post_data:
-            scraped_data.append(post_data)
+            # Check if title already exists in data
+            if 'Title' in post_data and not check_existing_title(post_data['Title'], scraped_data):
+                scraped_data.append(post_data)
     
-    # Save the scraped data to a JSON file
+    # Load existing data from the file, if any
     output_path = os.path.join('data', 'data2.json')
+    if is_json_file_empty(output_path):
+        existing_data = []
+    else:
+        with open(output_path, 'r', encoding='utf-8') as f:
+            existing_data = json.load(f)
+    
+    # Stack the new data on top of the existing data
+    final_data = scraped_data + existing_data
+    
+    # Save the stacked data to the JSON file
     with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(scraped_data, f, ensure_ascii=False, indent=4)
+        json.dump(final_data, f, ensure_ascii=False, indent=4)
 
     print(f"Scraping completed and data saved to {output_path}")
 
