@@ -2,7 +2,7 @@ name: Run Data2 Python script
 
 on:
   schedule:
-    - cron: '1 */6 * * *'  # runs at the first minute of every 6th hour. (12:01a, 6:01a, 12:01p, and 6:01p)
+    - cron: '1 */5 * * *'  # runs at the first minute of every 6th hour. (12:01a, 6:01a, 12:01p, and 6:01p)
   workflow_dispatch:  # Allow manual triggering of the workflow
 
 jobs:
