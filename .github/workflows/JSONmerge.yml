@@ -2,7 +2,7 @@ name: Merge JSON Files
 
 on:
   schedule:
-    - cron: '1 */6 * * *'  # run the task at the first minute of every 5th hour, So, for example, if the current time is 10:30 AM, the task will run at 11:01 AM, then again at 4:01 PM, and so on.
+    - cron: '1 */5 * * *'  # run the task at the first minute of every 5th hour, So, for example, if the current time is 10:30 AM, the task will run at 11:01 AM, then again at 4:01 PM, and so on.
   push:
     branches:
       - main
