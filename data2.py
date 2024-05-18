@@ -13,7 +13,7 @@ def fetch_sitemap(sitemap_url):
     root = ET.fromstring(response.content)
     namespaces = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
     urls = [url.find('ns:loc', namespaces).text for url in root.findall('ns:url', namespaces)]
-    return urls[:15]  # Get the latest 15 URLs
+    return urls[:15]  # Get the latest 10 URLs
 
 # Function to scrape data from a post URL
 def scrape_post(url):
@@ -65,10 +65,7 @@ def prioritize_urls(urls):
 
 # Main function to execute the scraping and saving process
 def main():
-    sitemap_url = os.getenv('SIURL')
-    if not sitemap_url:
-        raise ValueError("SIURL environment variable not set")
-    
+    sitemap_url = "https://govtjobguru.in/jobs-sitemap.xml"
     post_urls = fetch_sitemap(sitemap_url)
     prioritized_urls = prioritize_urls(post_urls)
     
@@ -81,7 +78,6 @@ def main():
     
     # Save the scraped data to a JSON file
     output_path = os.path.join('data', 'data2.json')
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(scraped_data, f, ensure_ascii=False, indent=4)
 
