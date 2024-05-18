@@ -13,7 +13,7 @@ def fetch_sitemap(sitemap_url):
     root = ET.fromstring(response.content)
     namespaces = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
     urls = [url.find('ns:loc', namespaces).text for url in root.findall('ns:url', namespaces)]
-    return urls[:15]  # Get the latest 10 URLs
+    return urls[:15]  # Get the latest 15 URLs
 
 # Function to scrape data from a post URL
 def scrape_post(url):
@@ -108,10 +108,6 @@ def main():
                     break
         else:
             existing_data.append(new_article)
-    
-    # Adding main tag for last update time
-    main_tag = {'Last Fetch Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-    existing_data.insert(0, main_tag)
     
     # Storing updated data in the JSON file
     with open(output_path, 'w') as json_file:
