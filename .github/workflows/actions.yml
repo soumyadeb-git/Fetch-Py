@@ -56,11 +56,20 @@ jobs:
           git pull origin main || echo "No remote changes to pull"
           git push origin main
 
+      - name: Run json_manager.py script
+        run: python json_manager.py
+
+      - name: Commit merged_data.json changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add data/merged_data.json
+          git commit -m "Update merged_data.json" || echo "No changes to commit"
+          git pull origin main || echo "No remote changes to pull"
+          git push origin main
+
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-
-      - name: Run json_manager.py script
-        run: python json_manager.py
