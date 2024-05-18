@@ -2,7 +2,7 @@ name: Merge JSON Files
 
 on:
   schedule:
-    - cron: '1 */6 * * *'  # run the task at the first minute of every 6th hour.
+    - cron: '1 */6 * * *'  # Run the task at the first minute of every 6th hour.
   push:
     branches:
       - main
@@ -20,18 +20,20 @@ jobs:
         with:
           python-version: '3.x'  # Use the Python version required for your script
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt  # If you have any requirements
+      # Uncomment this section if you have a requirements.txt
+      # - name: Install dependencies
+      #   run: |
+      #     if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run Python script
         run: python json_merger.py
-        working-directory: ${{ github.workspace }}  # Ensure the script runs in the correct directory
+        working-directory: ${{ github.workspace }}
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/merged_data.json || git commit -m "Create merged_data.json"
-          git commit -m "Merge and update JSON files"
-          git pull origin main || echo "No remote changes to pull"
-          git push
+          git add data/merged_data.json
+          git commit -m "Merge and update JSON files" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push origin main
