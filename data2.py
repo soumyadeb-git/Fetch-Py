@@ -65,9 +65,9 @@ def prioritize_urls(urls):
 
 # Main function to execute the scraping and saving process
 def main():
-    sitemap_url = os.getenv('SITEMAP_URL')
+    sitemap_url = os.getenv('SIURL')
     if not sitemap_url:
-        raise ValueError("SITEMAP_URL environment variable not set")
+        raise ValueError("SIURL environment variable not set")
     
     post_urls = fetch_sitemap(sitemap_url)
     prioritized_urls = prioritize_urls(post_urls)
