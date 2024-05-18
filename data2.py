@@ -6,7 +6,6 @@ import json
 import re
 from datetime import datetime
 
-
 # Function to fetch and parse the sitemap
 def fetch_sitemap(sitemap_url):
     response = requests.get(sitemap_url)
@@ -94,8 +93,11 @@ def main():
     # Reading existing data from the file
     existing_data = []
     if os.path.exists(output_path) and os.path.getsize(output_path) > 0:  # Check if file exists and not empty
-        with open(output_path, 'r') as json_file:
-            existing_data = json.load(json_file)
+        try:
+            with open(output_path, 'r') as json_file:
+                existing_data = json.load(json_file)
+        except json.JSONDecodeError:
+            print("Existing JSON file is empty or malformed.")
     
     # Update existing data for specific entries
     for new_article in scraped_data:
@@ -116,6 +118,6 @@ def main():
         json.dump(existing_data, json_file, indent=4)
     
     print("Latest articles data stored in 'data2.json' file.")
-    
+
 if __name__ == "__main__":
     main()
