@@ -9,7 +9,7 @@ import re
 import subprocess
 
 def fetch_latest_articles():
-    sitemap_url = os.getenv('SITEMAP_URL')
+    sitemap_url = os.getenv('KARM_URL')
     if not sitemap_url:
         raise ValueError("SIURL environment variable is not set")
     print(f"Fetching sitemap from: {sitemap_url}")  # Debugging line
