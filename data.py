@@ -81,7 +81,7 @@ def format_last_updated(last_updated):
 def fetch_and_analyze_post_title(soup):
     # Find and analyze post title
     post_title_tag = soup.find('h1', class_='entry-title')
-    if (post_title_tag):
+    if post_title_tag:
         post_title = post_title_tag.text.strip()
         # Extract specific sections from the title
         keywords = ['Recruitment 2024', 'Notification', 'Admit Card 2024', 'Result']
