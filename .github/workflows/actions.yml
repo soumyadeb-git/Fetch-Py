@@ -1,4 +1,4 @@
-name: Run Python scripts
+name: Run Action Python scripts
 
 on:
   schedule:
