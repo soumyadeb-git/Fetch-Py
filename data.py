@@ -4,15 +4,18 @@ from bs4 import BeautifulSoup
 import json
 import os
 from datetime import datetime, timedelta
-import random  # Import random module for generating random days
-import re  # Import regular expressions module
+import random
+import re
 import subprocess
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
     sitemap_url = os.getenv('SIURL')
+    if not sitemap_url:
+        raise ValueError("SIURL environment variable is not set")
+    print(f"Fetching sitemap from: {sitemap_url}")  # Debugging statement
+    
     response = requests.get(sitemap_url)
-
     if response.status_code == 200:
         # Parsing the XML
         root = ET.fromstring(response.content)
@@ -78,7 +81,7 @@ def format_last_updated(last_updated):
 def fetch_and_analyze_post_title(soup):
     # Find and analyze post title
     post_title_tag = soup.find('h1', class_='entry-title')
-    if post_title_tag:
+    if (post_title_tag):
         post_title = post_title_tag.text.strip()
         # Extract specific sections from the title
         keywords = ['Recruitment 2024', 'Notification', 'Admit Card 2024', 'Result']
