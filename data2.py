@@ -4,6 +4,8 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import json
 import re
+from datetime import datetime
+
 
 # Function to fetch and parse the sitemap
 def fetch_sitemap(sitemap_url):
@@ -84,21 +86,36 @@ def main():
             if 'Title' in post_data and not check_existing_title(post_data['Title'], scraped_data):
                 scraped_data.append(post_data)
     
-    # Load existing data from the file, if any
-    output_path = os.path.join('data', 'data2.json')
+    # Output folder path
+    output_folder = 'data/'
+    os.makedirs(output_folder, exist_ok=True)
+    output_path = os.path.join(output_folder, 'data1.json')
+    
+    # Reading existing data from the file
     existing_data = []
-    if os.path.exists(output_path) and os.path.getsize(output_path) > 0:
-        with open(output_path, 'r', encoding='utf-8') as f:
-            existing_data = json.load(f)
+    if os.path.exists(output_path) and os.path.getsize(output_path) > 0:  # Check if file exists and not empty
+        with open(output_path, 'r') as json_file:
+            existing_data = json.load(json_file)
     
-    # Stack the new data on top of the existing data
-    final_data = scraped_data + existing_data
+    # Update existing data for specific entries
+    for new_article in scraped_data:
+        for existing_article in existing_data:
+            if 'Title' in new_article and 'Title' in existing_article:
+                if new_article['Title'] == existing_article['Title']:
+                    existing_article.update(new_article)
+                    break
+        else:
+            existing_data.append(new_article)
     
-    # Save the stacked data to the JSON file
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(final_data, f, ensure_ascii=False, indent=4)
-
-    print(f"Scraping completed and data saved to {output_path}")
-
+    # Adding main tag for last update time
+    main_tag = {'Last Fetch Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+    existing_data.insert(0, main_tag)
+    
+    # Storing updated data in the JSON file
+    with open(output_path, 'w') as json_file:
+        json.dump(existing_data, json_file, indent=4)
+    
+    print("Latest articles data stored in 'data1.json' file.")
+    
 if __name__ == "__main__":
     main()
