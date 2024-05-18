@@ -26,7 +26,6 @@ jobs:
       - name: Run data.py script
         env:
           SIURL: ${{ secrets.SIURL }}
-          SITEMAP_URL: ${{ secrets.SITEMAP_URL }}
         run: |
           echo "Running data.py with SIURL=$SIURL"
           python data.py
