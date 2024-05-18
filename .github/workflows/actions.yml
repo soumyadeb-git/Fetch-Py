@@ -1,4 +1,4 @@
-name: Run Action Python scripts
+name: Run Python script
 
 on:
   schedule:
@@ -6,67 +6,68 @@ on:
   workflow_dispatch:  # Allow manual triggering of the workflow
 
 jobs:
-  run_scripts:
+  run_script:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
+      
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'
-
+      
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
-
-      - name: Run data.py script
+      
+      - name: Run Data.py Python script
         env:
-          SIURL: ${{ secrets.SIURL }}
+          SITEMAP_URL: ${{ secrets.karm_URL }}
         run: |
-          echo "Running data.py with SIURL=$SIURL"
+          echo "Running data.py with karm_URL=$karm_URL"
           python data.py
 
-      - name: Commit data1.json changes
+      - name: Commit changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/data1.json
+          git add data/data1.json || git commit -m "Create data1.json"
           git commit -m "Update data1.json" || echo "No changes to commit"
           git pull origin main || echo "No remote changes to pull"
           git push origin main
 
-      - name: Run data2.py script
+      - name: Run Data2.py Python script
         env:
-          SITEMAP_URL: ${{ secrets.SITEMAP_URL }}
+          SITEMAP_URL: ${{ secrets.SIURL }}
         run: |
-          echo "Running data2.py with SITEMAP_URL=$SITEMAP_URL"
-          python data2.py
+          echo "Running data2.py with SIURL=$SIURL"
+          python data.py
 
-      - name: Commit data2.json changes
+      - name: Commit changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/data2.json
+          git add data/data2.json || git commit -m "Create data2.json"
           git commit -m "Update data2.json" || echo "No changes to commit"
           git pull origin main || echo "No remote changes to pull"
           git push origin main
 
-      - name: Run json_manager.py script
-        run: python json_manager.py
+      - name: Run json_manager.py Python script
+        run: |
+          echo "Running json_manager.py"
+          python json_manager.py
 
-      - name: Commit merged_data.json changes
+      - name: Commit changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/merged_data.json
-          git commit -m "Update merged_data.json" || echo "No changes to commit"
+          git add data/data/merged_data.json || git commit -m "Create data/merged_data.json"
+          git commit -m "Update data/merged_data.json" || echo "No changes to commit"
           git pull origin main || echo "No remote changes to pull"
           git push origin main
-
+          
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
