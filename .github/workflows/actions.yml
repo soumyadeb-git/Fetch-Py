@@ -24,7 +24,7 @@ jobs:
       
       - name: Run Data.py Python script
         env:
-          SITEMAP_URL: ${{ secrets.karm_URL }}
+          KARM_URL: ${{ secrets.karm_URL }}
         run: |
           echo "Running data.py with karm_URL=$karm_URL"
           python data.py
@@ -40,7 +40,7 @@ jobs:
 
       - name: Run Data2.py Python script
         env:
-          SITEMAP_URL: ${{ secrets.SIURL }}
+          SIURL: ${{ secrets.SIURL }}
         run: |
           echo "Running data2.py with SIURL=$SIURL"
           python data.py
