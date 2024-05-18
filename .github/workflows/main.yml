@@ -23,6 +23,8 @@ jobs:
           pip install requests beautifulsoup4
       
       - name: Run Python script
+        env:
+          KARM_URL: ${{ secrets.KARM_URL }}
         run: python data.py
 
       - name: Commit changes
