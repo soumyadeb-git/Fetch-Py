@@ -33,7 +33,7 @@ def scrape_post(url):
                 key = cells[0].get_text(strip=True)
                 value = cells[1].get_text(strip=True)
                 if key == "Department":
-                    data['Title'] = value + " Recruitment 2024"
+                    data['Title'] = value
                 elif key == "Total Vacancies":
                     data['Total Vacancies'] = value
                 elif key == "Notification No.":
@@ -53,7 +53,7 @@ def scrape_post(url):
         for row in rows:
             cells = row.find_all('td')
             if len(cells) == 2 and ("Apply Online" in cells[0].get_text(strip=True) or "Online Registration Portal" in cells[0].get_text(strip=True)):
-                data['Apply Online URL'] = cells[1].find('a')['href']
+                data['Link'] = cells[1].find('a')['href']
                 break
     
     return data
