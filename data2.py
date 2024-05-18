@@ -89,7 +89,7 @@ def main():
     # Output folder path
     output_folder = 'data/'
     os.makedirs(output_folder, exist_ok=True)
-    output_path = os.path.join(output_folder, 'data1.json')
+    output_path = os.path.join(output_folder, 'data2.json')
     
     # Reading existing data from the file
     existing_data = []
@@ -115,7 +115,7 @@ def main():
     with open(output_path, 'w') as json_file:
         json.dump(existing_data, json_file, indent=4)
     
-    print("Latest articles data stored in 'data1.json' file.")
+    print("Latest articles data stored in 'data2.json' file.")
     
 if __name__ == "__main__":
     main()
