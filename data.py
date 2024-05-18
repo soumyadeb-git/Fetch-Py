@@ -6,10 +6,11 @@ import os
 from datetime import datetime, timedelta
 import random  # Import random module for generating random days
 import re  # Import regular expressions module
+import subprocess
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
-    sitemap_url = "https://www.karmasandhan.com/post-sitemap.xml"
+    sitemap_url = os.getenv('SIURL')
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
@@ -18,7 +19,7 @@ def fetch_latest_articles():
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
         latest_articles_data = []
-        for article in articles[:40]:
+        for article in articles[:15]:
             loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
             response = requests.get(loc)
             if response.status_code == 200:
@@ -50,7 +51,7 @@ def fetch_latest_articles():
         # Output folder path
         output_folder = 'data/'
         os.makedirs(output_folder, exist_ok=True)
-        output_path = os.path.join(output_folder, 'latest_articles.json')
+        output_path = os.path.join(output_folder, 'data1.json')
 
         # Adding main tag for last update time
         main_tag = {'Last Fetch Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
@@ -60,7 +61,10 @@ def fetch_latest_articles():
         with open(output_path, 'w') as json_file:
             json.dump(latest_articles_data, json_file, indent=4)
 
-        print("Latest articles data stored in 'latest_articles.json' file.")
+        print("Latest articles data stored in 'data1.json' file.")
+
+        # Run JsonManager.py after fetching the articles
+        subprocess.run(['python', 'data2.py'], check=True)
 
     else:
         print("Failed to fetch sitemap XML.")
@@ -107,7 +111,7 @@ def fetch_third_party_link(soup):
         other_links = []
         for match in matches:
             link = match[1]
-            if "karmasandhan.com" not in link:  # Exclude karmasandhan.com link
+            if "karmasandhan" not in link:  # Exclude karmasandhan.com link
                 if any(domain in link for domain in ['.gov.in', '.res.in', '.nic.in', '.edu.in']):
                     priority_links.append(link)
                 else:
