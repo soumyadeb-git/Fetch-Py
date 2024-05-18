@@ -72,7 +72,10 @@ def fetch_latest_articles():
         print("Latest articles data stored in 'data1.json' file.")
 
         # Run JsonManager.py after fetching the articles
+       try:
         subprocess.run(['python', 'data2.py'], check=True)
+       except subprocess.CalledProcessError as e:
+        print(f"Error running jdata.py: {e}")
 
     else:
         print("Failed to fetch sitemap XML.")
