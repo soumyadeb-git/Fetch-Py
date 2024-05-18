@@ -44,7 +44,7 @@ def scrape_post(url):
                     if date_match:
                         data['Last Date'] = date_match.group(0)
                 elif key == "Notification Published on":
-                    data['Notification Published on'] = value
+                    data['Updated On'] = value
 
     # Scrape the table with id="tablelinks"
     tablelinks = soup.find('table', id='tablelinks')
