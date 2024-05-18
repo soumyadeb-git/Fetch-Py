@@ -23,10 +23,8 @@ jobs:
           pip install requests beautifulsoup4
       
       - name: Run Data.py Python script
-        env:
-          KARM_URL: ${{ secrets.karm_URL }}
         run: |
-          echo "Running data.py with karm_URL=$KARM_URL"
+          echo "Running data.py"
           python data.py
 
       - name: Commit changes
@@ -58,7 +56,7 @@ jobs:
         env:
           SIURL: ${{ secrets.SIURL }}
         run: |
-          echo "Running data2.py with SIURL=$SIURL"
+          echo "Running data2.py"
           python data.py
 
       - name: Commit changes
