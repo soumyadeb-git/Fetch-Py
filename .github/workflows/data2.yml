@@ -25,7 +25,7 @@ jobs:
       - name: Run Python script
         env:
           SIURL: ${{ secrets.SIURL }}
-        run: python data.py
+        run: python data2.py
 
       - name: Commit changes
         run: |
