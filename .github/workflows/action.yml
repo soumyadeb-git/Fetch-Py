@@ -1,4 +1,4 @@
-name: Run Python scripts
+name: Run Combine Python scripts
 
 on:
   schedule:
