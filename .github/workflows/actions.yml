@@ -28,9 +28,9 @@ jobs:
 
       - name: Run data.py script
         env:
-          SITEMAP_URL: ${{ secrets.SIURL }}
+          SIURL: ${{ secrets.SIURL }}
         run: |
-          echo "Running data.py with SITEMAP_URL=$SITEMAP_URL"
+          echo "Running data.py with SIURL=$SIURL"
           python data.py
 
       - name: Commit data1.json changes
