@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 import json
 import os
 from datetime import datetime, timedelta
-import random  # Import random module for generating random days
-import re  # Import regular expressions module
+import random
+import re
 import subprocess
 
 def fetch_latest_articles():
@@ -19,7 +19,7 @@ def fetch_latest_articles():
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
         latest_articles_data = []
-        for article in articles[:15]:
+        for article in articles[:20]:
             loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
             response = requests.get(loc)
             if response.status_code == 200:
@@ -43,7 +43,7 @@ def fetch_latest_articles():
 
                 # Add hyperlink from entry-content div
                 link = fetch_third_party_link(soup)
-                if link and "karmasandhan.com" not in link:  # Exclude karmasandhan.com link
+                if link and "karmasandhan" not in link:  # Exclude karmasandhan.com link
                     article_data['Link'] = link
 
                 latest_articles_data.append(article_data)
@@ -53,18 +53,31 @@ def fetch_latest_articles():
         os.makedirs(output_folder, exist_ok=True)
         output_path = os.path.join(output_folder, 'data1.json')
 
+        # Reading existing data from the file
+        existing_data = []
+        if os.path.exists(output_path) and os.path.getsize(output_path) > 0:  # Check if file exists and not empty
+            with open(output_path, 'r') as json_file:
+                existing_data = json.load(json_file)
+
+        # Update existing data for specific entries
+        for new_article in latest_articles_data:
+            for existing_article in existing_data:
+                if 'Title' in new_article and 'Title' in existing_article:
+                    if new_article['Title'] == existing_article['Title']:
+                        existing_article.update(new_article)
+                        break
+            else:
+                existing_data.append(new_article)
+
         # Adding main tag for last update time
         main_tag = {'Last Fetch Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-        latest_articles_data.insert(0, main_tag)
+        existing_data.insert(0, main_tag)
 
-        # Storing data in a JSON file
+        # Storing updated data in the JSON file
         with open(output_path, 'w') as json_file:
-            json.dump(latest_articles_data, json_file, indent=4)
+            json.dump(existing_data, json_file, indent=4)
 
         print("Latest articles data stored in 'data1.json' file.")
-
-        # Run JsonManager.py after fetching the articles
-        subprocess.run(['python', 'data2.py'], check=True)
 
     else:
         print("Failed to fetch sitemap XML.")
