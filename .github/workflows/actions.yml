@@ -24,12 +24,14 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Verify SIURL environment variable
-        run: echo "SIURL: ${{ secrets.SIURL }}"
+        run: echo "SIURL=${{ secrets.SIURL }}"
 
       - name: Run data.py script
         env:
           SITEMAP_URL: ${{ secrets.SIURL }}
-        run: python data.py
+        run: |
+          echo "Running data.py with SITEMAP_URL=$SITEMAP_URL"
+          python data.py
 
       - name: Commit data1.json changes
         run: |
@@ -41,12 +43,14 @@ jobs:
           git push origin main
 
       - name: Verify SITEMAP_URL environment variable
-        run: echo "SITEMAP_URL: ${{ secrets.SITEMAP_URL }}"
+        run: echo "SITEMAP_URL=${{ secrets.SITEMAP_URL }}"
 
       - name: Run data2.py script
         env:
           SITEMAP_URL: ${{ secrets.SITEMAP_URL }}
-        run: python data2.py
+        run: |
+          echo "Running data2.py with SITEMAP_URL=$SITEMAP_URL"
+          python data2.py
 
       - name: Commit data2.json changes
         run: |
