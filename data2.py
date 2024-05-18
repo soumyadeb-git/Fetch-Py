@@ -13,7 +13,7 @@ def fetch_sitemap(sitemap_url):
     root = ET.fromstring(response.content)
     namespaces = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
     urls = [url.find('ns:loc', namespaces).text for url in root.findall('ns:url', namespaces)]
-    return urls[:15]  # Get the latest 15 URLs
+    return urls[:20]  # Get the latest 15 URLs
 
 # Function to scrape data from a post URL
 def scrape_post(url):
