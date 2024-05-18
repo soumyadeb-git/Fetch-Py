@@ -9,15 +9,13 @@ import re
 import subprocess
 
 def fetch_latest_articles():
-    # URL of the sitemap XML file
     sitemap_url = os.getenv('SIURL')
     if not sitemap_url:
         raise ValueError("SIURL environment variable is not set")
-    print(f"Fetching sitemap from: {sitemap_url}")  # Debugging statement
-    
+    print(f"Fetching sitemap from: {sitemap_url}")  # Debugging line
     response = requests.get(sitemap_url)
+
     if response.status_code == 200:
-        # Parsing the XML
         root = ET.fromstring(response.content)
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
 
@@ -27,10 +25,8 @@ def fetch_latest_articles():
             response = requests.get(loc)
             if response.status_code == 200:
                 soup = BeautifulSoup(response.content, 'html.parser')
-                # Find last updated information using CSS selector or any other method
                 last_updated = soup.find(class_='posted-on').find('time')['datetime']
                 last_updated_date_only = format_last_updated(last_updated)
-                # Fetch and analyze post title
                 post_title = fetch_and_analyze_post_title(soup)
                 category = determine_category(post_title) if post_title else "Other"
                 article_data = {
@@ -40,39 +36,33 @@ def fetch_latest_articles():
                 if post_title:
                     article_data['Title'] = post_title
 
-                # Calculate Published on date as Last Updated date + random number of days (18 to 30)
                 published_on_date = calculate_published_on_date(last_updated_date_only)
                 article_data['Last Date'] = published_on_date
 
-                # Add hyperlink from entry-content div
                 link = fetch_third_party_link(soup)
-                if link and "karmasandhan.com" not in link:  # Exclude karmasandhan.com link
+                if link and "karmasandhan.com" not in link:
                     article_data['Link'] = link
 
                 latest_articles_data.append(article_data)
 
-        # Output folder path
         output_folder = 'data/'
         os.makedirs(output_folder, exist_ok=True)
         output_path = os.path.join(output_folder, 'data1.json')
 
-        # Adding main tag for last update time
         main_tag = {'Last Fetch Time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
         latest_articles_data.insert(0, main_tag)
 
-        # Storing data in a JSON file
         with open(output_path, 'w') as json_file:
             json.dump(latest_articles_data, json_file, indent=4)
 
-        print("Latest articles data stored in 'data1.json' file.")
+        print("Latest articles data stored in 'data1.json' file.")  # Debugging line
 
-        # Run data2.py after fetching the articles and pass SITEMAP_URL environment variable
-        env = os.environ.copy()
-        env['SITEMAP_URL'] = os.getenv('SITEMAP_URL')
-        subprocess.run(['python', 'data2.py'], check=True, env=env)
-
+        subprocess.run(['python', 'data2.py'], check=True)
     else:
         print("Failed to fetch sitemap XML.")
+
+# ... rest of the script remains unchanged
+
 
 def format_last_updated(last_updated):
     # Format last updated date
