@@ -4,24 +4,16 @@ from bs4 import BeautifulSoup
 import json
 import os
 from datetime import datetime, timedelta
-import random
-import re
+import random  # Import random module for generating random days
+import re  # Import regular expressions module
 import subprocess
-
-def get_full_sitemap_url():
-    base_url = os.getenv('KARM_URL')
-    if not base_url:
-        raise ValueError("KARM_URL environment variable is not set")
-    relative_path = "jobs-sitemap.xml"
-    return base_url + relative_path
 
 def fetch_latest_articles():
     # URL of the sitemap XML file
-    sitemap_url = get_full_sitemap_url()
+    sitemap_url = "https://www.karmasandhan.com/post-sitemap.xml"
     response = requests.get(sitemap_url)
 
     if response.status_code == 200:
-        print(f"Fetching sitemap from: {sitemap_url}")  # Debugging line
         # Parsing the XML
         root = ET.fromstring(response.content)
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
@@ -72,10 +64,7 @@ def fetch_latest_articles():
         print("Latest articles data stored in 'data1.json' file.")
 
         # Run JsonManager.py after fetching the articles
-       try:
         subprocess.run(['python', 'data2.py'], check=True)
-       except subprocess.CalledProcessError as e:
-        print(f"Error running jdata.py: {e}")
 
     else:
         print("Failed to fetch sitemap XML.")
