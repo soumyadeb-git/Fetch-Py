@@ -1,5 +1,8 @@
 [
     {
+        "Last Fetch Time": "2024-05-18 10:29:25"
+    },
+    {
         "Last Fetch Time": "2024-05-18 09:49:06"
     },
     {
@@ -109,6 +112,9 @@
         "Link": "https://nats.education.gov.in/"
     },
     {
+        "Last Fetch Time": "2024-05-18 10:28:35"
+    },
+    {
         "Last Fetch Time": "2024-05-18 09:23:02"
     },
     {
@@ -121,21 +127,21 @@
         "Updated On": "May 18, 2024",
         "Category": "Notification",
         "Title": "BSF Recruitment Notification",
-        "Last Date": "June 10, 2024",
+        "Last Date": "June 13, 2024",
         "Link": "https://rectt.bsf.gov.in/"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "Metal and Steel Factory Ishapore Recruitment 2024",
-        "Last Date": "June 17, 2024",
+        "Last Date": "June 14, 2024",
         "Link": "https://ddpdoo.gov.in/units/MSF"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "IIT Bombay Recruitment 2024",
-        "Last Date": "June 17, 2024",
+        "Last Date": "June 11, 2024",
         "Link": "https://www.iitb.ac.in/"
     },
     {
@@ -233,7 +239,7 @@
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "Sundargarh District Court Recruitment 2024",
-        "Last Date": "June 07, 2024",
+        "Last Date": "June 05, 2024",
         "Link": "https://sundargarh.dcourts.gov.in/"
     },
     {
@@ -261,7 +267,7 @@
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "BEML Recruitment 2024",
-        "Last Date": "June 05, 2024",
+        "Last Date": "June 06, 2024",
         "Link": "https://www.bemlindia.in/"
     },
     {
@@ -280,63 +286,96 @@
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "ISTM Recruitment 2024",
-        "Last Date": "June 13, 2024",
+        "Last Date": "June 06, 2024",
         "Link": "https://www.istm.gov.in/home/index"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "IWAI Recruitment 2024",
-        "Last Date": "June 17, 2024",
+        "Last Date": "June 13, 2024",
         "Link": "https://iwai.nic.in/"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "JNU Recruitment 2024",
-        "Last Date": "June 08, 2024",
+        "Last Date": "June 05, 2024",
         "Link": "https://forms.gle/bhDLbxHCe8Ljo8778"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "IBM Recruitment 2024",
-        "Last Date": "June 16, 2024",
+        "Last Date": "June 15, 2024",
         "Link": "https://ibm.gov.in/IBMPortal/"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "National Book Trust Recruitment 2024",
-        "Last Date": "June 09, 2024",
+        "Last Date": "June 05, 2024",
         "Link": "https://www.nbtindia.gov.in/"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "Gajapati District Court Recruitment 2024",
-        "Last Date": "June 15, 2024",
+        "Last Date": "June 08, 2024",
         "Link": "https://gajapati.dcourts.gov.in/"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "BSF Group A Recruitment 2024",
-        "Last Date": "June 17, 2024",
+        "Last Date": "June 16, 2024",
         "Link": "https://rectt.bsf.gov.in/"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "Delhi Public School (DPS) Recruitment 2024",
-        "Last Date": "June 08, 2024",
+        "Last Date": "June 11, 2024",
         "Link": "https://dpsbdn.org/index.php"
     },
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
         "Title": "CISF Recruitment 2024",
-        "Last Date": "June 12, 2024",
+        "Last Date": "June 11, 2024",
         "Link": "https://www.cisf.gov.in/cisfeng/"
+    },
+    {
+        "Updated On": "May 18, 2024",
+        "Category": "Recruitment",
+        "Title": "BRDC\u00a0Recruitment 2024",
+        "Last Date": "June 12, 2024",
+        "Link": "https://megbrdc.nic.in/"
+    },
+    {
+        "Updated On": "May 18, 2024",
+        "Category": "Recruitment",
+        "Title": "Ministry of Social Justice Recruitment 2024",
+        "Last Date": "June 14, 2024",
+        "Link": "https://socialjustice.gov.in/"
+    },
+    {
+        "Updated On": "May 18, 2024",
+        "Category": "Recruitment",
+        "Title": "Canara Bank Recruitment 2024",
+        "Last Date": "June 05, 2024",
+        "Link": "https://canarabank.com/"
+    },
+    {
+        "Updated On": "May 18, 2024",
+        "Category": "Other",
+        "Last Date": "June 07, 2024",
+        "Link": "https://upsssc.gov.in/"
+    },
+    {
+        "Updated On": "May 18, 2024",
+        "Category": "Other",
+        "Last Date": "June 11, 2024",
+        "Link": "https://navodaya.gov.in/nvs/en/Home1"
     }
 ]
