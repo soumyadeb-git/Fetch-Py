@@ -38,7 +38,7 @@ jobs:
 
   run_script_2:
     runs-on: ubuntu-latest
-    needs: run_script_1
+    needs: [run_script_1]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -67,16 +67,9 @@ jobs:
           git pull origin main || echo "No remote changes to pull"
           git push origin main
 
-  stop:
-    runs-on: ubuntu-latest
-    needs: run_script_2
-    steps:
-      - name: Pause Workflow
-        run: sleep 10s
-
   run_script_3:
     runs-on: ubuntu-latest
-    needs: stop
+    needs: [run_script_2]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
