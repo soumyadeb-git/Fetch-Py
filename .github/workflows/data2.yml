@@ -32,8 +32,8 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/latest_articles.json || git commit -m "Create latest_articles.json"
-          git commit -m "Update latest_articles.json" || echo "No changes to commit"
+          git add data/data2.json || git commit -m "Create data2.json"
+          git commit -m "Update data2.json" || echo "No changes to commit"
           git pull origin main || echo "No remote changes to pull"
           git push origin main
           
