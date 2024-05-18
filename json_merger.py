@@ -1,41 +1,55 @@
 import os
 import json
 
-def load_json(file_path):
-    """ Load JSON data from a file. """
-    with open(file_path, 'r') as f:
-        return json.load(f)
-
-def save_json(file_path, data):
-    """ Save JSON data to a file. """
-    with open(file_path, 'w') as f:
-        json.dump(data, f, indent=4)
-
-def clean_data(data):
-    """ Remove 'Last Fetch Time' tag from data. """
+def remove_last_fetch_time(data):
+    """Remove 'Last Fetch Time' from each item in the list."""
     for item in data:
-        if 'Last Fetch Time' in item:
-            del item['Last Fetch Time']
+        item.pop('Last Fetch Time', None)
     return data
 
-def merge_and_update_json(file1, file2, merged_file):
-    # Load and clean data from the first file
-    data1 = clean_data(load_json(file1))
-    
-    # Load and clean data from the second file
-    data2 = clean_data(load_json(file2))
-    
-    # Merge data, preserving unique items
-    merged_data = data2 + [item for item in data1 if item not in data2]
-    
-    # Write merged data to the new JSON file
-    save_json(merged_file, merged_data)
+def merge_and_update_json(file1, file2, merged_file, key='Title'):
+    """Merge two JSON files, remove 'Last Fetch Time' tags, and save the result."""
+    # Load data from the first file
+    with open(file1, 'r') as f1:
+        data1 = json.load(f1)
+        data1 = remove_last_fetch_time(data1)
 
-# Get list of existing JSON files in the data folder
+    # Load data from the second file
+    with open(file2, 'r') as f2:
+        data2 = json.load(f2)
+        data2 = remove_last_fetch_time(data2)
+
+    # Create a dictionary to store items by key (Title)
+    merged_dict = {}
+
+    def add_or_update_item(item):
+        """Add or update item in the merged_dict."""
+        item_key = item.get(key)
+        if item_key is not None:
+            # Update existing item or add new one based on Title
+            merged_dict[item_key] = item
+
+    # Add items from the first file to the dictionary
+    for item in data1:
+        add_or_update_item(item)
+
+    # Update or add items from the second file
+    for item in data2:
+        add_or_update_item(item)
+
+    # Convert the dictionary back to a list
+    merged_data = list(merged_dict.values())
+
+    # Write merged data to new JSON file
+    with open(merged_file, 'w') as f:
+        json.dump(merged_data, f, indent=4)
+        print(f"Data written to {merged_file}")
+
+# File paths
 data_folder = 'data'
-files = sorted([f for f in os.listdir(data_folder) if f.endswith('.json')])
-file1, file2 = os.path.join(data_folder, files[-2]), os.path.join(data_folder, files[-1])
-merged_file = os.path.join(data_folder, f'data{len(files)}.json')
+file1 = os.path.join(data_folder, 'data1.json')
+file2 = os.path.join(data_folder, 'data2.json')
+merged_file = os.path.join(data_folder, 'merged_data.json')
 
 # Merge and update JSON files
 merge_and_update_json(file1, file2, merged_file)
