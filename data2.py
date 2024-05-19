@@ -96,8 +96,8 @@ def main():
         try:
             with open(output_path, 'r') as json_file:
                 existing_data = json.load(json_file)
-        except json.JSONDecodeError:
-            print("Existing JSON file is empty or malformed.")
+        except json.JSONDecodeError as e:
+            print(f"Error decoding JSON file: {e}")
     
     # Update existing data for specific entries
     for new_article in scraped_data:
@@ -110,10 +110,12 @@ def main():
             existing_data.append(new_article)
     
     # Storing updated data in the JSON file
-    with open(output_path, 'w') as json_file:
-        json.dump(existing_data, json_file, indent=4)
-    
-    print("Latest articles data stored in 'data2.json' file.")
+    try:
+        with open(output_path, 'w') as json_file:
+            json.dump(existing_data, json_file, indent=4)
+        print("Latest articles data stored in 'data2.json' file.")
+    except Exception as e:
+        print(f"Error writing to JSON file: {e}")
 
 if __name__ == "__main__":
     main()
