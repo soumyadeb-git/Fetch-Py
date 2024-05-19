@@ -1,4 +1,6 @@
-[![Run Python script](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/main.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/main.yml) 
+[![Merge JSON Files](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/JSONmerge.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/JSONmerge.yml)  [![Run Data.py Python script](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/main.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/main.yml)  [![Run Data2 Python script](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/data2.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/data2.yml)
+
+
 # Fetch-Py
 
 This repository contains a Python script designed to automate the extraction of specific information from a series of URLs listed in an XML sitemap. The extracted data is stored in a structured JSON format for easy access and further processing.
