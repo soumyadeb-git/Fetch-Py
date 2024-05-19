@@ -147,6 +147,20 @@
     },
     {
         "Updated On": "May 18, 2024",
+        "Category": "Recruitment",
+        "Title": "IWAI Recruitment 2024",
+        "Last Date": "June 06, 2024",
+        "Link": "https://iwai.nic.in/"
+    },
+    {
+        "Updated On": "May 18, 2024",
+        "Category": "Recruitment",
+        "Title": "BEML Recruitment 2024",
+        "Last Date": "June 05, 2024",
+        "Link": "https://www.bemlindia.in/"
+    },
+    {
+        "Updated On": "May 18, 2024",
         "Category": "Notification",
         "Title": "BSF Recruitment Notification",
         "Last Date": "June 13, 2024",
@@ -270,20 +284,6 @@
         "Title": "BHU Young Professional Recruitment 2024",
         "Last Date": "June 05, 2024",
         "Link": "mailto:karstav@yahoo.com"
-    },
-    {
-        "Updated On": "May 18, 2024",
-        "Category": "Recruitment",
-        "Title": "BEML Recruitment 2024",
-        "Last Date": "June 05, 2024",
-        "Link": "https://www.bemlindia.in/"
-    },
-    {
-        "Updated On": "May 18, 2024",
-        "Category": "Recruitment",
-        "Title": "IWAI Recruitment 2024",
-        "Last Date": "June 06, 2024",
-        "Link": "https://iwai.nic.in/"
     },
     {
         "Updated On": "May 18, 2024",
@@ -432,5 +432,45 @@
         "Avdt. No.": "CHESS/75/75500/APPR/Advt-2/2024",
         "Last Date": "31/05/2024",
         "Link": "https://nats.education.gov.in/"
+    },
+    {
+        "Title": "Office of The District & Sessons Judge, Kalimpong",
+        "Vacancies": "37",
+        "Avdt. No.": "RC 01 of 2024",
+        "Last Date": "17/05/2024",
+        "Updated On": "17/04/2024",
+        "Link": "https://kalimpongcourtrecruit2024.in/"
+    },
+    {
+        "Title": "High Court for the State of Telangana, Hyderabad",
+        "Vacancies": "150",
+        "Avdt. No.": "87/2024-RC",
+        "Last Date": "17/05/2024",
+        "Updated On": "10/04/2024",
+        "Link": "https://cdn3.digialm.com/EForms/configuredHtml/2775/87826/Index.html"
+    },
+    {
+        "Title": "Medical Services Recruitment Board, Tamil Nadu",
+        "Vacancies": "2553",
+        "Avdt. No.": "01/MRB/2024",
+        "Last Date": "15/07/2024",
+        "Updated On": "15/03/2024",
+        "Link": "https://tnmrbasg24.onlineregistrationform.org/MRBASG/"
+    },
+    {
+        "Title": "Jammu & Kashmir Bank",
+        "Vacancies": "276",
+        "Avdt. No.": "JKB/HRD/Rectt/2024-267",
+        "Last Date": "28/05/2024",
+        "Updated On": "09/05/2024",
+        "Link": "https://ibpsonline.ibps.in/jkbaapri24/"
+    },
+    {
+        "Title": "Union Public Service Commission",
+        "Vacancies": "459",
+        "Avdt. No.": "11/2024.CDS-II",
+        "Last Date": "04/06/2024",
+        "Updated On": "15/05/2024",
+        "Link": "https://upsconline.nic.in/upsc/OTRP/"
     }
 ]
