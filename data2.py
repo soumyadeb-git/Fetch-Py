@@ -80,6 +80,7 @@ def main():
     for url in prioritized_urls:
         print(f"Scraping {url}")
         post_data = scrape_post(url)
+        print("Post data:", post_data)  # Add this line for debugging
         if post_data:
             # Check if title already exists in data
             if 'Title' in post_data and not check_existing_title(post_data['Title'], scraped_data):
@@ -89,6 +90,7 @@ def main():
     output_folder = 'data/'
     os.makedirs(output_folder, exist_ok=True)
     output_path = os.path.join(output_folder, 'data2.json')
+    print("Output path:", output_path)  # Add this line for debugging
     
     # Reading existing data from the file
     existing_data = []
