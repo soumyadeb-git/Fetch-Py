@@ -63,13 +63,6 @@ def prioritize_urls(urls):
     priorities = ['.gov.in', '.nic.in', '.ac.in', '.org.in', '.in']
     return sorted(urls, key=lambda url: next((i for i, domain in enumerate(priorities) if domain in url), len(priorities)))
 
-# Function to check if title already exists in data
-def check_existing_title(title, data):
-    for entry in data:
-        if 'Title' in entry and entry['Title'] == title:
-            return True
-    return False
-
 # Main function to execute the scraping and saving process
 def main():
     # Fetching URL from environment variable
@@ -82,9 +75,7 @@ def main():
         post_data = scrape_post(url)
         print("Post data:", post_data)  # Add this line for debugging
         if post_data:
-            # Check if title already exists in data
-            if 'Title' in post_data and not check_existing_title(post_data['Title'], scraped_data):
-                scraped_data.append(post_data)
+            scraped_data.append(post_data)
     
     # Output folder path
     output_folder = 'data/'
@@ -94,12 +85,9 @@ def main():
     
     # Reading existing data from the file
     existing_data = []
-    if os.path.exists(output_path) and os.path.getsize(output_path) > 0:  # Check if file exists and not empty
-        try:
-            with open(output_path, 'r') as json_file:
-                existing_data = json.load(json_file)
-        except json.JSONDecodeError as e:
-            print(f"Error decoding JSON file: {e}")
+    if os.path.exists(output_path):  
+        with open(output_path, 'r') as json_file:
+            existing_data = json.load(json_file)
     
     # Update existing data for specific entries
     for new_article in scraped_data:
@@ -112,12 +100,9 @@ def main():
             existing_data.append(new_article)
     
     # Storing updated data in the JSON file
-    try:
-        with open(output_path, 'w') as json_file:
-            json.dump(existing_data, json_file, indent=4)
-        print("Latest articles data stored in 'data2.json' file.")
-    except Exception as e:
-        print(f"Error writing to JSON file: {e}")
+    with open(output_path, 'w') as json_file:
+        json.dump(existing_data, json_file, indent=4)
+    print("Latest articles data stored in 'data2.json' file.")
 
 if __name__ == "__main__":
     main()
