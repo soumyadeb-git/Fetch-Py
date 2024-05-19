@@ -4,7 +4,6 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import json
 import re
-from datetime import datetime
 
 # Function to fetch and parse the sitemap
 def fetch_sitemap(sitemap_url):
@@ -26,34 +25,28 @@ def scrape_post(url):
     # Scrape the table with id="tablemeta"
     tablemeta = soup.find('table', id='tablemeta')
     if tablemeta:
-        rows = tablemeta.find_all('tr')
-        for row in rows:
-            cells = row.find_all('td')
-            if len(cells) == 2:
-                key = cells[0].get_text(strip=True)
-                value = cells[1].get_text(strip=True)
-                if key == "Department":
-                    data['Title'] = value
-                elif key == "Total Vacancies":
-                    data['Vacancies'] = value
-                elif key == "Notification No.":
-                    data['Avdt. No.'] = value
-                elif key == "Deadlines":
-                    # Extract only the date from the cell
-                    date_match = re.search(r'\d{2}/\d{2}/\d{4}', value)
-                    if date_match:
-                        data['Last Date'] = date_match.group(0)
-                elif key == "Notification Published on":
-                    data['Updated On'] = value
+        for row in tablemeta.find_all('tr'):
+            key, value = [cell.get_text(strip=True) for cell in row.find_all('td')]
+            if key == "Department":
+                data['Title'] = value
+            elif key == "Total Vacancies":
+                data['Vacancies'] = value
+            elif key == "Notification No.":
+                data['Avdt. No.'] = value
+            elif key == "Deadlines":
+                date_match = re.search(r'\d{2}/\d{2}/\d{4}', value)
+                if date_match:
+                    data['Last Date'] = date_match.group(0)
+            elif key == "Notification Published on":
+                data['Updated On'] = value
 
     # Scrape the table with id="tablelinks"
     tablelinks = soup.find('table', id='tablelinks')
     if tablelinks:
-        rows = tablelinks.find_all('tr')
-        for row in rows:
-            cells = row.find_all('td')
-            if len(cells) == 2 and ("Apply Online" in cells[0].get_text(strip=True) or "Online Registration Portal" in cells[0].get_text(strip=True)):
-                data['Link'] = cells[1].find('a')['href']
+        for row in tablelinks.find_all('tr'):
+            link_title, link = [cell.get_text(strip=True) for cell in row.find_all('td')]
+            if "Apply Online" in link_title or "Online Registration Portal" in link_title:
+                data['Link'] = row.find('a')['href']
                 break
     
     return data
@@ -65,10 +58,7 @@ def prioritize_urls(urls):
 
 # Function to check if title already exists in data
 def check_existing_title(title, data):
-    for entry in data:
-        if 'Title' in entry and entry['Title'] == title:
-            return True
-    return False
+    return any(entry.get('Title') == title for entry in data)
 
 # Main function to execute the scraping and saving process
 def main():
@@ -77,13 +67,12 @@ def main():
     post_urls = fetch_sitemap(sitemap_url)
     prioritized_urls = prioritize_urls(post_urls)
     scraped_data = []
+    
     for url in prioritized_urls:
         print(f"Scraping {url}")
         post_data = scrape_post(url)
-        if post_data:
-            # Check if title already exists in data
-            if 'Title' in post_data and not check_existing_title(post_data['Title'], scraped_data):
-                scraped_data.append(post_data)
+        if post_data and 'Title' in post_data and not check_existing_title(post_data['Title'], scraped_data):
+            scraped_data.append(post_data)
     
     # Output folder path
     output_folder = 'data/'
@@ -102,10 +91,9 @@ def main():
     # Update existing data for specific entries
     for new_article in scraped_data:
         for existing_article in existing_data:
-            if 'Title' in new_article and 'Title' in existing_article:
-                if new_article['Title'] == existing_article['Title']:
-                    existing_article.update(new_article)
-                    break
+            if new_article.get('Title') == existing_article.get('Title'):
+                existing_article.update(new_article)
+                break
         else:
             existing_data.append(new_article)
     
