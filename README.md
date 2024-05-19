@@ -5,7 +5,7 @@ This repository contains a Python script designed to automate the extraction of 
 
 ## Features
 
-- Parses an XML sitemap to retrieve the latest 10 URLs.
+- Parses an XML sitemap to retrieve the latest 20 URLs.
 - Visits each URL and extracts detailed information from specified sections of the webpage.
 - Prioritizes URLs based on predefined criteria.
 - Saves the extracted data in a JSON file for easy retrieval and analysis.
@@ -43,7 +43,7 @@ To run the script and extract the data:
    python data.py  # Replace with the name of your script file
    ```
 
-The script will fetch the latest 10 URLs from the sitemap, visit each URL, extract the required data, and save it to a file named `latest_articles.json` in the `/data/` directory.
+The script will fetch the latest 10 URLs from the sitemap, visit each URL, extract the required data, and save it to a file named `data1.json` in the `/data/` directory.
 
 ## Automation with GitHub Actions
 
