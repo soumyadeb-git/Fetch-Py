@@ -2,7 +2,10 @@ name: Merge JSON Files
 
 on:
   schedule:
-    - cron: '1 */4 * * *'  # Run the task at the first minute of every 4th hour.
+    - cron: '40 6 * * *'   # 11:40 AM IST (06:10 AM UTC)
+    - cron: '30 10 * * *'  # 03:30 PM IST (10:00 AM UTC)
+    - cron: '20 13 * * *'  # 07:20 PM IST (01:50 PM UTC)
+    - cron: '30 16 * * *'  # 10:30 PM IST (04:00 PM UTC)
   push:
     branches:
       - main
