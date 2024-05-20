@@ -2,9 +2,44 @@
     {
         "Updated On": "May 20, 2024",
         "Category": "Recruitment",
-        "Title": "AICTE Recruitment 2024",
-        "Last Date": "June 14, 2024",
-        "Link": "https://www.becil.com/"
+        "Title": "IISER Recruitment 2024",
+        "Last Date": "June 13, 2024",
+        "Link": "https://www.iisertvm.ac.in/"
+    },
+    {
+        "Updated On": "May 20, 2024",
+        "Category": "Admit Card",
+        "Title": "Bihar STET Admit Card 2024",
+        "Last Date": "June 09, 2024",
+        "Link": "http://secondary.biharboardonline.com/"
+    },
+    {
+        "Updated On": "May 20, 2024",
+        "Category": "Recruitment",
+        "Title": "ICSIL Recruitment 2024",
+        "Last Date": "June 16, 2024",
+        "Link": "https://icsil.in/"
+    },
+    {
+        "Updated On": "May 20, 2024",
+        "Category": "Recruitment",
+        "Title": "Kalakshetra Foundation Recruitment 2024",
+        "Last Date": "June 07, 2024",
+        "Link": "https://www.kalakshetra.in/"
+    },
+    {
+        "Updated On": "May 20, 2024",
+        "Category": "Result",
+        "Title": "NDA 1 Result",
+        "Last Date": "June 10, 2024",
+        "Link": "https://upsc.gov.in/"
+    },
+    {
+        "Updated On": "May 20, 2024",
+        "Category": "Recruitment",
+        "Title": "District Court Muzaffarnagar Recruitment 2024",
+        "Last Date": "June 18, 2024",
+        "Link": "https://allahabadhighcourt.in/"
     },
     {
         "Updated On": "May 20, 2024",
@@ -12,6 +47,13 @@
         "Title": "Mumbai Port Authority Recruitment 2024",
         "Last Date": "June 14, 2024",
         "Link": "https://www.mumbaiport.gov.in/"
+    },
+    {
+        "Updated On": "May 20, 2024",
+        "Category": "Recruitment",
+        "Title": "AICTE Recruitment 2024",
+        "Last Date": "June 14, 2024",
+        "Link": "https://www.becil.com/"
     },
     {
         "Updated On": "May 20, 2024",
@@ -54,13 +96,6 @@
         "Title": "IITM Recruitment 2024",
         "Last Date": "June 12, 2024",
         "Link": "https://www.tropmet.res.in/"
-    },
-    {
-        "Updated On": "May 20, 2024",
-        "Category": "Recruitment",
-        "Title": "ICSIL Recruitment 2024",
-        "Last Date": "June 16, 2024",
-        "Link": "https://icsil.in/"
     },
     {
         "Updated On": "May 20, 2024",
@@ -668,5 +703,42 @@
         "Avdt. No.": "N/A",
         "Last Date": "17/06/2024",
         "Link": "https://rectt.bsf.gov.in/"
+    },
+    {
+        "Title": "Office of The District Judge, Gajapati",
+        "Vacancies": "15",
+        "Avdt. No.": "01",
+        "Last Date": "14/06/2024",
+        "Updated On": "15/05/2024"
+    },
+    {
+        "Title": "Haryana Public Service Commission",
+        "Vacancies": "91",
+        "Avdt. No.": "15/2024",
+        "Last Date": "05/06/2024",
+        "Updated On": "18/05/2024"
+    },
+    {
+        "Title": "Assam Public Service Commission",
+        "Vacancies": "235",
+        "Avdt. No.": "02/2024",
+        "Last Date": "01/06/2024",
+        "Updated On": "12/01/2024",
+        "Link": "https://apscrecruitment.in/#/auth/landing"
+    },
+    {
+        "Title": "VMMC & Safdarjung Hospital, New Delhi",
+        "Vacancies": "204",
+        "Avdt. No.": "24729 ACDM-14024/1/2023-ACAD-VMMC",
+        "Last Date": "27/05/2024",
+        "Updated On": "15/05/2024"
+    },
+    {
+        "Title": "The High Court of Orissa Cuttack",
+        "Vacancies": "147",
+        "Avdt. No.": "02/2024",
+        "Last Date": "18/06/2024",
+        "Updated On": "14/05/2024",
+        "Link": "https://ohcrecruitment.in/ohc/applicant_registration.php"
     }
 ]
