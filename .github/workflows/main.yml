@@ -2,7 +2,10 @@ name: Run Data.py Python script
 
 on:
   schedule:
-    - cron: '1 */5 * * *'  # runs at the first minute of every 6th hour. (12:01a, 6:01a, 12:01p, and 6:01p)
+    - cron: '30 6 * * *'   # 11:30 AM IST (06:00 AM UTC)
+    - cron: '0 9 * * *'    # 03:00 PM IST (09:00 AM UTC)
+    - cron: '0 13 * * *'   # 07:00 PM IST (01:00 PM UTC)
+    - cron: '0 16 * * *'   # 10:00 PM IST (04:00 PM UTC)
   workflow_dispatch:  # Allow manual triggering of the workflow
 
 jobs:
