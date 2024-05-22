@@ -1,4 +1,4 @@
-name: Run Data Python script
+name: Run Data2 Python script
 
 on:
   schedule:
@@ -28,7 +28,7 @@ jobs:
       - name: Run Python script
         env:
           SIURL: ${{ secrets.KARM_URL }}
-        run: python data.py
+        run: python data2.py
 
       - name: Commit changes
         run: |
