@@ -25,9 +25,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
       
-      - name: Run Python script
+      - name: Load secrets
         env:
-          SIURL: ${{ secrets.KARM_URL }}
+          KARM_URL: ${{ secrets.KARM_URL }}
+      
+      - name: Run Python script
         run: python data.py
 
       - name: Commit changes
