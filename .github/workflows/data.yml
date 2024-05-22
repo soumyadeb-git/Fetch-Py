@@ -26,8 +26,7 @@ jobs:
           pip install requests beautifulsoup4
       
       - name: Load secrets
-        env:
-          KARM_URL: ${{ secrets.KARM_URL }}
+        run: echo "KARM_URL=${{ secrets.KARM_URL }}" >> $GITHUB_ENV
       
       - name: Run Python script
         run: python data.py
