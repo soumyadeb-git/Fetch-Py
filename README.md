@@ -1,4 +1,4 @@
-[![Merge JSON Files](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/JSONmerge.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/JSONmerge.yml)  [![Run Data.py Python script](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/main.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/main.yml)  [![Run Data2 Python script](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/data2.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/data2.yml)
+[![Merge JSON Files](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/JSONmerge.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/JSONmerge.yml)  [![Run Data1 Python script](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/data.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/data.yml)  [![Run Data2 Python script](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/data2.yml/badge.svg)](https://github.com/soumyadeb-git/Fetch-Py/actions/workflows/data2.yml)
 
 
 # Fetch-Py
