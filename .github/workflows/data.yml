@@ -1,4 +1,4 @@
-name: Run Data2 Python script
+name: Run Data1 Python script
 
 on:
   schedule:
