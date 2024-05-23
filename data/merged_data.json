@@ -1,5 +1,47 @@
 [
     {
+        "Updated On": "May 23, 2024",
+        "Category": "Recruitment",
+        "Title": "DFCCIL Recruitment 2024",
+        "Last Date": "June 21, 2024",
+        "Link": "https://dfccil.com/"
+    },
+    {
+        "Updated On": "May 23, 2024",
+        "Category": "Recruitment",
+        "Title": "Indian Overseas Bank Recruitment 2024",
+        "Last Date": "June 13, 2024",
+        "Link": "https://www.iob.in/"
+    },
+    {
+        "Updated On": "May 23, 2024",
+        "Category": "Recruitment",
+        "Title": "ITI Limited Recruitment 2024",
+        "Last Date": "June 18, 2024",
+        "Link": "https://www.itiltd.in/"
+    },
+    {
+        "Updated On": "May 23, 2024",
+        "Category": "Recruitment",
+        "Title": "Ministry of Civil Aviation Recruitment 2024",
+        "Last Date": "June 14, 2024",
+        "Link": "https://www.civilaviation.gov.in/"
+    },
+    {
+        "Updated On": "May 23, 2024",
+        "Category": "Recruitment",
+        "Title": "NCRB Recruitment 2024",
+        "Last Date": "June 20, 2024",
+        "Link": "https://ncrb.gov.in/"
+    },
+    {
+        "Updated On": "May 17, 2024",
+        "Category": "Recruitment",
+        "Title": "CRPF Recruitment 2024",
+        "Last Date": "June 04, 2024",
+        "Link": "https://rect.crpf.gov.in/"
+    },
+    {
         "Updated On": "May 22, 2024",
         "Category": "Recruitment",
         "Title": "IARI Recruitment 2024",
@@ -875,13 +917,6 @@
     {
         "Updated On": "May 17, 2024",
         "Category": "Recruitment",
-        "Title": "CRPF Recruitment 2024",
-        "Last Date": "June 04, 2024",
-        "Link": "https://rect.crpf.gov.in/"
-    },
-    {
-        "Updated On": "May 17, 2024",
-        "Category": "Recruitment",
         "Title": "IIPS Recruitment 2024",
         "Last Date": "June 12, 2024",
         "Link": "https://www.iipsindia.ac.in/"
@@ -1163,7 +1198,8 @@
         "Vacancies": "91",
         "Avdt. No.": "15/2024",
         "Last Date": "05/06/2024",
-        "Updated On": "18/05/2024"
+        "Updated On": "18/05/2024",
+        "Link": "https://regn.hpsc.gov.in/iti/"
     },
     {
         "Title": "Assam Public Service Commission",
@@ -1210,5 +1246,76 @@
         "Last Date": "09/06/2024",
         "Updated On": "15/03/2024",
         "Link": "https://bgsys.onlineregistrationforms.com/#/home"
+    },
+    {
+        "Title": "Office of The District Judge, Bankura",
+        "Vacancies": "99",
+        "Avdt. No.": "01-2024",
+        "Last Date": "24/06/2024",
+        "Updated On": "22/05/2024"
+    },
+    {
+        "Title": "Bhabha Atomic Research Centre Hopsital",
+        "Vacancies": "18",
+        "Avdt. No.": "N/A",
+        "Last Date": "30/05/2024"
+    },
+    {
+        "Title": "Indian Institute of Tropical Meterology, Pune",
+        "Vacancies": "65",
+        "Avdt. No.": "PER /07/2023",
+        "Last Date": "18/06/2024",
+        "Link": "https://iitmjobs.tropmet.res.in/job/multipost-phase-2-2024.php"
+    },
+    {
+        "Title": "Bhabha Atomic Research Centre",
+        "Vacancies": "50",
+        "Avdt. No.": "RE(Drivers)-01/2024-25",
+        "Last Date": "24/05/2024",
+        "Updated On": "30/04/2024"
+    },
+    {
+        "Title": "UPSSSC",
+        "Vacancies": "134",
+        "Avdt. No.": "06/Exam/2024",
+        "Updated On": "27/02/2024",
+        "Link": "https://upsssc.gov.in/AllNotifications.aspx"
+    },
+    {
+        "Title": "India Post Payments Bank",
+        "Vacancies": "54",
+        "Avdt. No.": "IPPB/CO/HR/RECT./2024-25/01",
+        "Last Date": "24/05/2024",
+        "Updated On": "04/05/2024"
+    },
+    {
+        "Title": "Indian Air Force",
+        "Vacancies": "Various",
+        "Avdt. No.": "AIRMEN INTAKE 01/2025",
+        "Last Date": "05/06/2024",
+        "Link": "https://airmenselection.cdac.in/rallyreg/candidate/login"
+    },
+    {
+        "Title": "Employees State Insurance Corporation, Rajasthan",
+        "Vacancies": "115",
+        "Avdt. No.": "02/2024",
+        "Last Date": "04/06/2024",
+        "Updated On": "21/05/2024"
+    },
+    {
+        "Title": "Integral Coach Factory, Chennai",
+        "Vacancies": "1010",
+        "Avdt. No.": "APP/01/2024-2025",
+        "Last Date": "21/06/2024",
+        "Updated On": "22/05/2024",
+        "Link": "https://pb.icf.gov.in/act/instructions.php"
+    },
+    {
+        "Title": "High Court of Gujarat",
+        "Vacancies": "1318",
+        "Avdt. No.": "HCG/NTA/01/2024/[I]",
+        "Last Date": "15/06/2024",
+        "Updated On": "22/05/2024",
+        "Link": "https://ghcrec.ntaonline.in/"
     }
 ]
