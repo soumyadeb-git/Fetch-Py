@@ -219,7 +219,8 @@
         "Vacancies": "671",
         "Avdt. No.": "1465/OSSC",
         "Last Date": "24/05/2024",
-        "Updated On": "30/03/2024"
+        "Updated On": "30/03/2024",
+        "Link": "https://www.ossc.gov.in/Public/Pages/Post_detail_information.aspx"
     },
     {
         "Title": "Bihar Gram Swaraj Yojna Society",
@@ -315,5 +316,34 @@
         "Last Date": "12/06/2024",
         "Updated On": "13/05/2024",
         "Link": "https://appr-recruit.co.in/ALP24rrcserV2/"
+    },
+    {
+        "Title": "The Gauhati High Court AT Guwahati",
+        "Vacancies": "12",
+        "Avdt. No.": "N/A",
+        "Last Date": "26/05/2024",
+        "Link": "https://ghcrec.assam.gov.in/KBJSG3AppForm/"
+    },
+    {
+        "Title": "High Court of Gujarat At Soal, Ahemdabad",
+        "Vacancies": "245",
+        "Avdt. No.": "RC/1434/2022 (I) AND NO. RC-ILC/1434/2022 (II)",
+        "Last Date": "26/05/2024",
+        "Link": "https://cdn.digialm.com/EForms/configuredHtml/32768/86593/Index.html"
+    },
+    {
+        "Title": "Uttarakhand Public Service Commission",
+        "Vacancies": "137+53=190",
+        "Avdt. No.": "A-1/E-3/DR(RO/ARO)/2023",
+        "Last Date": "16/06/2024",
+        "Updated On": "08/09/2023",
+        "Link": "https://ukpscnet.in/ro-aro/exam.html#/"
+    },
+    {
+        "Title": "High Court of Judicature AT Bombay",
+        "Vacancies": "56",
+        "Avdt. No.": "N/A",
+        "Last Date": "27/05/2024",
+        "Link": "https://bhc.gov.in/nagclerkrecruit/home.php"
     }
 ]
