@@ -24,10 +24,10 @@
     },
     {
         "Title": "Karnataka Public Service Commission",
-        "Vacancies": "70",
+        "Vacancies": "313",
         "Avdt. No.": "N/A",
-        "Last Date": "01/06/2024",
-        "Link": "https://kpsc.kar.nic.in/indexk.html"
+        "Last Date": "28/05/2024",
+        "Link": "https://kpsconline.karnataka.gov.in/HomePage/index.html"
     },
     {
         "Title": "Maharashtra State Electricity Distribution Co. Ltd.",
@@ -296,11 +296,11 @@
     },
     {
         "Title": "High Court of Gujarat",
-        "Vacancies": "1318",
-        "Avdt. No.": "HCG/NTA/01/2024/[I]",
-        "Last Date": "15/06/2024",
+        "Vacancies": "16",
+        "Avdt. No.": "RC/B.1304/2023(Translator)",
+        "Last Date": "26/05/2024",
         "Updated On": "22/05/2024",
-        "Link": "https://ghcrec.ntaonline.in/"
+        "Link": "https://hc-ojas.gujarat.gov.in/AdvtList.aspx?type=curr"
     },
     {
         "Title": "Dr. Ram Manohar Lal Hospital",
@@ -345,5 +345,12 @@
         "Avdt. No.": "N/A",
         "Last Date": "27/05/2024",
         "Link": "https://bhc.gov.in/nagclerkrecruit/home.php"
+    },
+    {
+        "Title": "Directorate General Border Security Force",
+        "Vacancies": "09",
+        "Avdt. No.": "N/A",
+        "Last Date": "24/06/2024",
+        "Link": "https://rectt.bsf.gov.in/registration/basic-details?guid=e4636d28-eb4a-11ee-91a0-0ae965027b11"
     }
 ]
