@@ -1984,7 +1984,8 @@
         "Vacancies": "56",
         "Avdt. No.": "N/A",
         "Last Date": "27/05/2024",
-        "Link": "https://bhc.gov.in/nagclerkrecruit/home.php"
+        "Link": "https://bhc.gov.in/nagclerkrecruit/home.php",
+        "Updated On": "10/05/2024"
     },
     {
         "Title": "Directorate General Border Security Force",
@@ -2000,5 +2001,43 @@
         "Last Date": "27/05/2024",
         "Updated On": "28/04/2024",
         "Link": "https://www.mhc.tn.gov.in/recruitment/login"
+    },
+    {
+        "Title": "Indian Navy",
+        "Vacancies": "Various",
+        "Avdt. No.": "02/2024 Batch",
+        "Last Date": "05/06/2024",
+        "Link": "https://agniveernavy.cdac.in/sailorscycle3/"
+    },
+    {
+        "Title": "The Institute of Company Secretaries of India",
+        "Vacancies": "20",
+        "Avdt. No.": "N/A",
+        "Last Date": "10/06/2024",
+        "Link": "https://www.icsi.edu/career_2k44/accept.asp/"
+    },
+    {
+        "Title": "The High Court of Kerala",
+        "Vacancies": "32",
+        "Avdt. No.": "07/2024",
+        "Last Date": "29/05/2024",
+        "Updated On": "25/04/2024",
+        "Link": "https://hckrecruitment.keralacourts.in/hckrecruitment/Login"
+    },
+    {
+        "Title": "Office of the Inspector General of Police Meghalaya, Shillong",
+        "Vacancies": "2968",
+        "Avdt. No.": "PTS/CRB/RECR/2023-24/350",
+        "Last Date": "31/05/2024",
+        "Updated On": "06/03/2024",
+        "Link": "https://crb2024.apply-gov.in/"
+    },
+    {
+        "Title": "Bihar Public Service Commission",
+        "Vacancies": "318",
+        "Avdt. No.": "24/2024",
+        "Last Date": "29/05/2024",
+        "Updated On": "23/02/2024",
+        "Link": "https://onlinebpsc.bihar.gov.in/main/home"
     }
 ]
