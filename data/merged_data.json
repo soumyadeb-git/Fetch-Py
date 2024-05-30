@@ -1,5 +1,61 @@
 [
     {
+        "Updated On": "May 30, 2024",
+        "Category": "Recruitment",
+        "Title": "Thane Bharat Sahakari Bank Manager Recruitment 2024",
+        "Last Date": "June 26, 2024",
+        "Link": "https://tbsbl.com/"
+    },
+    {
+        "Updated On": "May 30, 2024",
+        "Category": "Recruitment",
+        "Title": "RRB Paramedical Recruitment 2024",
+        "Last Date": "June 24, 2024",
+        "Link": "https://www.rrbchennai.gov.in/downloads/cen02-2019-paramedical-categories-new.pdf"
+    },
+    {
+        "Updated On": "May 30, 2024",
+        "Category": "Admit Card",
+        "Title": "UP B.Ed JEE Admit Card 2024",
+        "Last Date": "June 24, 2024",
+        "Link": "https://www.bujhansi.ac.in/"
+    },
+    {
+        "Updated On": "May 30, 2024",
+        "Category": "Recruitment",
+        "Title": "IBA Recruitment 2024",
+        "Last Date": "June 22, 2024",
+        "Link": "https://www.iba.org.in/"
+    },
+    {
+        "Updated On": "May 30, 2024",
+        "Category": "Notification",
+        "Title": "RRB Technician Exam Date 2024 for 9144 Vacancies, Check Details for the Notification",
+        "Last Date": "June 22, 2024",
+        "Link": "https://www.rrbapply.gov.in/#/auth/landing"
+    },
+    {
+        "Updated On": "May 18, 2024",
+        "Category": "Recruitment",
+        "Title": "HAL Recruitment 2024",
+        "Last Date": "June 13, 2024",
+        "Link": "https://www.hal-india.co.in/home"
+    },
+    {
+        "Updated On": "May 30, 2024",
+        "Category": "Recruitment",
+        "Title": "HEPC Recruitment 2024",
+        "Last Date": "June 22, 2024",
+        "Link": "https://www.hepcindia.com/index"
+    },
+    {
+        "Updated On": "May 30, 2024",
+        "Category": "Result",
+        "Title": "WBJEE 2024 Result",
+        "Last Date": "June 21, 2024",
+        "Link": "https://wbjeeb.nic.in/"
+    },
+    {
         "Updated On": "May 29, 2024",
         "Category": "Recruitment",
         "Title": "KUFOS Recruitment 2024",
@@ -271,13 +327,6 @@
         "Title": "AIIMS Delhi Recruitment 2024",
         "Last Date": "June 15, 2024",
         "Link": "https://www.aiims.edu/index.php?lang=en"
-    },
-    {
-        "Updated On": "May 18, 2024",
-        "Category": "Recruitment",
-        "Title": "HAL Recruitment 2024",
-        "Last Date": "June 13, 2024",
-        "Link": "https://www.hal-india.co.in/home"
     },
     {
         "Updated On": "May 23, 2024",
@@ -1991,10 +2040,10 @@
     },
     {
         "Title": "Uttar Pradesh Subordinate Service Selection Commission",
-        "Vacancies": "361",
-        "Avdt. No.": "05-Exam/2024",
+        "Vacancies": "3446",
+        "Avdt. No.": "07-Exam/2024",
         "Last Date": "18/05/2024",
-        "Updated On": "22/02/2024",
+        "Updated On": "04/03/2024",
         "Link": "https://upsssc.gov.in/AllNotifications.aspx"
     },
     {
@@ -2068,11 +2117,11 @@
     },
     {
         "Title": "Union Public Service Commission",
-        "Vacancies": "312",
-        "Avdt. No.": "10/2024",
-        "Last Date": "13/06/2024",
-        "Updated On": "24/05/2024",
-        "Link": "https://www.upsconline.nic.in/ora/VacancyNoticePub.php"
+        "Vacancies": "83",
+        "Avdt. No.": "09/2024",
+        "Last Date": "30/05/2024",
+        "Updated On": "11/05/2024",
+        "Link": "https://upsconline.nic.in/ora/VacancyNoticePub.php"
     },
     {
         "Title": "Rajasthan University of Health Sciences",
@@ -2194,10 +2243,11 @@
     },
     {
         "Title": "Indian Air Force",
-        "Vacancies": "Various",
-        "Avdt. No.": "AIRMEN INTAKE 01/2025",
-        "Last Date": "05/06/2024",
-        "Link": "https://airmenselection.cdac.in/rallyreg/candidate/login"
+        "Vacancies": "304",
+        "Avdt. No.": "AFCAT 02/2024",
+        "Last Date": "28/04/2024",
+        "Link": "https://afcat.cdac.in/afcatreg/candidate/login",
+        "Updated On": "30/05/2024"
     },
     {
         "Title": "Employees State Insurance Corporation, Rajasthan",
@@ -2333,7 +2383,8 @@
         "Vacancies": "182",
         "Avdt. No.": "A/HR/TBP/01/2024",
         "Last Date": "12/06/2024",
-        "Updated On": "27/05/2024"
+        "Updated On": "27/05/2024",
+        "Link": "https://halaircraft.formflix.com/"
     },
     {
         "Title": "NHPC Limited",
@@ -2349,5 +2400,20 @@
         "Last Date": "30/05/2024",
         "Updated On": "19/02/2024",
         "Link": "https://opscechayan.in/#/auth/landing"
+    },
+    {
+        "Title": "Dr. B. R. Ambedkar University Delhi",
+        "Vacancies": "67",
+        "Avdt. No.": "AUD/07/Acad./2024",
+        "Last Date": "10/06/2024",
+        "Updated On": "14/03/2024",
+        "Link": "https://audrec.samarth.edu.in/"
+    },
+    {
+        "Title": "DRDO Defence Metallurgical Research Laboratory",
+        "Vacancies": "127",
+        "Avdt. No.": "N/A",
+        "Last Date": "31/05/2024",
+        "Link": "https://forms.gle/xqRiBZ4U6NgebvIDA"
     }
 ]
