@@ -1,5 +1,89 @@
 [
     {
+        "Updated On": "June 01, 2024",
+        "Category": "Recruitment",
+        "Title": "Kerala High Court Recruitment 2024",
+        "Last Date": "June 28, 2024",
+        "Link": "https://highcourt.kerala.gov.in/"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Recruitment",
+        "Title": "NFSC Recruitment 2024",
+        "Last Date": "June 23, 2024",
+        "Link": "https://dgfscdhg.gov.in/"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Notification",
+        "Title": "SSC Notification",
+        "Last Date": "June 29, 2024",
+        "Link": "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/jsa%20ldc%202019%202020.pdf"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Notification",
+        "Title": "LIC AAO 2024 Recruitment Notification",
+        "Last Date": "June 30, 2024",
+        "Link": "https://licindia.in/"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Recruitment",
+        "Title": "Tezpur University Recruitment 2024",
+        "Last Date": "June 26, 2024",
+        "Link": "https://www.tezu.ernet.in/"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Recruitment",
+        "Title": "Patna High Court Recruitment 2024",
+        "Last Date": "June 21, 2024",
+        "Link": "https://patnahighcourt.gov.in/"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Result",
+        "Title": "KCET Result",
+        "Last Date": "July 01, 2024",
+        "Link": "https://cetonline.karnataka.gov.in/kea/"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Notification",
+        "Title": "SSC CGL 2024 Notification",
+        "Last Date": "June 26, 2024",
+        "Link": "http://www.ssc.gov.in/"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Recruitment",
+        "Title": "AIIMS Raipur Recruitment 2024",
+        "Last Date": "July 01, 2024",
+        "Link": "https://www.aiimsraipur.edu.in/"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Recruitment",
+        "Title": "Gati Shakti Vishwavidyalaya Faculty Recruitment 2024",
+        "Last Date": "June 26, 2024",
+        "Link": "https://gsvrec.samarth.edu.in/index.php"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Result",
+        "Title": "CUET UG Result",
+        "Last Date": "June 30, 2024",
+        "Link": "http://exams.nta.ac.in/"
+    },
+    {
+        "Updated On": "June 01, 2024",
+        "Category": "Notification",
+        "Title": "IBPS RRB Clerk 2024 Notification",
+        "Last Date": "July 01, 2024",
+        "Link": "http://www.ibps.in/"
+    },
+    {
         "Updated On": "May 31, 2024",
         "Category": "Recruitment",
         "Title": "Ministry of Youth Affairs & Sports Recruitment 2024",
@@ -2224,10 +2308,10 @@
     },
     {
         "Title": "Karnataka Public Service Commission",
-        "Vacancies": "313",
+        "Vacancies": "70",
         "Avdt. No.": "N/A",
-        "Last Date": "28/05/2024",
-        "Link": "https://kpsconline.karnataka.gov.in/HomePage/index.html"
+        "Last Date": "30/06/2024",
+        "Link": "https://kpsc.kar.nic.in/indexk.html"
     },
     {
         "Title": "Maharashtra State Electricity Distribution Co. Ltd.",
@@ -2579,10 +2663,10 @@
     },
     {
         "Title": "The High Court of Kerala",
-        "Vacancies": "32",
-        "Avdt. No.": "07/2024",
-        "Last Date": "29/05/2024",
-        "Updated On": "25/04/2024",
+        "Vacancies": "34",
+        "Avdt. No.": "9/2024",
+        "Last Date": "02/07/2024",
+        "Updated On": "30/05/2024",
         "Link": "https://hckrecruitment.keralacourts.in/hckrecruitment/Login"
     },
     {
@@ -2646,5 +2730,42 @@
         "Avdt. No.": "N/A",
         "Last Date": "31/05/2024",
         "Link": "https://forms.gle/xqRiBZ4U6NgebvIDA"
+    },
+    {
+        "Title": "Maharashtra Public Service Commission",
+        "Vacancies": "274",
+        "Avdt. No.": "414/2023",
+        "Last Date": "07/06/2024",
+        "Updated On": "29/12/2023",
+        "Link": "https://mpsconline.gov.in/candidate"
+    },
+    {
+        "Title": "Mizoram Public Service Commission",
+        "Vacancies": "10",
+        "Avdt. No.": "02 of 2024-2025",
+        "Last Date": "01/07/2024",
+        "Updated On": "31/05/2024",
+        "Link": "https://mpsconline.mizoram.gov.in/"
+    },
+    {
+        "Title": "All India Institute of Medical Science, Raipur (Chhattisgarh)",
+        "Vacancies": "75",
+        "Avdt. No.": "03/02/2024/Recruit./Acad/AIIMSRPR/157",
+        "Last Date": "06/06/2024",
+        "Updated On": "30/05/2024"
+    },
+    {
+        "Title": "Central Institute of Educational Technology",
+        "Vacancies": "71",
+        "Avdt. No.": "7/CIET/2024-25",
+        "Updated On": "27/05/2024"
+    },
+    {
+        "Title": "High Court of Judicature at Patna",
+        "Vacancies": "80",
+        "Avdt. No.": "PHC/01/2024",
+        "Last Date": "30/06/2024",
+        "Updated On": "28/05/2024",
+        "Link": "https://phc-recruitment.com/"
     }
 ]
