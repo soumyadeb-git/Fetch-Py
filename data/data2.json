@@ -24,10 +24,10 @@
     },
     {
         "Title": "Karnataka Public Service Commission",
-        "Vacancies": "313",
+        "Vacancies": "70",
         "Avdt. No.": "N/A",
-        "Last Date": "28/05/2024",
-        "Link": "https://kpsconline.karnataka.gov.in/HomePage/index.html"
+        "Last Date": "30/06/2024",
+        "Link": "https://kpsc.kar.nic.in/indexk.html"
     },
     {
         "Title": "Maharashtra State Electricity Distribution Co. Ltd.",
@@ -379,10 +379,10 @@
     },
     {
         "Title": "The High Court of Kerala",
-        "Vacancies": "32",
-        "Avdt. No.": "07/2024",
-        "Last Date": "29/05/2024",
-        "Updated On": "25/04/2024",
+        "Vacancies": "34",
+        "Avdt. No.": "9/2024",
+        "Last Date": "02/07/2024",
+        "Updated On": "30/05/2024",
         "Link": "https://hckrecruitment.keralacourts.in/hckrecruitment/Login"
     },
     {
@@ -446,5 +446,34 @@
         "Avdt. No.": "N/A",
         "Last Date": "31/05/2024",
         "Link": "https://forms.gle/xqRiBZ4U6NgebvIDA"
+    },
+    {
+        "Title": "Maharashtra Public Service Commission",
+        "Vacancies": "274",
+        "Avdt. No.": "414/2023",
+        "Last Date": "07/06/2024",
+        "Updated On": "29/12/2023",
+        "Link": "https://mpsconline.gov.in/candidate"
+    },
+    {
+        "Title": "Mizoram Public Service Commission",
+        "Vacancies": "10",
+        "Avdt. No.": "02 of 2024-2025",
+        "Last Date": "01/07/2024",
+        "Updated On": "31/05/2024",
+        "Link": "https://mpsconline.mizoram.gov.in/"
+    },
+    {
+        "Title": "All India Institute of Medical Science, Raipur (Chhattisgarh)",
+        "Vacancies": "75",
+        "Avdt. No.": "03/02/2024/Recruit./Acad/AIIMSRPR/157",
+        "Last Date": "06/06/2024",
+        "Updated On": "30/05/2024"
+    },
+    {
+        "Title": "Central Institute of Educational Technology",
+        "Vacancies": "71",
+        "Avdt. No.": "7/CIET/2024-25",
+        "Updated On": "27/05/2024"
     }
 ]
