@@ -148,11 +148,11 @@
     },
     {
         "Title": "Union Public Service Commission",
-        "Vacancies": "83",
-        "Avdt. No.": "09/2024",
-        "Last Date": "30/05/2024",
-        "Updated On": "11/05/2024",
-        "Link": "https://upsconline.nic.in/ora/VacancyNoticePub.php"
+        "Vacancies": "459",
+        "Avdt. No.": "11/2024.CDS-II",
+        "Last Date": "04/06/2024",
+        "Updated On": "15/05/2024",
+        "Link": "https://upsconline.nic.in/upsc/OTRP/"
     },
     {
         "Title": "Rajasthan University of Health Sciences",
@@ -491,5 +491,27 @@
         "Last Date": "17/06/2024",
         "Updated On": "08/03/2024",
         "Link": "https://aiimsguwahati.ac.in/page/recruitapp"
+    },
+    {
+        "Title": "National Health Mission, Punjab",
+        "Vacancies": "30",
+        "Avdt. No.": "NHM/Pb/CHR/24/116297",
+        "Last Date": "06/06/2024",
+        "Updated On": "16/05/2024",
+        "Link": "https://nhmpunjab.com/midwifery/"
+    },
+    {
+        "Title": "Directorate General Border Security Force (Water Wing)",
+        "Vacancies": "02",
+        "Avdt. No.": "water_wing_06/2024",
+        "Last Date": "01/07/2024",
+        "Link": "https://rectt.bsf.gov.in/registration/basic-details?guid=1b524afb-1367-11ef-b7b8-0a9bb35a7561"
+    },
+    {
+        "Title": "Directorate General Border Security Force Water Wing",
+        "Vacancies": "162",
+        "Avdt. No.": "wing_01/2024",
+        "Last Date": "01/07/2024",
+        "Link": "https://rectt.bsf.gov.in/registration/basic-details?guid=d9b862fe-c5a3-11ee-af7a-0a1d71e69cf3"
     }
 ]
