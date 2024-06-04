@@ -274,10 +274,10 @@
     },
     {
         "Title": "Indian Air Force",
-        "Vacancies": "304",
-        "Avdt. No.": "AFCAT 02/2024",
-        "Last Date": "28/04/2024",
-        "Link": "https://afcat.cdac.in/afcatreg/candidate/login",
+        "Vacancies": "Various",
+        "Avdt. No.": "Agniveervayu Intake 2025",
+        "Last Date": "05/06/2024",
+        "Link": "https://airmenselection.cdac.in/rallyreg/candidate/login",
         "Updated On": "30/05/2024"
     },
     {
@@ -513,5 +513,32 @@
         "Avdt. No.": "wing_01/2024",
         "Last Date": "01/07/2024",
         "Link": "https://rectt.bsf.gov.in/registration/basic-details?guid=d9b862fe-c5a3-11ee-af7a-0a1d71e69cf3"
+    },
+    {
+        "Title": "Northeast Frontier Railway",
+        "Vacancies": "24",
+        "Avdt. No.": "N/A",
+        "Last Date": "09/06/2024"
+    },
+    {
+        "Title": "Indira Gandhi Centre for Atomic Research, Kalpakkam",
+        "Vacancies": "91",
+        "Avdt. No.": "IGCAR/01/2024",
+        "Last Date": "30/06/2024",
+        "Link": "https://igcar.onlinereg.in/veeryareg24/Home.aspx#no-back-button"
+    },
+    {
+        "Title": "Deogiri College Maharashtra",
+        "Vacancies": "309",
+        "Avdt. No.": "N/A",
+        "Last Date": "10/06/2024",
+        "Link": "https://deogiricollege.org/recruitment/applicationonline.php"
+    },
+    {
+        "Title": "All India Institute of Medical Sciences, New Delhi",
+        "Vacancies": "220",
+        "Avdt. No.": "07/2024-Acad.I",
+        "Updated On": "31/05/2024",
+        "Link": "https://jr.aiimsexams.ac.in/StudentLogin.aspx"
     }
 ]
