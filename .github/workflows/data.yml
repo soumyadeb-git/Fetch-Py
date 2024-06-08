@@ -2,10 +2,10 @@ name: Run Data1 Python script
 
 on:
   schedule:
-    - cron: '20 3 * * *'    # 11:20 AM IST (03:20 AM UTC)
-    - cron: '40 8 * * *'    # 02:40 PM IST (08:40 AM UTC)
-    - cron: '50 12 * * *'   # 06:50 PM IST (12:50 PM UTC)
-    - cron: '40 15 * * *'   # 09:40 PM IST (03:40 PM UTC)
+  - cron: '20 6 * * *'   # 11:50 AM IST (06:20 AM UTC)
+  - cron: '00 10 * * *'  # 03:30 PM IST (10:00 AM UTC)
+  - cron: '30 13 * * *'  # 07:00 PM IST (01:30 PM UTC)
+  - cron: '00 16 * * *'  # 09:30 PM IST (04:00 PM UTC)
   workflow_dispatch:  # Allow manual triggering of the workflow
 
 jobs:
