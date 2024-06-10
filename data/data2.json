@@ -163,10 +163,11 @@
     },
     {
         "Title": "Border Security Force",
-        "Vacancies": "144",
-        "Avdt. No.": "N/A",
-        "Last Date": "17/06/2024",
-        "Link": "https://rectt.bsf.gov.in/"
+        "Vacancies": "1526",
+        "Avdt. No.": "https://rectt.bsf.gov.in/",
+        "Last Date": "08/07/2024",
+        "Link": "https://rectt.bsf.gov.in/registration/basic-details?guid=234fb396-0d25-11ef-ba98-0a050616f7db",
+        "Updated On": "09/06/2024"
     },
     {
         "Title": "Office of The District Judge, Gajapati",
@@ -630,14 +631,15 @@
     },
     {
         "Title": "Punjab State Power Corporation Limited",
-        "Vacancies": "439",
-        "Avdt. No.": "N/A",
-        "Last Date": "10/07/2024",
-        "Updated On": "15/03/2024"
+        "Vacancies": "19",
+        "Avdt. No.": "CRA 307/24",
+        "Last Date": "01/07/2024",
+        "Updated On": "15/03/2024",
+        "Link": "https://nats.education.gov.in/student_type.php"
     },
     {
         "Title": "Sanjay Gandhi Post Graduate Institute of Medical Sciences",
-        "Vacancies": "427",
+        "Vacancies": "419",
         "Avdt. No.": "I /48/ 01-18 /Rectt/2023-24",
         "Last Date": "25/06/2024",
         "Updated On": "07/03/2024",
@@ -649,5 +651,13 @@
         "Avdt. No.": "01062024",
         "Last Date": "01/07/2024",
         "Link": "https://ibpsonline.ibps.in/rcffebr24/"
+    },
+    {
+        "Title": "Damodar Valley Corporation",
+        "Vacancies": "64",
+        "Avdt. No.": "PLR/JE&MS/2024/5/1",
+        "Last Date": "04/07/2024",
+        "Updated On": "05/06/2024",
+        "Link": "https://www.dvcrecruitment.in/dvc/"
     }
 ]
