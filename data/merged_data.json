@@ -1,5 +1,54 @@
 [
     {
+        "Updated On": "June 11, 2024",
+        "Category": "Recruitment",
+        "Title": "Mizoram Public Service Commission Recruitment 2024",
+        "Last Date": "July 09, 2024",
+        "Link": "https://mpsc.mizoram.gov.in/"
+    },
+    {
+        "Updated On": "June 11, 2024",
+        "Category": "Recruitment",
+        "Title": "GNDU Recruitment 2024",
+        "Last Date": "June 30, 2024",
+        "Link": "https://gndu.ac.in/"
+    },
+    {
+        "Updated On": "June 11, 2024",
+        "Category": "Recruitment",
+        "Title": "SEBI Grade A Recruitment 2024",
+        "Last Date": "July 10, 2024",
+        "Link": "http://www.sebi.gov.in"
+    },
+    {
+        "Updated On": "May 18, 2024",
+        "Category": "Recruitment",
+        "Title": "IBM Recruitment 2024",
+        "Last Date": "June 15, 2024",
+        "Link": "https://ibm.gov.in/IBMPortal/"
+    },
+    {
+        "Updated On": "June 11, 2024",
+        "Category": "Recruitment",
+        "Title": "NFL 85+ Engineer and Other Vacancies Recruitment 2024",
+        "Last Date": "July 05, 2024",
+        "Link": "https://www.nationalfertilizers.com/"
+    },
+    {
+        "Updated On": "May 30, 2024",
+        "Category": "Recruitment",
+        "Title": "DIAT Recruitment 2024",
+        "Last Date": "June 19, 2024",
+        "Link": "https://diat.ac.in"
+    },
+    {
+        "Updated On": "June 11, 2024",
+        "Category": "Recruitment",
+        "Title": "CCI 210+ Executive, Management Trainee and Other Recruitment 2024",
+        "Last Date": "July 03, 2024",
+        "Link": "https://cotcorp.org.in"
+    },
+    {
         "Updated On": "June 07, 2024",
         "Category": "Recruitment",
         "Title": "AIIMS Gorakhpur Recruitment 2024",
@@ -340,13 +389,6 @@
         "Title": "NHSRC Recruitment 2024",
         "Last Date": "June 26, 2024",
         "Link": "https://nhsrcindia.org/"
-    },
-    {
-        "Updated On": "May 30, 2024",
-        "Category": "Recruitment",
-        "Title": "DIAT Recruitment 2024",
-        "Last Date": "June 19, 2024",
-        "Link": "https://diat.ac.in"
     },
     {
         "Updated On": "June 08, 2024",
@@ -3489,13 +3531,6 @@
     {
         "Updated On": "May 18, 2024",
         "Category": "Recruitment",
-        "Title": "IBM Recruitment 2024",
-        "Last Date": "June 15, 2024",
-        "Link": "https://ibm.gov.in/IBMPortal/"
-    },
-    {
-        "Updated On": "May 18, 2024",
-        "Category": "Recruitment",
         "Title": "National Book Trust Recruitment 2024",
         "Last Date": "June 05, 2024",
         "Link": "https://www.nbtindia.gov.in/"
@@ -3530,10 +3565,11 @@
     },
     {
         "Title": "NLC India Limited",
-        "Vacancies": "239",
-        "Avdt. No.": "01/2024",
-        "Last Date": "15/06/2024",
-        "Link": "https://web.nlcindia.in/pap_training_012024/"
+        "Vacancies": "163",
+        "Avdt. No.": "NLCIL/BP/01/2024",
+        "Last Date": "23/06/2024",
+        "Link": "https://web.nlcindia.in/bps_gat_tat_012024/",
+        "Updated On": "10/06/2024"
     },
     {
         "Title": "Karnataka Public Service Commission",
@@ -3699,8 +3735,8 @@
     },
     {
         "Title": "Assam Public Service Commission",
-        "Vacancies": "61",
-        "Avdt. No.": "12//2024",
+        "Vacancies": "130",
+        "Avdt. No.": "12/2024 & 13/2024",
         "Last Date": "14/07/2024",
         "Updated On": "07/06/2024",
         "Link": "https://apscrecruitment.in/#/auth/landing"
@@ -4194,5 +4230,18 @@
         "Avdt. No.": "24-01/HVFTS/59th TA/2024",
         "Last Date": "22/06/2024",
         "Updated On": "08/06/2024"
+    },
+    {
+        "Title": "Post Graduate Institute of Medical Science, Rohtak",
+        "Vacancies": "153",
+        "Avdt. No.": "N/A",
+        "Last Date": "12/06/2024"
+    },
+    {
+        "Title": "Securities and Exchange Board of India",
+        "Vacancies": "97",
+        "Avdt. No.": "N/A",
+        "Last Date": "30/06/2024",
+        "Link": "https://ibpsonline.ibps.in/sebimarc24/"
     }
 ]
