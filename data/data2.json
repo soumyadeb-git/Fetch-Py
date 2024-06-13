@@ -632,11 +632,11 @@
     },
     {
         "Title": "Punjab State Power Corporation Limited",
-        "Vacancies": "439",
-        "Avdt. No.": "N/A",
-        "Last Date": "10/07/2024",
+        "Vacancies": "176",
+        "Avdt. No.": "CRA 306/24",
+        "Last Date": "01/07/2024",
         "Updated On": "11/03/2024",
-        "Link": "https://nats.education.gov.in/student_type.php"
+        "Link": "https://aeotgate2023.pspcl.in/"
     },
     {
         "Title": "Sanjay Gandhi Post Graduate Institute of Medical Sciences",
@@ -755,5 +755,26 @@
         "Last Date": "02/07/2024",
         "Updated On": "12/06/2024",
         "Link": "https://cdn.digialm.com/EForms/configuredHtml/1258/89103/Index.html"
+    },
+    {
+        "Title": "Staff Selection Commission (SSC)",
+        "Vacancies": "26146",
+        "Avdt. No.": "N/A",
+        "Last Date": "31/12/2023",
+        "Link": "https://ssc.nic.in/Portal/Apply"
+    },
+    {
+        "Title": "Bank of Baroda",
+        "Vacancies": "168",
+        "Avdt. No.": "BOB/HRM/REC/ADVT/2024/04",
+        "Updated On": "12/06/2024",
+        "Link": "https://bankapps.bankofbaroda.co.in/BOBRECTMNT2024/"
+    },
+    {
+        "Title": "Maharashtra State Electricity Transmission Company Limited",
+        "Vacancies": "63",
+        "Avdt. No.": "0797",
+        "Updated On": "10/06/2024",
+        "Link": "https://www.apprenticeshipindia.gov.in/"
     }
 ]
