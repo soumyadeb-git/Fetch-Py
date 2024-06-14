@@ -1,5 +1,40 @@
 [
     {
+        "Updated On": "June 14, 2024",
+        "Category": "Recruitment",
+        "Title": "Bank of Baroda Recruitment 2024",
+        "Last Date": "July 09, 2024",
+        "Link": "https://www.bankofbaroda.in/"
+    },
+    {
+        "Updated On": "May 31, 2024",
+        "Category": "Result",
+        "Title": "SSC GD Result",
+        "Last Date": "June 24, 2024",
+        "Link": "https://ssc.gov.in/"
+    },
+    {
+        "Updated On": "June 14, 2024",
+        "Category": "Recruitment",
+        "Title": "KDISC Recruitment 2024",
+        "Last Date": "July 02, 2024",
+        "Link": "https://kdisc.kerala.gov.in/en/"
+    },
+    {
+        "Updated On": "May 28, 2024",
+        "Category": "Recruitment",
+        "Title": "NTPC Recruitment 2024",
+        "Last Date": "June 18, 2024",
+        "Link": "https://forms.gle/RLgQ26CSwuAo91D6A"
+    },
+    {
+        "Updated On": "June 14, 2024",
+        "Category": "Recruitment",
+        "Title": "BPSC AE Recruitment 2024",
+        "Last Date": "July 12, 2024",
+        "Link": "https://www.bpsc.bih.nic.in/"
+    },
+    {
         "Updated On": "June 12, 2024",
         "Category": "Recruitment",
         "Title": "MEITY Recruitment 2024",
@@ -2252,13 +2287,6 @@
     },
     {
         "Updated On": "May 31, 2024",
-        "Category": "Result",
-        "Title": "SSC GD Result",
-        "Last Date": "June 24, 2024",
-        "Link": "https://ssc.gov.in/"
-    },
-    {
-        "Updated On": "May 31, 2024",
         "Category": "Recruitment",
         "Title": "IBBI Recruitment 2024",
         "Last Date": "June 28, 2024",
@@ -2634,13 +2662,6 @@
         "Title": "IOB Recruitment 2024",
         "Last Date": "June 22, 2024",
         "Link": "https://www.iob.in/"
-    },
-    {
-        "Updated On": "May 28, 2024",
-        "Category": "Recruitment",
-        "Title": "NTPC Recruitment 2024",
-        "Last Date": "June 18, 2024",
-        "Link": "https://forms.gle/RLgQ26CSwuAo91D6A"
     },
     {
         "Updated On": "May 28, 2024",
@@ -4779,5 +4800,11 @@
         "Avdt. No.": "0797",
         "Updated On": "10/06/2024",
         "Link": "https://www.apprenticeshipindia.gov.in/"
+    },
+    {
+        "Title": "BPSC",
+        "Vacancies": "118",
+        "Avdt. No.": "32/2024 & 33/2024",
+        "Updated On": "13/06/2024"
     }
 ]
