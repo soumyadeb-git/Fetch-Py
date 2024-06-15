@@ -1,5 +1,40 @@
 [
     {
+        "Updated On": "June 15, 2024",
+        "Category": "Notification",
+        "Title": "ONGC 260+ Vacancies Notification",
+        "Last Date": "July 06, 2024",
+        "Link": "https://ongcindia.com/web/eng/career/recruitment-notice"
+    },
+    {
+        "Updated On": "June 15, 2024",
+        "Category": "Recruitment",
+        "Title": "Supreme Court of India Recruitment 2024",
+        "Last Date": "July 15, 2024",
+        "Link": "https://www.sci.gov.in/"
+    },
+    {
+        "Updated On": "June 15, 2024",
+        "Category": "Recruitment",
+        "Title": "TMB Bank Recruitment 2024",
+        "Last Date": "July 09, 2024",
+        "Link": "https://www.tmbnet.in/"
+    },
+    {
+        "Updated On": "June 15, 2024",
+        "Category": "Recruitment",
+        "Title": "EPFO CTO Recruitment 2024",
+        "Last Date": "July 09, 2024",
+        "Link": "https://www.epfindia.gov.in/site_en/Recruitments.php"
+    },
+    {
+        "Updated On": "June 13, 2024",
+        "Category": "Recruitment",
+        "Title": "CBSE Recruitment 2024",
+        "Last Date": "July 13, 2024",
+        "Link": "http://www.cbse.gov.in"
+    },
+    {
         "Updated On": "June 14, 2024",
         "Category": "Recruitment",
         "Title": "MSEDCL Recruitment 2024",
@@ -320,13 +355,6 @@
         "Title": "KMRCL Recruitment 2024",
         "Last Date": "June 26, 2024",
         "Link": "https://indianrailways.gov.in/railwayboard/uploads/irpersonel/Vacancy_Circular/2024/notification_DyCE_Arbn_Civil%20(1).pdf"
-    },
-    {
-        "Updated On": "June 13, 2024",
-        "Category": "Recruitment",
-        "Title": "CBSE Recruitment 2024",
-        "Last Date": "July 13, 2024",
-        "Link": "http://www.cbse.gov.in"
     },
     {
         "Updated On": "May 20, 2024",
@@ -4985,5 +5013,20 @@
         "Title": "Pimpri Chinchwad Municipal Corporation",
         "Vacancies": "201",
         "Avdt. No.": "N/A"
+    },
+    {
+        "Title": "Rajasthan Public Service Commission",
+        "Vacancies": "352",
+        "Avdt. No.": "13/Exam/Programmer/EP-1/2023-24",
+        "Updated On": "25/01/2024",
+        "Link": "https://sso.rajasthan.gov.in/signin"
+    },
+    {
+        "Title": "RRB Railway Protection Force",
+        "Vacancies": "4208",
+        "Avdt. No.": "RPF 02/2024",
+        "Last Date": "14/05/2024",
+        "Updated On": "14/04/2024",
+        "Link": "https://www.rrbapply.gov.in/#/auth/landing"
     }
 ]
