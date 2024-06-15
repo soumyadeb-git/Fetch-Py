@@ -814,5 +814,20 @@
         "Title": "Pimpri Chinchwad Municipal Corporation",
         "Vacancies": "201",
         "Avdt. No.": "N/A"
+    },
+    {
+        "Title": "Rajasthan Public Service Commission",
+        "Vacancies": "352",
+        "Avdt. No.": "13/Exam/Programmer/EP-1/2023-24",
+        "Updated On": "25/01/2024",
+        "Link": "https://sso.rajasthan.gov.in/signin"
+    },
+    {
+        "Title": "RRB Railway Protection Force",
+        "Vacancies": "4208",
+        "Avdt. No.": "RPF 02/2024",
+        "Last Date": "14/05/2024",
+        "Updated On": "14/04/2024",
+        "Link": "https://www.rrbapply.gov.in/#/auth/landing"
     }
 ]
