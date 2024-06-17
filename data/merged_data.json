@@ -1,5 +1,19 @@
 [
     {
+        "Updated On": "June 07, 2024",
+        "Category": "Recruitment",
+        "Title": "HPCL Recruitment 2024",
+        "Last Date": "June 28, 2024",
+        "Link": "https://www.hindustanpetroleum.com/"
+    },
+    {
+        "Updated On": "June 17, 2024",
+        "Category": "Recruitment",
+        "Title": "IDBI Bank Recruitment 2024",
+        "Last Date": "July 17, 2024",
+        "Link": "https://www.idbibank.in/idbi-bank-careers-current-openings.aspx"
+    },
+    {
         "Updated On": "June 16, 2024",
         "Category": "Recruitment",
         "Title": "BBJ Recruitment 2024",
@@ -1703,13 +1717,6 @@
         "Title": "MSME Recruitment 2024",
         "Last Date": "July 05, 2024",
         "Link": "https://www.msme.gov.in/"
-    },
-    {
-        "Updated On": "June 07, 2024",
-        "Category": "Recruitment",
-        "Title": "HPCL Recruitment 2024",
-        "Last Date": "June 28, 2024",
-        "Link": "https://www.hindustanpetroleum.com/"
     },
     {
         "Updated On": "June 07, 2024",
@@ -4460,10 +4467,10 @@
     },
     {
         "Title": "Uttar Pradesh Subordinate Service Selection Commission",
-        "Vacancies": "4016",
-        "Avdt. No.": "08-Exam/2024",
+        "Vacancies": "397",
+        "Avdt. No.": "09/2024",
         "Last Date": "28/06/2024",
-        "Updated On": "08/03/2024",
+        "Updated On": "15/06/2024",
         "Link": "http://upsssc.gov.in/AllNotifications.aspx"
     },
     {
@@ -5008,7 +5015,8 @@
         "Vacancies": "65",
         "Avdt. No.": "2/2024",
         "Last Date": "03/07/2024",
-        "Updated On": "06/06/2024"
+        "Updated On": "06/06/2024",
+        "Link": "https://apssb.nic.in/Index/institute_index/ins/RECINS001"
     },
     {
         "Title": "All India Institute of Medical Science, Kalyani",
@@ -5153,10 +5161,10 @@
     },
     {
         "Title": "Bank of Baroda",
-        "Vacancies": "168",
-        "Avdt. No.": "BOB/HRM/REC/ADVT/2024/04",
-        "Updated On": "12/06/2024",
-        "Link": "https://bankapps.bankofbaroda.co.in/BOBRECTMNT2024/"
+        "Vacancies": "459",
+        "Avdt. No.": "BOB/HRM/REC/ADVT/2024/05",
+        "Updated On": "14/06/2024",
+        "Link": "https://bankapps.bankofbaroda.co.in/BOBRECT_CONT2024/"
     },
     {
         "Title": "Maharashtra State Electricity Transmission Company Limited",
@@ -5169,7 +5177,8 @@
         "Title": "BPSC",
         "Vacancies": "118",
         "Avdt. No.": "32/2024 & 33/2024",
-        "Updated On": "13/06/2024"
+        "Updated On": "13/06/2024",
+        "Link": "https://onlinebpsc.bihar.gov.in/main/home"
     },
     {
         "Title": "Bihar State Power (Holding) Company Limited",
@@ -5251,5 +5260,10 @@
         "Vacancies": "518",
         "Avdt. No.": "MDLATS/01/2024",
         "Link": "https://mazagondock.in/app/mdlapprentice/Login.aspx"
+    },
+    {
+        "Title": "Indian Airforce",
+        "Vacancies": "Various",
+        "Avdt. No.": "02/2025"
     }
 ]
