@@ -745,9 +745,10 @@
     {
         "Title": "Power Grid Corporation of India Limited",
         "Vacancies": "435",
-        "Avdt. No.": "Ref. No: CC/08/2023 dtd 26.09.2023",
+        "Avdt. No.": "1",
         "Updated On": "12/06/2024",
-        "Link": "https://careers.powergrid.in/recruitment-nextgen/h/login.aspx"
+        "Link": "https://careers.powergrid.in/recruitment-nextgen/h/login.aspx",
+        "Last Date": "04/07/2024"
     },
     {
         "Title": "The Cotton Corporation of India Limited",
@@ -986,5 +987,12 @@
         "Last Date": "18/07/2024",
         "Updated On": "18/06/2024",
         "Link": "https://myapplonline.in.net/ccc/"
+    },
+    {
+        "Title": "General Insurance Corporation of India",
+        "Vacancies": "85",
+        "Avdt. No.": "N/A",
+        "Last Date": "12/01/2024",
+        "Link": "https://ibpsonline.ibps.in/giciojun23/"
     }
 ]
