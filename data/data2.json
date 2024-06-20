@@ -361,7 +361,7 @@
         "Title": "Madras High Court",
         "Vacancies": "2329",
         "Avdt. No.": "75 to 171/2024",
-        "Last Date": "27/05/2024",
+        "Last Date": "26/06/2024",
         "Updated On": "28/04/2024",
         "Link": "https://www.mhc.tn.gov.in/recruitment/login"
     },
@@ -788,9 +788,11 @@
     },
     {
         "Title": "Bihar State Power (Holding) Company Limited",
-        "Vacancies": "2600",
-        "Avdt. No.": "01/2024, 02/2024, 03/2024, 04/2024, 05/2024",
-        "Updated On": "05/03/2024"
+        "Vacancies": "2000",
+        "Avdt. No.": "05/2024",
+        "Updated On": "05/03/2024",
+        "Last Date": "19/07/2024",
+        "Link": "https://cdn3.digialm.com/EForms/configuredHtml/1631/88041/Index.html"
     },
     {
         "Title": "North Eastern Railway",
@@ -956,7 +958,8 @@
         "Vacancies": "117",
         "Avdt. No.": "GDCE-01/2024",
         "Last Date": "20/07/2024",
-        "Updated On": "15/06/2024"
+        "Updated On": "15/06/2024",
+        "Link": "https://ibtexamination.com/NFR_GDCE2024/"
     },
     {
         "Title": "State Health Society Bihar",
@@ -1002,5 +1005,27 @@
         "Last Date": "07/02/2024",
         "Updated On": "08/01/2024",
         "Link": "https://apps.ssbodisha.ac.in/pgt2024/"
+    },
+    {
+        "Title": "Bihar State Power Holding Company Limited",
+        "Vacancies": "40",
+        "Avdt. No.": "01/2024",
+        "Last Date": "19/07/2024",
+        "Updated On": "06/03/2024",
+        "Link": "https://cdn3.digialm.com/EForms/configuredHtml/1631/88041/Index.html"
+    },
+    {
+        "Title": "Tamil Nadu State Transport Corporation Limited",
+        "Vacancies": "688",
+        "Avdt. No.": "N/A",
+        "Last Date": "08/07/2024",
+        "Link": "https://nats.education.gov.in/"
+    },
+    {
+        "Title": "Chhattisgarh State Power Generation Co, Ltd.",
+        "Vacancies": "19",
+        "Avdt. No.": "03-11/HR/SE-III/1845",
+        "Last Date": "18/07/2024",
+        "Updated On": "18/06/2024"
     }
 ]
