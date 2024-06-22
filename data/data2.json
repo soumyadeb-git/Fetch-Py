@@ -183,7 +183,7 @@
         "Avdt. No.": "16/2024",
         "Last Date": "12/07/2024",
         "Updated On": "21/06/2024",
-        "Link": "https://regn.hpsc.gov.in/iti/"
+        "Link": "https://regn.hpsc.gov.in/amo/"
     },
     {
         "Title": "Assam Public Service Commission",
@@ -369,8 +369,9 @@
         "Title": "Indian Navy",
         "Vacancies": "Various",
         "Avdt. No.": "02/2024 Batch",
-        "Last Date": "05/06/2024",
-        "Link": "https://agniveernavy.cdac.in/sailorscycle3/"
+        "Last Date": "11/07/2024",
+        "Link": "https://agniveernavy.cdac.in/sailorscycle3/",
+        "Updated On": "22/06/2024"
     },
     {
         "Title": "The Institute of Company Secretaries of India",
@@ -1056,5 +1057,17 @@
         "Last Date": "06/07/2024",
         "Updated On": "06/06/2024",
         "Link": "https://colrec.uod.ac.in/"
+    },
+    {
+        "Title": "National Education Society For Tribal Students",
+        "Vacancies": "15",
+        "Avdt. No.": "N/A",
+        "Last Date": "15/07/2024"
+    },
+    {
+        "Title": "The Indian Navy",
+        "Vacancies": "Various",
+        "Avdt. No.": "02/2024 Batch",
+        "Last Date": "20/07/2024"
     }
 ]
