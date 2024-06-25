@@ -1,5 +1,33 @@
 [
     {
+        "Updated On": "June 25, 2024",
+        "Category": "Recruitment",
+        "Title": "GIC Recruitment 2024",
+        "Last Date": "July 16, 2024",
+        "Link": "https://www.gicre.in/en/"
+    },
+    {
+        "Updated On": "May 30, 2024",
+        "Category": "Recruitment",
+        "Title": "DIAT Recruitment 2024",
+        "Last Date": "June 19, 2024",
+        "Link": "https://diat.ac.in"
+    },
+    {
+        "Updated On": "June 25, 2024",
+        "Category": "Recruitment",
+        "Title": "OPTCL Recruitment 2024",
+        "Last Date": "July 17, 2024",
+        "Link": "https://www.optcl.co.in/"
+    },
+    {
+        "Updated On": "May 29, 2024",
+        "Category": "Recruitment",
+        "Title": "Cochin Port Authority Recruitment 2024",
+        "Last Date": "June 23, 2024",
+        "Link": "https://www.cochinport.gov.in/cpt"
+    },
+    {
         "Updated On": "May 24, 2024",
         "Category": "Recruitment",
         "Title": "Digital India Corporation Recruitment 2024",
@@ -1545,13 +1573,6 @@
         "Link": "https://smportkolkata.shipping.gov.in/"
     },
     {
-        "Updated On": "May 29, 2024",
-        "Category": "Recruitment",
-        "Title": "Cochin Port Authority Recruitment 2024",
-        "Last Date": "June 23, 2024",
-        "Link": "https://www.cochinport.gov.in/cpt"
-    },
-    {
         "Updated On": "June 15, 2024",
         "Category": "Recruitment",
         "Title": "Visva Bharati Faculty Recruitment 2024",
@@ -2432,13 +2453,6 @@
         "Title": "NFL 85+ Engineer and Other Vacancies Recruitment 2024",
         "Last Date": "July 05, 2024",
         "Link": "https://www.nationalfertilizers.com/"
-    },
-    {
-        "Updated On": "May 30, 2024",
-        "Category": "Recruitment",
-        "Title": "DIAT Recruitment 2024",
-        "Last Date": "June 19, 2024",
-        "Link": "https://diat.ac.in"
     },
     {
         "Updated On": "June 10, 2024",
@@ -5487,7 +5501,7 @@
     },
     {
         "Title": "Uttar Pradesh Subordinate Service Selection Commission",
-        "Vacancies": "4376",
+        "Vacancies": "4612",
         "Avdt. No.": "08-Exam/2024",
         "Last Date": "28/06/2024",
         "Updated On": "08/03/2024",
@@ -5867,18 +5881,18 @@
     },
     {
         "Title": "Maharashtra Public Service Commission",
-        "Vacancies": "274",
-        "Avdt. No.": "414/2023",
-        "Last Date": "07/06/2024",
-        "Updated On": "29/12/2023",
+        "Vacancies": "114",
+        "Avdt. No.": "026/2023",
+        "Last Date": "08/07/2024",
+        "Updated On": "19/05/2023",
         "Link": "https://mpsconline.gov.in/candidate"
     },
     {
         "Title": "Mizoram Public Service Commission",
-        "Vacancies": "10",
-        "Avdt. No.": "02 of 2024-2025",
-        "Last Date": "01/07/2024",
-        "Updated On": "31/05/2024",
+        "Vacancies": "80",
+        "Avdt. No.": "03 of 2024-2025",
+        "Last Date": "18/07/2024",
+        "Updated On": "18/06/2024",
         "Link": "https://mpsconline.mizoram.gov.in/"
     },
     {
@@ -6533,5 +6547,19 @@
         "Last Date": "24/07/2024",
         "Updated On": "24/06/2024",
         "Link": "https://ssc.gov.in/"
+    },
+    {
+        "Title": "Chennai Metro Rail Limited",
+        "Vacancies": "17",
+        "Avdt. No.": "CMRL/HR/CON/09/2024",
+        "Last Date": "10/07/2024",
+        "Updated On": "09/06/2024",
+        "Link": "https://careers.chennaimetrorail.org/sign_in.php"
+    },
+    {
+        "Title": "The Maharashtra State Electricity Transmission Company Limited",
+        "Vacancies": "417",
+        "Avdt. No.": "10/2024",
+        "Updated On": "24/06/2024"
     }
 ]
