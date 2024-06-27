@@ -276,8 +276,8 @@
     },
     {
         "Title": "Indian Air Force",
-        "Vacancies": "Various",
-        "Avdt. No.": "Agniveervayu Intake 2025",
+        "Vacancies": "1515",
+        "Avdt. No.": "Notification Date (3rd to 9th April 2021), Last Date to Apply: Within 30 days from the date of advertisment",
         "Last Date": "05/06/2024",
         "Link": "https://airmenselection.cdac.in/rallyreg/candidate/login",
         "Updated On": "30/05/2024"
@@ -1253,5 +1253,52 @@
         "Last Date": "12/04/2021",
         "Updated On": "23/03/2021",
         "Link": "http://www.mponline.gov.in/Portal/UserInterface/KIOSK/frmKioskApplication.aspx"
+    },
+    {
+        "Title": "Punjab and Sind Bank",
+        "Vacancies": "56",
+        "Avdt. No.": "N/A",
+        "Last Date": "03/04/2021",
+        "Link": "https://ibpsonline.ibps.in/psbcsiofeb21/"
+    },
+    {
+        "Title": "Saraswat Co-operative Bank Ltd",
+        "Vacancies": "150",
+        "Avdt. No.": "N/A",
+        "Last Date": "19/03/2021",
+        "Link": "https://ibpsonline.ibps.in/scbpjmofeb21/"
+    },
+    {
+        "Title": "Eastern Coalfields Limited",
+        "Vacancies": "1086",
+        "Avdt. No.": "ECL/CMD/C-6/Rectt/21/115",
+        "Last Date": "15/06/2021",
+        "Updated On": "31/05/2021"
+    },
+    {
+        "Title": "Pandit Bhagwat Dayal Sharma Post Graduate Institute of Medical Sciences, Rohtak",
+        "Vacancies": "04",
+        "Avdt. No.": "N/A",
+        "Last Date": "10/06/2021"
+    },
+    {
+        "Title": "Reserve Bank of India",
+        "Vacancies": "926",
+        "Avdt. No.": "N/A",
+        "Last Date": "24/01/2020",
+        "Link": "https://ibpsonline.ibps.in/rbiasstnov19/basic_details.php"
+    },
+    {
+        "Title": "Goa Police Department",
+        "Vacancies": "1097",
+        "Avdt. No.": "01/2021",
+        "Last Date": "26/05/2021"
+    },
+    {
+        "Title": "Eklavya Model Residential School, (Ministry of Tribal Affairs)",
+        "Vacancies": "3479",
+        "Avdt. No.": "N/A",
+        "Last Date": "31/05/2021",
+        "Link": "https://recruitment.nta.nic.in/WebinfoEMRSRecruitment/Page/Page?PageId=5"
     }
 ]
