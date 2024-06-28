@@ -1,6 +1,132 @@
 [
     {
         "Updated On": "June 28, 2024",
+        "Category": "Notification",
+        "Title": "OIL Technician Recruitment Notification",
+        "Last Date": "July 20, 2024",
+        "Link": "https://www.oil-india.com/current_opennew.aspx"
+    },
+    {
+        "Updated On": "June 07, 2024",
+        "Category": "Recruitment",
+        "Title": "Union Bank of India Recruitment 2024",
+        "Last Date": "July 06, 2024",
+        "Link": "https://www.unionbankofindia.co.in/english/recruitment.aspx"
+    },
+    {
+        "Updated On": "June 19, 2024",
+        "Category": "Recruitment",
+        "Title": "ITBP Recruitment 2024",
+        "Last Date": "July 12, 2024",
+        "Link": "https://itbpolice.nic.in/"
+    },
+    {
+        "Updated On": "June 14, 2024",
+        "Category": "Recruitment",
+        "Title": "Bank of Baroda Recruitment 2024",
+        "Last Date": "July 09, 2024",
+        "Link": "https://www.bankofbaroda.in/"
+    },
+    {
+        "Updated On": "June 26, 2024",
+        "Category": "Recruitment",
+        "Title": "PGCIL Recruitment 2024",
+        "Last Date": "July 19, 2024",
+        "Link": "https://www.powergrid.in/"
+    },
+    {
+        "Updated On": "June 28, 2024",
+        "Category": "Recruitment",
+        "Title": "Delhi University Recruitment 2024",
+        "Last Date": "July 23, 2024",
+        "Link": "http://www.du.ac.in"
+    },
+    {
+        "Updated On": "May 22, 2024",
+        "Category": "Recruitment",
+        "Title": "ESIC Recruitment 2024",
+        "Last Date": "June 09, 2024",
+        "Link": "https://www.esic.gov.in/"
+    },
+    {
+        "Updated On": "June 04, 2024",
+        "Category": "Recruitment",
+        "Title": "IRCTC Recruitment 2024",
+        "Last Date": "July 01, 2024",
+        "Link": "https://irctc.com/new-openings-news.html"
+    },
+    {
+        "Updated On": "June 28, 2024",
+        "Category": "Recruitment",
+        "Title": "UPMSCL Recruitment 2024",
+        "Last Date": "July 18, 2024",
+        "Link": "http://45.64.157.35:8080/UPMSCL/index.action"
+    },
+    {
+        "Updated On": "June 28, 2024",
+        "Category": "Notification",
+        "Title": "SSC Stenographer 2024 Notification",
+        "Last Date": "July 22, 2024",
+        "Link": "https://ssc.gov.in/home/ssc-calendar"
+    },
+    {
+        "Updated On": "June 28, 2024",
+        "Category": "Recruitment",
+        "Title": "MBB University Recruitment 2024",
+        "Last Date": "July 27, 2024",
+        "Link": "https://mbbuniversity.ac.in/"
+    },
+    {
+        "Updated On": "June 28, 2024",
+        "Category": "Notification",
+        "Title": "AIIMS Jodhpur Recruitment\u00a02024 Notification",
+        "Last Date": "July 24, 2024",
+        "Link": "https://www.aiimsjodhpur.edu.in/"
+    },
+    {
+        "Updated On": "June 28, 2024",
+        "Category": "Recruitment",
+        "Title": "IDBI Bank SO Recruitment 2024",
+        "Last Date": "July 28, 2024",
+        "Link": "https://www.idbibank.in/"
+    },
+    {
+        "Updated On": "June 28, 2024",
+        "Category": "Recruitment",
+        "Title": "PSPCL Recruitment 2024",
+        "Last Date": "July 21, 2024",
+        "Link": "https://www.pspcl.in/"
+    },
+    {
+        "Updated On": "May 18, 2024",
+        "Category": "Recruitment",
+        "Title": "HAL Recruitment 2024",
+        "Last Date": "June 13, 2024",
+        "Link": "https://www.hal-india.co.in/home"
+    },
+    {
+        "Updated On": "June 28, 2024",
+        "Category": "Recruitment",
+        "Title": "Madras University Recruitment 2024",
+        "Last Date": "July 18, 2024",
+        "Link": "https://www.unom.ac.in/"
+    },
+    {
+        "Updated On": "May 24, 2024",
+        "Category": "Recruitment",
+        "Title": "NCERT Recruitment 2024",
+        "Last Date": "June 15, 2024",
+        "Link": "https://ncert.nic.in/"
+    },
+    {
+        "Updated On": "June 28, 2024",
+        "Category": "Recruitment",
+        "Title": "NITI Aayog Recruitment 2024",
+        "Last Date": "July 23, 2024",
+        "Link": "https://www.niti.gov.in/"
+    },
+    {
+        "Updated On": "June 28, 2024",
         "Category": "Recruitment",
         "Title": "DGS Shipping Recruitment 2024",
         "Last Date": "July 22, 2024",
@@ -541,13 +667,6 @@
     {
         "Updated On": "June 26, 2024",
         "Category": "Recruitment",
-        "Title": "PGCIL Recruitment 2024",
-        "Last Date": "July 19, 2024",
-        "Link": "https://www.powergrid.in/"
-    },
-    {
-        "Updated On": "June 26, 2024",
-        "Category": "Recruitment",
         "Title": "HPPA ASKO Recruitment 2024",
         "Last Date": "July 16, 2024",
         "Link": "https://hppa.haryana.gov.in/"
@@ -1082,13 +1201,6 @@
         "Link": "https://nfdb.gov.in/"
     },
     {
-        "Updated On": "May 22, 2024",
-        "Category": "Recruitment",
-        "Title": "ESIC Recruitment 2024",
-        "Last Date": "June 09, 2024",
-        "Link": "https://www.esic.gov.in/"
-    },
-    {
         "Updated On": "May 21, 2024",
         "Category": "Recruitment",
         "Title": "AIIMS Nagpur Recruitment 2024",
@@ -1549,13 +1661,6 @@
         "Title": "Bose Institute Recruitment\u00a02024 Notification",
         "Last Date": "July 12, 2024",
         "Link": "http://www.jcbose.ac.in/home"
-    },
-    {
-        "Updated On": "June 19, 2024",
-        "Category": "Recruitment",
-        "Title": "ITBP Recruitment 2024",
-        "Last Date": "July 12, 2024",
-        "Link": "https://itbpolice.nic.in/"
     },
     {
         "Updated On": "June 19, 2024",
@@ -2447,13 +2552,6 @@
         "Link": "https://www.aiimsbilaspur.edu.in/"
     },
     {
-        "Updated On": "June 07, 2024",
-        "Category": "Recruitment",
-        "Title": "Union Bank of India Recruitment 2024",
-        "Last Date": "July 06, 2024",
-        "Link": "https://www.unionbankofindia.co.in/english/recruitment.aspx"
-    },
-    {
         "Updated On": "June 14, 2024",
         "Category": "Recruitment",
         "Title": "PGCIL Engineer Trainee Recruitment 2024",
@@ -2480,13 +2578,6 @@
         "Title": "BPSC Head Master Admit Card 2024",
         "Last Date": "July 06, 2024",
         "Link": "https://www.bpsc.bih.nic.in/"
-    },
-    {
-        "Updated On": "June 14, 2024",
-        "Category": "Recruitment",
-        "Title": "Bank of Baroda Recruitment 2024",
-        "Last Date": "July 09, 2024",
-        "Link": "https://www.bankofbaroda.in/"
     },
     {
         "Updated On": "June 14, 2024",
@@ -2648,13 +2739,6 @@
         "Title": "BSF ASI Recruitment 2024",
         "Last Date": "July 05, 2024",
         "Link": "https://rectt.bsf.gov.in/"
-    },
-    {
-        "Updated On": "May 18, 2024",
-        "Category": "Recruitment",
-        "Title": "HAL Recruitment 2024",
-        "Last Date": "June 13, 2024",
-        "Link": "https://www.hal-india.co.in/home"
     },
     {
         "Updated On": "June 13, 2024",
@@ -3952,13 +4036,6 @@
     {
         "Updated On": "June 04, 2024",
         "Category": "Recruitment",
-        "Title": "IRCTC Recruitment 2024",
-        "Last Date": "July 01, 2024",
-        "Link": "https://irctc.com/new-openings-news.html"
-    },
-    {
-        "Updated On": "June 04, 2024",
-        "Category": "Recruitment",
         "Title": "Allahabad University Recruitment 2024",
         "Last Date": "June 22, 2024",
         "Link": "https://allduniv.ac.in/about-uoa/recruitment"
@@ -4613,13 +4690,6 @@
         "Title": "ERNET India Recruitment 2024",
         "Last Date": "June 22, 2024",
         "Link": "https://ernet.in/"
-    },
-    {
-        "Updated On": "May 24, 2024",
-        "Category": "Recruitment",
-        "Title": "NCERT Recruitment 2024",
-        "Last Date": "June 15, 2024",
-        "Link": "https://ncert.nic.in/"
     },
     {
         "Updated On": "May 29, 2024",
