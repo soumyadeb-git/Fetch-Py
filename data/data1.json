@@ -1,6 +1,180 @@
 [
     {
         "Updated On": "July 06, 2024",
+        "Category": "Other",
+        "Title": null,
+        "Last Date": "July 28, 2024",
+        "Link": "http://www.aiasl.in/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "SAIL MT Recruitment 2024",
+        "Last Date": "August 04, 2024",
+        "Link": "https://www.sail.co.in/en/home"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "ONGC Recruitment 2024",
+        "Last Date": "July 31, 2024",
+        "Link": "https://ongcindia.com/web/eng/career/recruitment-notice"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "NHAI Recruitment 2024",
+        "Last Date": "July 25, 2024",
+        "Link": "https://nhai.gov.in/#/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "Ministry of Home Affairs Recruitment 2024",
+        "Last Date": "July 27, 2024",
+        "Link": "https://www.mha.gov.in/en"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Other",
+        "Title": null,
+        "Last Date": "July 26, 2024",
+        "Link": "https://www.dvc.gov.in/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Other",
+        "Title": null,
+        "Last Date": "July 26, 2024"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "BECIL Recruitment 2024",
+        "Last Date": "August 05, 2024",
+        "Link": "https://www.becil.com/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "BEE Recruitment 2024",
+        "Last Date": "July 27, 2024",
+        "Link": "https://beeindia.gov.in/en"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Other",
+        "Title": null,
+        "Last Date": "July 24, 2024",
+        "Link": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&amp;id=0,7,1281"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Other",
+        "Title": null,
+        "Last Date": "August 01, 2024",
+        "Link": "https://hal-india.co.in/home"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "DOT Recruitment 2024",
+        "Last Date": "July 28, 2024",
+        "Link": "https://dot.gov.in/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "Cochin Shipyard Limited Recruitment 2024",
+        "Last Date": "July 27, 2024",
+        "Link": "https://cochinshipyard.in/welcome"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "UCO Bank Recruitment 2024",
+        "Last Date": "July 29, 2024",
+        "Link": "https://ucobank.com/en/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Other",
+        "Title": null,
+        "Last Date": "August 04, 2024",
+        "Link": "https://aptet.apcfss.in"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "KIOCL Limited Recruitment 2024",
+        "Last Date": "July 26, 2024",
+        "Link": "https://www.kioclltd.in/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "RRB TTE Recruitment 2024",
+        "Last Date": "July 31, 2024",
+        "Link": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&amp;id=0,7,1281"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Other",
+        "Title": null,
+        "Last Date": "July 27, 2024",
+        "Link": "https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&amp;id=0,7,1281"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "SECI Recruitment 2024",
+        "Last Date": "July 26, 2024",
+        "Link": "https://www.seci.co.in/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Notification",
+        "Title": "Army JAG Entry Scheme Notification",
+        "Last Date": "July 30, 2024",
+        "Link": "https://www.joinindianarmy.nic.in/Authentication.aspx"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "Indian Navy Recruitment 2024",
+        "Last Date": "July 26, 2024",
+        "Link": "https://www.joinindiannavy.gov.in/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Notification",
+        "Title": "Army NCC Special Entry Scheme 2024, Check Notification",
+        "Last Date": "July 31, 2024",
+        "Link": "https://www.joinindianarmy.nic.in/Authentication.aspx"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "AFMS MO Recruitment 2024",
+        "Last Date": "August 04, 2024",
+        "Link": "https://amcsscentry.gov.in/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Recruitment",
+        "Title": "IIT ISM Dhanbad Recruitment 2024",
+        "Last Date": "July 28, 2024",
+        "Link": "https://www.iitism.ac.in/"
+    },
+    {
+        "Updated On": "July 06, 2024",
+        "Category": "Notification",
+        "Title": "Indian Army SSC Tech Entry 2024 Notification",
+        "Last Date": "August 01, 2024",
+        "Link": "https://joinindianarmy.nic.in"
+    },
+    {
+        "Updated On": "July 06, 2024",
         "Category": "Recruitment",
         "Title": "Indian Navy Recruitment 2024",
         "Last Date": "July 28, 2024",
