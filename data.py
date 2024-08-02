@@ -102,7 +102,7 @@ def fetch_third_party_link(soup):
         other_links = []
         for match in matches:
             link = match[1]
-            if "karmasandhan" not in link:
+            if "karmasandhan" not in link and "whatsapp.com" not in link:
                 if any(domain in link for domain in ['.gov.in', '.res.in', '.nic.in', '.edu.in']):
                     priority_links.append(link)
                 else:
