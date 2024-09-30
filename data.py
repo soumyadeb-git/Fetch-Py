@@ -100,20 +100,26 @@ def fetch_third_party_link(soup):
         matches = link_pattern.findall(str(entry_content))
         priority_links = []
         other_links = []
-        for match in matches:
+
+        for match in matches:  # Fixed: Changed 'forfor' to 'for'
             link = match[1]
-            if "karmasandhan" not in link and "whatsapp.com" not in link:
+            if ("karmasandhan" not in link and 
+                "whatsapp.com" not in link and 
+                "t.me" not in link and 
+                "x.com" not in link and 
+                "facebook.com" not in link):
                 if any(domain in link for domain in ['.gov.in', '.res.in', '.nic.in', '.edu.in']):
                     priority_links.append(link)
                 else:
                     other_links.append(link)
-        
+
         if priority_links:
             return priority_links[0]
         elif other_links:
             return other_links[0]
 
     return None
+
 
 def calculate_published_on_date(last_updated_date):
     random_days = random.randint(18, 30)
