@@ -1,4 +1,4 @@
-name: Run Bot2 Python script
+name: Run Data2 Python script
 
 on:
   schedule:
@@ -28,7 +28,7 @@ jobs:
       - name: Run Python script
         env:
           SIURL: ${{ secrets.SIURL }}
-        run: python bot2.py
+        run: python data2.py  # Updated to reference data2.py
 
       - name: Commit changes
         run: |
