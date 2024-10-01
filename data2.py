@@ -74,17 +74,12 @@ def scrape_post(url):
     
     return data
 
-# Function to prioritize URLs based on domain
-def prioritize_urls(urls):
-    priorities = ['.gov.in', '.nic.in', '.ac.in', '.org.in', '.in']
-    return sorted(urls, key=lambda url: next((i for i, domain in enumerate(priorities) if domain in url), len(priorities)))
-
 # Main function to execute the scraping and saving process
 def main():
     # Fetching URL from environment variable
-    sitemap_url = os.getenv('SIURL')
+    sitemap_url = os.getenv('SIURL', 'https://govtjobguru.in/sitemap.xml')
     
-    # Step 1: Fetch all sub-sitemaps
+    # Step 1: Fetch all sub-sitemaps from the main sitemap
     sub_sitemaps = fetch_sitemap(sitemap_url)
     
     # Step 2: Identify the latest jobs sitemap (e.g., jobs-sitemap4.xml)
@@ -93,11 +88,13 @@ def main():
     if latest_jobs_sitemap:
         # Step 3: Fetch the URLs from the latest jobs sitemap
         post_urls = fetch_jobs_sitemap(latest_jobs_sitemap)
-        prioritized_urls = prioritize_urls(post_urls)
+        
+        # The most recent posts are at the bottom, so we reverse the list
+        post_urls = post_urls[::-1]
         scraped_data = []
         
-        # Step 4: Scrape each post
-        for url in prioritized_urls:
+        # Step 4: Scrape each post starting from the bottom
+        for url in post_urls:
             print(f"Scraping {url}")
             post_data = scrape_post(url)
             print("Post data:", post_data)  # Debugging line
