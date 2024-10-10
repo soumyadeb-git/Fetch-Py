@@ -191,13 +191,17 @@ def fetch_and_analyze_post_title(soup):
                 return post_title  # Return the title if a keyword is found
     return None
 
-def determine_category(post_title):
-    if post_title:
-        if 'Recruitment' in post_title:
-            return 'Job'
-        elif 'Notification' in post_title:
-            return 'Notification'
-    return 'Other'
+def determine_category(title):
+    if "Recruitment" in title:
+        return "Recruitment"
+    elif "Notification" in title:
+        return "Notification"
+    elif "Admit Card" in title:
+        return "Admit Card"
+    elif "Result" in title:
+        return "Result"
+    return "Other"
+
 
 # Call the function to execute the process
 fetch_latest_articles()
