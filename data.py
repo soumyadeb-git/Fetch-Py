@@ -47,7 +47,7 @@ def fetch_latest_articles():
 
             article_data = {
                 'Updated On': last_updated_date_only,
-                'Category': category,
+                'category': category,
                 'Title': post_title,
                 **extracted_data
             }
