@@ -62,7 +62,7 @@ def fetch_latest_articles():
             latest_articles_data.append(article_data)
 
     # Save the data to a JSON file
-    output_folder = 'Fetch/data/'
+    output_folder = 'data/'
     os.makedirs(output_folder, exist_ok=True)
     output_path = os.path.join(output_folder, 'data1.json')
 
