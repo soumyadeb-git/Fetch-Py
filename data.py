@@ -63,13 +63,15 @@ def fetch_latest_articles():
 
     # Save the data to a JSON file
     output_folder = 'data/'
-    os.makedirs(output_folder, exist_ok=True)
+    os.makedirs(output_folder, exist_ok=True)  # Create folder if it doesn't exist
     output_path = os.path.join(output_folder, 'data1.json')
 
-    with open(output_path, 'w') as json_file:
-        json.dump(latest_articles_data, json_file, indent=4)
-
-    print("Latest articles data stored in 'data1.json' file.")
+    try:
+        with open(output_path, 'w') as json_file:
+            json.dump(latest_articles_data, json_file, indent=4)
+        print(f"Latest articles data stored in '{output_path}' file.")
+    except Exception as e:
+        print(f"Error writing JSON data: {e}")
 
 def extract_job_details(content, article_content, soup):
     text = content
@@ -186,19 +188,16 @@ def fetch_and_analyze_post_title(soup):
         keywords = ['Recruitment 2024', 'Notification', 'Admit Card 2024', 'Result']
         for keyword in keywords:
             if keyword in post_title:
-                return post_title.split(keyword)[0] + keyword
+                return post_title  # Return the title if a keyword is found
     return None
 
-def determine_category(title):
-    if "Recruitment 2024" in title:
-        return "Recruitment"
-    elif "Notification" in title:
-        return "Notification"
-    elif "Admit Card 2024" in title:
-        return "Admit Card"
-    elif "Result" in title:
-        return "Result"
-    return "Other"
+def determine_category(post_title):
+    if post_title:
+        if 'Recruitment' in post_title:
+            return 'Job'
+        elif 'Notification' in post_title:
+            return 'Notification'
+    return 'Other'
 
-# Calling the function
-fetch_latest_articles
+# Call the function to execute the process
+fetch_latest_articles()
