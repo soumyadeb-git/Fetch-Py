@@ -11,7 +11,7 @@ def fetch_latest_articles():
 
     response = requests.get(sitemap_url)
     if response.status_code != 200:
-        print("Failed to fetch sitemap XML.")
+        print(f"Failed to fetch sitemap XML from {sitemap_url}. Status code: {response.status_code}")
         return
 
     try:
@@ -31,6 +31,7 @@ def fetch_latest_articles():
             
         response = requests.get(loc)
         if response.status_code != 200:
+            print(f"Failed to fetch article from {loc}. Status code: {response.status_code}")
             continue
 
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -47,26 +48,28 @@ def fetch_latest_articles():
 
             article_data = {
                 'Updated On': last_updated_date_only,
-                'category': category,
+                'Category': category,
                 'Title': post_title,
                 **extracted_data
             }
 
             latest_articles_data.append(article_data)
 
-    output_folder = 'Fetch/data/'
+    output_folder = 'data/'
     os.makedirs(output_folder, exist_ok=True)
     output_path = os.path.join(output_folder, 'data1.json')
 
-    with open(output_path, 'w') as json_file:
-        json.dump(latest_articles_data, json_file, indent=4)
-
-    print("Latest articles data stored in 'data1.json' file.")
+    try:
+        with open(output_path, 'w') as json_file:
+            json.dump(latest_articles_data, json_file, indent=4)
+        print("Latest articles data stored in 'data1.json' file.")
+    except Exception as e:
+        print(f"Error writing to JSON file: {e}")
 
 def extract_job_details(content, article_content, soup):
     text = content
     job_details = {
-        'Application Link': fetch_third_party_link(soup),
+        'Link': fetch_third_party_link(soup),
         'Summary': generate_short_summary(text),
         'Last Date': extract_application_deadlines(article_content)
     }
@@ -156,9 +159,13 @@ def extract_application_deadlines(article_content):
     return ', '.join(unique_dates) if unique_dates else 'Not Mentioned and Will be Updated Soon'
 
 def format_last_updated(last_updated):
-    date_object = datetime.fromisoformat(last_updated)
-    formatted_date = date_object.strftime('%B %d, %Y')
-    return formatted_date
+    try:
+        date_object = datetime.fromisoformat(last_updated)
+        formatted_date = date_object.strftime('%B %d, %Y')
+        return formatted_date
+    except ValueError:
+        print(f"Error parsing last updated date: {last_updated}")
+        return 'Unknown'
 
 def fetch_and_analyze_post_title(soup):
     post_title_tag = soup.find('h1', class_='entry-title')
