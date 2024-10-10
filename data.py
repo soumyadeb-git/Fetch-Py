@@ -7,8 +7,7 @@ from datetime import datetime
 import re
 
 def fetch_latest_articles():
-    # URL of the sitemap XML file
-    sitemap_url = os.environ.get('KARM_URL')  # Accessing GitHub Actions secret variable
+    sitemap_url = os.environ.get('KARM_URL')
 
     response = requests.get(sitemap_url)
     if response.status_code != 200:
@@ -16,7 +15,6 @@ def fetch_latest_articles():
         return
 
     try:
-        # Try parsing as XML
         root = ET.fromstring(response.content)
         articles = root.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}url")
     except ET.ParseError:
@@ -25,11 +23,9 @@ def fetch_latest_articles():
 
     latest_articles_data = []
 
-    # Processing each article found
     for article in articles[:25]:
         loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
         
-        # Only process links that are valid URLs
         if not loc.startswith('http'):
             continue
             
@@ -49,36 +45,30 @@ def fetch_latest_articles():
             article_content = soup.find('div', class_='entry-content')
             extracted_data = extract_job_details(article_content.get_text(separator=' '), article_content, soup) if article_content else {}
 
-            # Ensure consistent JSON output format
             article_data = {
                 'Updated On': last_updated_date_only,
                 'Category': category,
                 'Title': post_title,
-                'Application Link': extracted_data.get('Application Link', None),
-                'Summary': extracted_data.get('Summary', 'N/A'),
-                'Last Date': extracted_data.get('Last Date/Application Deadlines', 'Not Mentioned and Will be Updated Soon')
+                **extracted_data
             }
 
             latest_articles_data.append(article_data)
 
-    # Save the data to a JSON file
-    output_folder = 'data/'
-    os.makedirs(output_folder, exist_ok=True)  # Create folder if it doesn't exist
+    output_folder = 'Fetch/data/'
+    os.makedirs(output_folder, exist_ok=True)
     output_path = os.path.join(output_folder, 'data1.json')
 
-    try:
-        with open(output_path, 'w') as json_file:
-            json.dump(latest_articles_data, json_file, indent=4)
-        print(f"Latest articles data stored in '{output_path}' file.")
-    except Exception as e:
-        print(f"Error writing JSON data: {e}")
+    with open(output_path, 'w') as json_file:
+        json.dump(latest_articles_data, json_file, indent=4)
+
+    print("Latest articles data stored in 'data1.json' file.")
 
 def extract_job_details(content, article_content, soup):
     text = content
     job_details = {
         'Application Link': fetch_third_party_link(soup),
         'Summary': generate_short_summary(text),
-        'Last Date/Application Deadlines': extract_application_deadlines(article_content)  # Capture date details
+        'Last Date': extract_application_deadlines(article_content)
     }
     return job_details
 
@@ -110,70 +100,59 @@ def fetch_third_party_link(soup):
     return None
 
 def generate_short_summary(text):
-    # Split the text into sentences and filter out any sentence containing URLs
     sentences = text.split('.')
     summary_points = []
     
     for sentence in sentences:
         cleaned_sentence = sentence.strip()
-        
-        # Skip any sentence that contains a URL (http, https, www)
         if 'http' in cleaned_sentence or 'www' in cleaned_sentence:
             continue
 
-        if cleaned_sentence:  # Check for non-empty sentences
-            summary_points.append(f"- {cleaned_sentence}")  # Adding bullet points for formatting
-        if len(summary_points) >= 3:  # Limit to three points
+        if cleaned_sentence:
+            summary_points.append(f"- {cleaned_sentence}")
+        if len(summary_points) >= 3:
             break
 
-    return '\n'.join(summary_points) if summary_points else 'N/A'  # Join the points or return 'N/A'
+    return '\n'.join(summary_points) if summary_points else 'N/A'
 
 def extract_application_deadlines(article_content):
-    # Get all text from the article content
     text = article_content.get_text(separator=' ', strip=True)
 
-    # Define a regex pattern to capture various date formats
     date_patterns = [
-        r'(?:(?:Walk-In-Interview Date|Last Date|Application Deadline|Deadline):?\s*([\w\s,.-]+?\d{1,2}[/-]\d{1,2}[/-]\d{2,4}))',  # dd/mm/yyyy or dd-mm-yyyy
-        r'(?:(?:Walk-In-Interview Date|Last Date|Application Deadline|Deadline):?\s*([\w\s,.-]*\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4}))',  # dd Month yyyy
-        r'(?:(?:by|within|before)\s*([\w\s,.-]*\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4}))',  # By/within dd Month yyyy
-        r'(?:(?:submit|applications must be submitted)\s*(?:before|within)\s*([\w\s,.-]*\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4}))',  # Submit before dd Month yyyy
-        r'(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})',  # dd/mm/yyyy or dd-mm-yyyy
-        r'(\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4})',  # dd Month yyyy
-        r'(\d{1,2}\s+\w+\s+\d{4})'  # dd Month yyyy with space
+        r'(?:(?:Walk-In-Interview Date|Last Date|Application Deadline|Deadline):?\s*([\w\s,.-]+?\d{1,2}[/-]\d{1,2}[/-]\d{2,4}))',
+        r'(?:(?:Walk-In-Interview Date|Last Date|Application Deadline|Deadline):?\s*([\w\s,.-]*\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4}))',
+        r'(?:(?:by|within|before)\s*([\w\s,.-]*\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4}))',
+        r'(?:(?:submit|applications must be submitted)\s*(?:before|within)\s*([\w\s,.-]*\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4}))',
+        r'(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})',
+        r'(\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4})',
+        r'(\d{1,2}\s+\w+\s+\d{4})'
     ]
 
-    # Collect matches
     matched_dates = []
 
     for pattern in date_patterns:
         matches = re.findall(pattern, text, re.IGNORECASE)
         matched_dates.extend([match.strip() for match in matches if match.strip()])
 
-    # Process matched dates to convert to date objects and format them
     formatted_dates = []
-    today = datetime.now().date()  # Get today's date
+    today = datetime.now().date()
 
     for date_str in matched_dates:
         try:
-            # Attempt to parse various formats
             if re.search(r'\d{1,2}[/-]\d{1,2}[/-]\d{2,4}', date_str):
                 date_obj = datetime.strptime(date_str, '%d/%m/%Y') if '/' in date_str else datetime.strptime(date_str, '%d-%m-%Y')
             elif re.search(r'\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4}', date_str):
                 date_obj = datetime.strptime(date_str.replace('st', '').replace('nd', '').replace('rd', '').replace('th', '').strip(), '%d %B %Y')
             else:
-                date_obj = datetime.strptime(date_str.strip(), '%d %B %Y')  # e.g., "21 October 2024"
+                date_obj = datetime.strptime(date_str.strip(), '%d %B %Y')
 
-            # Check if the date is not today's date
             if date_obj.date() != today:
                 formatted_dates.append(date_obj.strftime('%Y-%m-%d'))
         except ValueError:
-            continue  # Skip invalid date formats
+            continue
 
-    # Ensure uniqueness and sort the formatted dates
     unique_dates = sorted(set(formatted_dates))
 
-    # Return formatted dates or default message if none found
     return ', '.join(unique_dates) if unique_dates else 'Not Mentioned and Will be Updated Soon'
 
 def format_last_updated(last_updated):
@@ -188,7 +167,7 @@ def fetch_and_analyze_post_title(soup):
         keywords = ['Recruitment 2024', 'Notification', 'Admit Card 2024', 'Result']
         for keyword in keywords:
             if keyword in post_title:
-                return post_title  # Return the title if a keyword is found
+                return post_title.split(keyword)[0] + keyword
     return None
 
 def determine_category(title):
@@ -202,6 +181,5 @@ def determine_category(title):
         return "Result"
     return "Other"
 
-
-# Call the function to execute the process
+# Calling the function
 fetch_latest_articles()
