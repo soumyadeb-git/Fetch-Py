@@ -55,13 +55,26 @@ def fetch_latest_articles():
 
             latest_articles_data.append(article_data)
 
+    # Load existing data from JSON file
     output_folder = 'data/'
     os.makedirs(output_folder, exist_ok=True)
     output_path = os.path.join(output_folder, 'data1.json')
 
+    existing_data = []
+    if os.path.exists(output_path):
+        with open(output_path, 'r') as json_file:
+            existing_data = json.load(json_file)
+
+    # Remove old entries with the same 'Updated On' date
+    existing_dates = {entry['Updated On'] for entry in existing_data}
+    latest_articles_data = [entry for entry in latest_articles_data if entry['Updated On'] not in existing_dates]
+
+    # Combine new entries with existing data
+    combined_data = latest_articles_data + existing_data
+
     try:
         with open(output_path, 'w') as json_file:
-            json.dump(latest_articles_data, json_file, indent=4)
+            json.dump(combined_data, json_file, indent=4)
         print("Latest articles data stored in 'data1.json' file.")
     except Exception as e:
         print(f"Error writing to JSON file: {e}")
