@@ -49,16 +49,19 @@ def fetch_latest_articles():
             article_content = soup.find('div', class_='entry-content')
             extracted_data = extract_job_details(article_content.get_text(separator=' '), article_content, soup) if article_content else {}
 
+            # Ensure consistent JSON output format
             article_data = {
                 'Updated On': last_updated_date_only,
                 'Category': category,
                 'Title': post_title,
-                **extracted_data
+                'Application Link': extracted_data.get('Application Link', None),
+                'Summary': extracted_data.get('Summary', 'N/A'),
+                'Last Date': extracted_data.get('Last Date/Application Deadlines', 'Not Mentioned and Will be Updated Soon')
             }
 
             latest_articles_data.append(article_data)
 
-    # Save only relevant fields to a JSON file
+    # Save the data to a JSON file
     output_folder = 'Fetch/data/'
     os.makedirs(output_folder, exist_ok=True)
     output_path = os.path.join(output_folder, 'data1.json')
@@ -73,7 +76,7 @@ def extract_job_details(content, article_content, soup):
     job_details = {
         'Application Link': fetch_third_party_link(soup),
         'Summary': generate_short_summary(text),
-        'Last Date': extract_application_deadlines(article_content)  # Only the date will be fetched here
+        'Last Date/Application Deadlines': extract_application_deadlines(article_content)  # Capture date details
     }
     return job_details
 
@@ -123,7 +126,6 @@ def generate_short_summary(text):
 
     return '\n'.join(summary_points) if summary_points else 'N/A'  # Join the points or return 'N/A'
 
-
 def extract_application_deadlines(article_content):
     # Get all text from the article content
     text = article_content.get_text(separator=' ', strip=True)
@@ -169,10 +171,8 @@ def extract_application_deadlines(article_content):
     # Ensure uniqueness and sort the formatted dates
     unique_dates = sorted(set(formatted_dates))
 
-    # Return formatted dates or 'Will be Updated Soon' if none found
+    # Return formatted dates or default message if none found
     return ', '.join(unique_dates) if unique_dates else 'Not Mentioned and Will be Updated Soon'
-
-
 
 def format_last_updated(last_updated):
     date_object = datetime.fromisoformat(last_updated)
@@ -201,4 +201,4 @@ def determine_category(title):
     return "Other"
 
 # Calling the function
-fetch_latest_articles()
+fetch_latest_articles
