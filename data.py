@@ -169,7 +169,7 @@ def extract_application_deadlines(article_content):
 
     unique_dates = sorted(set(formatted_dates))
 
-    return ', '.join(unique_dates) if unique_dates else 'Not Mentioned and Will be Updated Soon'
+    return ', '.join(unique_dates) if unique_dates else 'Not Disclosed'
 
 def format_last_updated(last_updated):
     try:
