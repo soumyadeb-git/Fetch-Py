@@ -65,12 +65,12 @@ def fetch_latest_articles():
         with open(output_path, 'r') as json_file:
             existing_data = json.load(json_file)
 
-    # Remove old entries with the same 'Updated On' date
-    existing_dates = {entry['Updated On'] for entry in existing_data}
-    latest_articles_data = [entry for entry in latest_articles_data if entry['Updated On'] not in existing_dates]
+    # Remove old entries with the same 'Title' (unique identifier) as the new data
+    existing_titles = {entry['Title'] for entry in existing_data}
+    latest_articles_data = [entry for entry in latest_articles_data if entry['Title'] not in existing_titles]
 
     # Combine new entries with existing data
-    combined_data = latest_articles_data + existing_data
+    combined_data = existing_data + latest_articles_data
 
     try:
         with open(output_path, 'w') as json_file:
