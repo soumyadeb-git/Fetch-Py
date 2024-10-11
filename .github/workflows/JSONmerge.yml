@@ -2,10 +2,10 @@ name: Merge JSON Files
 
 on:
   schedule:
-    - cron: '30 7 * * *'   # 12:30 PM IST (07:00 AM UTC)
-    - cron: '30 10 * * *'  # 04:00 PM IST (10:30 AM UTC)
-    - cron: '30 14 * * *'  # 08:00 PM IST (02:30 PM UTC)
-    - cron: '30 16 * * *'  # 10:00 PM IST (04:30 PM UTC)
+    - cron: '39 6 * * *'   # 12:09 PM IST (06:39 AM UTC)
+    - cron: '17 10 * * *'  # 03:47 PM IST (10:17 AM UTC)
+    - cron: '47 13 * * *'  # 07:17 PM IST (01:47 PM UTC)
+    - cron: '17 16 * * *'  # 09:47 PM IST (04:17 PM UTC)
 
   push:
     branches:
