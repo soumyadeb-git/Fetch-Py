@@ -22,7 +22,8 @@ def fetch_latest_articles():
         return
 
     latest_articles_data = []
-
+    
+    # Start fetching articles
     for article in articles[:25]:
         loc = article.find("{http://www.sitemaps.org/schemas/sitemap/0.9}loc").text
         
@@ -46,6 +47,7 @@ def fetch_latest_articles():
             article_content = soup.find('div', class_='entry-content')
             extracted_data = extract_job_details(article_content.get_text(separator=' '), article_content, soup) if article_content else {}
 
+            # New data structure for each article
             article_data = {
                 'Updated On': last_updated_date_only,
                 'Category': category,
@@ -69,8 +71,8 @@ def fetch_latest_articles():
     existing_titles = {entry['Title'] for entry in existing_data}
     latest_articles_data = [entry for entry in latest_articles_data if entry['Title'] not in existing_titles]
 
-    # Combine new entries with existing data
-    combined_data = existing_data + latest_articles_data
+    # Combine new entries with existing data, placing new data at the top
+    combined_data = latest_articles_data + existing_data  # New data at the top
 
     try:
         with open(output_path, 'w') as json_file:
