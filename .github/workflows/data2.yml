@@ -35,15 +35,14 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
+          
+          # Stage the changes
           git add data/data2.json
+
+          # Check if there are changes to commit
           if ! git diff --cached --quiet; then
               git commit -m "Update data2.json"
-              git push origin main || echo "No changes to commit"
-              git pull origin main || echo "No remote changes to pull"
-          git push origin main
-          
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+              git push origin main
+          else
+              echo "No changes to commit"
+          fi
