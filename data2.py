@@ -133,7 +133,7 @@ def update_json_file(json_file_path, new_data):
 
 # Main function to execute the task
 def main():
-    main_sitemap_url = os.environ.get('SIURL')
+    main_sitemap_url = 'https://govtjobguru.in/sitemap.xml'
     json_file_path = 'data/data2.json'
     
     # Fetch newest jobs-sitemap
