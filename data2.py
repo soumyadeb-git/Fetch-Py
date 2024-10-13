@@ -10,7 +10,7 @@ import os
 def fetch_newest_jobs_sitemap(main_sitemap_url):
     response = requests.get(main_sitemap_url)
     if response.status_code == 200:
-        soup = BeautifulSoup(response.content, 'lxml-xml')
+        soup = BeautifulSoup(response.content, 'html.parser')  # Changed from 'xml' to 'html.parser'
         # Finding all sub-sitemaps
         sitemaps = soup.find_all('sitemap')
         # Get all jobs-sitemap URLs
