@@ -24,15 +24,15 @@ def load_json_file(file_path):
         print(f"Error decoding JSON from {file_path}. Returning an empty list.")
         return []  # Return an empty list if there's a JSON decoding error
 
-def filter_and_merge_data(data1, data2):
-    """Filter data based on today's date and merge both datasets."""
+def filter_and_merge_data(data1, data2, data3):
+    """Filter data based on today's date and merge three datasets."""
     today_str = get_today_str()
 
     # Create a dictionary to hold the most recent entries
     merged_dict = {}
 
-    # Process both datasets
-    for item in data1 + data2:
+    # Process all three datasets
+    for item in data1 + data2 + data3:
         item_key = item.get('Title')
         if item_key:
             existing_item = merged_dict.get(item_key)
@@ -54,8 +54,8 @@ def filter_and_merge_data(data1, data2):
 
     return sorted_data
 
-def merge_and_update_json(file1, file2, merged_file):
-    """Merge two JSON files, remove 'Last Fetch Time' tags, and save the result."""
+def merge_and_update_json(file1, file2, file3, merged_file):
+    """Merge three JSON files, remove 'Last Fetch Time' tags, and save the result."""
     # Load data from the first file
     data1 = load_json_file(file1)
     data1 = remove_last_fetch_time(data1)
@@ -64,8 +64,12 @@ def merge_and_update_json(file1, file2, merged_file):
     data2 = load_json_file(file2)
     data2 = remove_last_fetch_time(data2)
 
+    # Load data from the third file
+    data3 = load_json_file(file3)
+    data3 = remove_last_fetch_time(data3)
+
     # Filter and merge data
-    merged_data = filter_and_merge_data(data1, data2)
+    merged_data = filter_and_merge_data(data1, data2, data3)
 
     # Write merged data to new JSON file
     with open(merged_file, 'w') as f:
@@ -80,4 +84,4 @@ file3 = os.path.join(data_folder, 'info.json')  # Add the new file here
 merged_file = os.path.join(data_folder, 'merged_data.json')
 
 # Merge and update JSON files
-merge_and_update_json(file1, file2, merged_file)
+merge_and_update_json(file1, file2, file3, merged_file)
