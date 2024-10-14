@@ -31,27 +31,15 @@ def filter_and_merge_data(data1, data2):
     # Create a dictionary to hold the most recent entries
     merged_dict = {}
 
-    # Process first dataset
-    for item in data1:
+    # Process both datasets
+    for item in data1 + data2:
         item_key = item.get('Title')
         if item_key:
-            merged_dict[item_key] = item  # Add or update entry
+            existing_item = merged_dict.get(item_key)
+            if not existing_item or item['Updated On'] > existing_item['Updated On']:
+                merged_dict[item_key] = item  # Keep the most recent item
 
-    # Process second dataset
-    for item in data2:
-        item_key = item.get('Title')
-        if item_key:
-            # If the item is already in the dictionary, check if it should be updated
-            if item_key in merged_dict:
-                existing_item_date = merged_dict[item_key]['Updated On']
-                new_item_date = item['Updated On']
-                # Only keep the most recent item
-                if new_item_date > existing_item_date:
-                    merged_dict[item_key] = item
-            else:
-                merged_dict[item_key] = item  # Add new entry
-
-    # Sort data by 'Updated On' date, giving priority to today's data
+    # Sort data by 'Updated On' date
     merged_data = list(merged_dict.values())
     
     # Create a separate list for today's entries
