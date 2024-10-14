@@ -103,7 +103,8 @@ def fetch_post_data(post_url):
                        f"Notification No.: {data.get('Notification No.', 'None')}\n" \
                        f"Qualification: {data.get('Qualification', 'None')}\n" \
                        f"Location: {data.get('Location', 'None')}\n" \
-                       f"Application Procedure: {data.get('Application Procedure', 'None')}"
+                       f"Application Procedure: {data.get('Application Procedure', 'None')}",
+            "Last Date": "Not Disclose"
         }
 
         return json_data
