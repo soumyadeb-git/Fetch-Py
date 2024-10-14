@@ -53,9 +53,18 @@ def filter_and_merge_data(data1, data2):
 
     # Sort data by 'Updated On' date, giving priority to today's data
     merged_data = list(merged_dict.values())
-    merged_data.sort(key=lambda x: (x.get('Updated On') != today_str, x.get('Updated On')), reverse=True)
+    
+    # Create a separate list for today's entries
+    today_entries = [item for item in merged_data if item.get('Updated On') == today_str]
+    other_entries = [item for item in merged_data if item.get('Updated On') != today_str]
 
-    return merged_data
+    # Sort the other entries by 'Updated On' date
+    other_entries.sort(key=lambda x: x.get('Updated On'), reverse=True)
+
+    # Combine today's entries with other entries
+    sorted_data = today_entries + other_entries
+
+    return sorted_data
 
 def merge_and_update_json(file1, file2, merged_file):
     """Merge two JSON files, remove 'Last Fetch Time' tags, and save the result."""
