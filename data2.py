@@ -95,7 +95,7 @@ def fetch_post_data(post_url):
         # Structure data for JSON output
         json_data = {
             "Updated On": updated_on_date,
-            "Category": "Other",
+            "Category": "Recruitment",
             "Title": data.get("Department", "N/A"),
             "Link": "null",
             "Summary": f"Positions: {data.get('Positions', 'None')}\n" \
