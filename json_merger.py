@@ -76,6 +76,7 @@ def merge_and_update_json(file1, file2, merged_file):
 data_folder = 'data'
 file1 = os.path.join(data_folder, 'data1.json')
 file2 = os.path.join(data_folder, 'data2.json')
+file3 = os.path.join(data_folder, 'info.json')  # Add the new file here
 merged_file = os.path.join(data_folder, 'merged_data.json')
 
 # Merge and update JSON files
