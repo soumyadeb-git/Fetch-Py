@@ -30,40 +30,32 @@ def filter_and_merge_data(data1, data2):
 
     # Create a dictionary to hold the most recent entries
     merged_dict = {}
-    new_data = []
 
     # Process first dataset
     for item in data1:
-        item_date = item.get('Updated On')
         item_key = item.get('Title')
         if item_key:
-            if item_date == today_str:
-                new_data.append(item)  # Add to new data list if it's today
             merged_dict[item_key] = item  # Add or update entry
 
     # Process second dataset
     for item in data2:
-        item_date = item.get('Updated On')
         item_key = item.get('Title')
-
         if item_key:
-            if item_date == today_str:
-                new_data.append(item)  # Add to new data list if it's today
             # If the item is already in the dictionary, check if it should be updated
             if item_key in merged_dict:
                 existing_item_date = merged_dict[item_key]['Updated On']
+                new_item_date = item['Updated On']
                 # Only keep the most recent item
-                if item_date > existing_item_date:
+                if new_item_date > existing_item_date:
                     merged_dict[item_key] = item
             else:
                 merged_dict[item_key] = item  # Add new entry
 
-    # Combine today's articles and old articles
-    todays_articles = new_data  # Start with new data
-    old_articles = [item for item in merged_dict.values() if item.get('Updated On') != today_str]
+    # Sort data by 'Updated On' date, giving priority to today's data
+    merged_data = list(merged_dict.values())
+    merged_data.sort(key=lambda x: (x.get('Updated On') != today_str, x.get('Updated On')), reverse=True)
 
-    # Return the combined list with today's new entries at the top
-    return todays_articles + old_articles
+    return merged_data
 
 def merge_and_update_json(file1, file2, merged_file):
     """Merge two JSON files, remove 'Last Fetch Time' tags, and save the result."""
