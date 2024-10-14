@@ -32,7 +32,7 @@ def fetch_last_5_urls(sitemap_url):
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'xml')
         urls = [url.loc.text for url in soup.find_all('url')]
-        return urls[-15:]
+        return urls[-20:]
     else:
         raise Exception(f"Failed to fetch the sitemap at {sitemap_url}")
 
