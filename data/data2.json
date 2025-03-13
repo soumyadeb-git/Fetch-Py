@@ -1,6 +1,78 @@
 [
     {
-        "Updated On": "March 12, 2025",
+        "Updated On": "March 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Indian Air Force",
+        "Link": "null",
+        "Summary": "Positions: Agniveer Vayu Intake 01/2026\nTotal Vacancies: Various\nNotification No.: AGNIVEERVAYU INTAKE 01/2026\nQualification: 12th, Diploma\nLocation: India\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "March 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Bihar Public Service Commission",
+        "Link": "null",
+        "Summary": "Positions: Lecturer (Mining Engineering)\nTotal Vacancies: 06\nNotification No.: 57/2024\nQualification: BE/B.Tech\nLocation: Bihar\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "March 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Staff Selection Commission",
+        "Link": "null",
+        "Summary": "Positions: Sub Inspector SI in Delhi Police, Central Armed Police Forces Examination 2024\nTotal Vacancies: 4187\nNotification No.: N/A\nQualification: Bachelor Degree\nLocation: India\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "March 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Punjab Police",
+        "Link": "null",
+        "Summary": "Positions: Constable\nTotal Vacancies: 1746\nNotification No.: 01 of 2025\nQualification: 12th\nLocation: Punjab\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "March 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Punjab State Power Corporation Limited",
+        "Link": "null",
+        "Summary": "Positions: Assistant Lineman (ALM)\nTotal Vacancies: 2500+500=3000\nNotification No.: 312/25\nQualification: 10th\nLocation: Punjab\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "March 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Electricity Department, Government of Puducherry",
+        "Link": "null",
+        "Summary": "Positions: Junior Engineer (JE)\nTotal Vacancies: 73\nNotification No.: 2-3/ED/OSD/Estt/A3/2024-25\nQualification: Degree (Electrical Engg)\nLocation: Puducherry\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "March 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Airports Authority of India",
+        "Link": "null",
+        "Summary": "Positions: Junior Executive\nTotal Vacancies: 83\nNotification No.: 01/2025/CHQ\nQualification: BE/B.Tech, Degree, MBA, PG degree\nLocation: New Delhi\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "March 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Airports Authority of India, Eastern Region",
+        "Link": "null",
+        "Summary": "Positions: Junior Assistant\nTotal Vacancies: 89\nNotification No.: ER/01/2024\nQualification: 10th, Diploma, 12th\nLocation: West Bengal\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "March 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Uttar Gujarat Vij Company Limited",
+        "Link": "null",
+        "Summary": "Positions: Graduate Apprentice\nTotal Vacancies: 56\nNotification No.: N/A\nQualification: BE/B.Tech\nLocation: Gujarat\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "March 13, 2025",
         "Category": "Recruitment",
         "Title": "Nuclear Power Corporation of India, Kaiga",
         "Link": "null",
@@ -8,7 +80,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "March 12, 2025",
+        "Updated On": "March 13, 2025",
         "Category": "Recruitment",
         "Title": "High Court of Judicature AT Allahabad",
         "Link": "null",
@@ -16,7 +88,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "March 12, 2025",
+        "Updated On": "March 13, 2025",
         "Category": "Recruitment",
         "Title": "Central Selection Board of Constable CSBC",
         "Link": "null",
@@ -24,7 +96,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "March 12, 2025",
+        "Updated On": "March 13, 2025",
         "Category": "Recruitment",
         "Title": "Railway Recruitment Board",
         "Link": "null",
@@ -32,7 +104,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "March 12, 2025",
+        "Updated On": "March 13, 2025",
         "Category": "Recruitment",
         "Title": "Bihar Staff Selection Commission",
         "Link": "null",
@@ -40,7 +112,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "March 12, 2025",
+        "Updated On": "March 13, 2025",
         "Category": "Recruitment",
         "Title": "Directorate of Medical Education Andhra Pradesh",
         "Link": "null",
@@ -48,7 +120,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "March 12, 2025",
+        "Updated On": "March 13, 2025",
         "Category": "Recruitment",
         "Title": "Chhattisgarh Public Service Commission",
         "Link": "null",
@@ -56,7 +128,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "March 12, 2025",
+        "Updated On": "March 13, 2025",
         "Category": "Recruitment",
         "Title": "Bihar Technical Service Commission",
         "Link": "null",
@@ -314,22 +386,6 @@
     {
         "Updated On": "March 07, 2025",
         "Category": "Recruitment",
-        "Title": "Punjab State Power Corporation Limited",
-        "Link": "null",
-        "Summary": "Positions: Apprenticeship in Lineman Trade\nTotal Vacancies: 2600\nNotification No.: 01/Apprenticelineman/2025-26\nQualification: ITI\nLocation: Punjab\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "March 07, 2025",
-        "Category": "Recruitment",
-        "Title": "Bihar Public Service Commission",
-        "Link": "null",
-        "Summary": "Positions: Lecturer (Mining Engineering)\nTotal Vacancies: 06\nNotification No.: 57/2024\nQualification: BE/B.Tech\nLocation: Bihar\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "March 07, 2025",
-        "Category": "Recruitment",
         "Title": "Rajasthan Staff Selection Board, Jaipur",
         "Link": "null",
         "Summary": "Positions: Hostel Superintendent\nTotal Vacancies: 112\nNotification No.: 04/2024\nQualification: 12th\nLocation: Jaipur/Rajasthan\nApplication Procedure: Apply Online",
@@ -437,14 +493,6 @@
         "Title": "Odisha Home Guards",
         "Link": "null",
         "Summary": "Positions: Home Guards\nTotal Vacancies: 47\nNotification No.: 68/HGs\nQualification: 5th\nLocation: Odisha\nApplication Procedure: Offline",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "March 05, 2025",
-        "Category": "Recruitment",
-        "Title": "Staff Selection Commission",
-        "Link": "null",
-        "Summary": "Positions: Stenographer Grade C & D Exam 2024\nTotal Vacancies: 2006\nNotification No.: N/A\nQualification: 12th\nLocation: India\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
@@ -1266,14 +1314,6 @@
     {
         "Updated On": "February 18, 2025",
         "Category": "Recruitment",
-        "Title": "Airports Authority of India",
-        "Link": "null",
-        "Summary": "Positions: Junior Executive\nTotal Vacancies: 83\nNotification No.: 01/2025/CHQ\nQualification: BE/B.Tech, Degree, MBA, PG degree\nLocation: New Delhi\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "February 18, 2025",
-        "Category": "Recruitment",
         "Title": "Deen Dayal Upadhyaya College, Delhi University",
         "Link": "null",
         "Summary": "Positions: Non Teaching\nTotal Vacancies: 40\nNotification No.: DDUC/NT/2025/1\nQualification: Degree, BE/B.Tech, M.Sc, MCA, 12th, 10th\nLocation: Delhi\nApplication Procedure: Apply Online",
@@ -1442,25 +1482,9 @@
     {
         "Updated On": "February 14, 2025",
         "Category": "Recruitment",
-        "Title": "Indian Air Force",
-        "Link": "null",
-        "Summary": "Positions: Agniveervayu (Sports)\nTotal Vacancies: Various\nNotification No.: Intake 02/2025\nQualification: 12th or Diploma\nLocation: India\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "February 14, 2025",
-        "Category": "Recruitment",
         "Title": "Odisha Staff Selection Commission",
         "Link": "null",
         "Summary": "Positions: Leave Training Reserve (LTR) Teachers\nTotal Vacancies: 6025\nNotification No.: 4231/OSSC\nQualification: Bachelor Degree, BE/B.Tech/B.Sc, B.Ed, M.Ed, 12th\nLocation: Odisha\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "February 14, 2025",
-        "Category": "Recruitment",
-        "Title": "Punjab Police",
-        "Link": "null",
-        "Summary": "Positions: Constable\nTotal Vacancies: 1746\nNotification No.: 01 of 2025\nQualification: 12th\nLocation: Punjab\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
