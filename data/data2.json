@@ -1,22 +1,6 @@
 [
     {
-        "Updated On": "May 28, 2025",
-        "Category": "Recruitment",
-        "Title": "Union Public Service Commission",
-        "Link": "null",
-        "Summary": "Positions: CDS 2 Exam 2025\nTotal Vacancies: 453\nNotification No.: 11/2025.CDS-II\nQualification: Bachelor Degree\nLocation: India\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "May 28, 2025",
-        "Category": "Recruitment",
-        "Title": "Tamil Nadu Public Service Commission",
-        "Link": "null",
-        "Summary": "Positions: CTSE (Non Interview Posts)\nTotal Vacancies: 615\nNotification No.: 09/2025\nQualification: BA, B.Sc, BE./B.Tech, MCA, M.Sc, etc\nLocation: Tamil Nadu\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
         "Title": "State Bank of India",
         "Link": "null",
@@ -24,31 +8,39 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
-        "Title": "Punjab Waqf Board",
+        "Title": "Nuclear Power Corporation of India Limited",
         "Link": "null",
-        "Summary": "Positions: PGT, TGT, NTT, Peon & Other\nTotal Vacancies: 74\nNotification No.: N/A\nQualification: 10th, 12th, B.P.Ed, Degree, PG Degree, BCA\nLocation: Punjab\nApplication Procedure: Apply Online",
+        "Summary": "Positions: Stipendiary Trainee/Scientific Assistant & Other\nTotal Vacancies: 197\nNotification No.: NPCIL/KAKRAPAR GUJARAT SITE/HRM/01/2025\nQualification: Degree, B.Sc, Diploma, 12th, ITI\nLocation: Gujarat\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
-        "Title": "Gujarat Secondary Service Selection Board",
+        "Title": "Gujarat Subordinate Service Selection Board",
         "Link": "null",
-        "Summary": "Positions: Additional Assistant Engineer (AAE)\nTotal Vacancies: 824\nNotification No.: 303/202526\nQualification: Diploma\nLocation: Gujarat\nApplication Procedure: Apply Online",
+        "Summary": "Positions: Assistant Manager\nTotal Vacancies: 100\nNotification No.: GSSSB/202526/306\nQualification: Diploma\nLocation: Gujarat\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
-        "Title": "Urban Local Bodies Department Haryana",
+        "Title": "Bihar Police Subordinate Services Commission",
         "Link": "null",
-        "Summary": "Positions: Geospatial Engineer and Technical Assistant\nTotal Vacancies: 55\nNotification No.: N/A\nQualification: Degree, PG Degree/Diploma, ITI\nLocation: Haryana\nApplication Procedure: Apply Online",
+        "Summary": "Positions: Enforcement Sub Inspector\nTotal Vacancies: 33\nNotification No.: 03/2025\nQualification: Degree\nLocation: Bihar\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
+        "Category": "Recruitment",
+        "Title": "Bihar Panchayati Raj Department",
+        "Link": "null",
+        "Summary": "Positions: Technical Assistant\nTotal Vacancies: 942\nNotification No.: 6394\nQualification: Diploma (Civil Engg)\nLocation: Bihar\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
         "Title": "Haryana Staff Selection Commission",
         "Link": "null",
@@ -56,7 +48,47 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
+        "Category": "Recruitment",
+        "Title": "Union Public Service Commission",
+        "Link": "null",
+        "Summary": "Positions: CDS 2 Exam 2025\nTotal Vacancies: 453\nNotification No.: 11/2025.CDS-II\nQualification: Bachelor Degree\nLocation: India\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "May 29, 2025",
+        "Category": "Recruitment",
+        "Title": "Tamil Nadu Public Service Commission",
+        "Link": "null",
+        "Summary": "Positions: CTSE (Non Interview Posts)\nTotal Vacancies: 615\nNotification No.: 09/2025\nQualification: BA, B.Sc, BE./B.Tech, MCA, M.Sc, etc\nLocation: Tamil Nadu\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "May 29, 2025",
+        "Category": "Recruitment",
+        "Title": "Punjab Waqf Board",
+        "Link": "null",
+        "Summary": "Positions: PGT, TGT, NTT, Peon & Other\nTotal Vacancies: 74\nNotification No.: N/A\nQualification: 10th, 12th, B.P.Ed, Degree, PG Degree, BCA\nLocation: Punjab\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "May 29, 2025",
+        "Category": "Recruitment",
+        "Title": "Gujarat Secondary Service Selection Board",
+        "Link": "null",
+        "Summary": "Positions: Additional Assistant Engineer (AAE)\nTotal Vacancies: 824\nNotification No.: 303/202526\nQualification: Diploma\nLocation: Gujarat\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "May 29, 2025",
+        "Category": "Recruitment",
+        "Title": "Urban Local Bodies Department Haryana",
+        "Link": "null",
+        "Summary": "Positions: Geospatial Engineer and Technical Assistant\nTotal Vacancies: 55\nNotification No.: N/A\nQualification: Degree, PG Degree/Diploma, ITI\nLocation: Haryana\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
         "Title": "Indian Space Research Organization/Department of Space Centres/Units",
         "Link": "null",
@@ -64,7 +96,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
         "Title": "High Court of Tripura",
         "Link": "null",
@@ -72,7 +104,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
         "Title": "Haryana Public Service Commission",
         "Link": "null",
@@ -80,7 +112,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
         "Title": "Railway Recruitment Boards",
         "Link": "null",
@@ -88,7 +120,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
         "Title": "Rajasthan Public Service Commission",
         "Link": "null",
@@ -96,7 +128,7 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
         "Title": "Uttar Pradesh Public Service Commission",
         "Link": "null",
@@ -104,19 +136,11 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "May 28, 2025",
+        "Updated On": "May 29, 2025",
         "Category": "Recruitment",
         "Title": "Odisha Public Service Commission",
         "Link": "null",
         "Summary": "Positions: Assistant Professor\nTotal Vacancies: 314\nNotification No.: 03 of 2025-26\nQualification: DNB, M.Sc, MS/MD\nLocation: Odisha\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "May 28, 2025",
-        "Category": "Recruitment",
-        "Title": "Gujarat Subordinate Service Selection Board",
-        "Link": "null",
-        "Summary": "Positions: Revenue Talati\nTotal Vacancies: 2389\nNotification No.: 301/202526\nQualification: Graduate\nLocation: Gujarat\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
@@ -1130,14 +1154,6 @@
     {
         "Updated On": "May 03, 2025",
         "Category": "Recruitment",
-        "Title": "Bihar Police Subordinate Services Commission",
-        "Link": "null",
-        "Summary": "Positions: SI Sub Inspector Prohibition\nTotal Vacancies: 28\nNotification No.: 01/2025\nQualification: Bachelor Degree\nLocation: Bihar\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "May 03, 2025",
-        "Category": "Recruitment",
         "Title": "CSIR National Botanical Research Institute, Lucknow",
         "Link": "null",
         "Summary": "Positions: Technician, Technical Asst & JSA\nTotal Vacancies: 30\nNotification No.: 01/2025\nQualification: 10th with ITI, 12th, Degree, Diploma\nLocation: Lucknow/Uttar Pradesh\nApplication Procedure: Apply Online",
@@ -1453,14 +1469,6 @@
         "Title": "National Institute of Electronics and Information Technology",
         "Link": "null",
         "Summary": "Positions: Scientific Assistant\nTotal Vacancies: 113\nNotification No.: NIELIT/NDL/STQC/2025/1\nQualification: BE/B.Tech, M.Sc\nLocation: New Delhi\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "April 22, 2025",
-        "Category": "Recruitment",
-        "Title": "Nuclear Power Corporation of India Limited",
-        "Link": "null",
-        "Summary": "Positions: Executive Trainee\nTotal Vacancies: 400\nNotification No.: NPCIL/HQ/HRM/ET/2025/02\nQualification: Bachelor Degree (Engg)\nLocation: Maharashtra\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
