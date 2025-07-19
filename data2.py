@@ -99,11 +99,11 @@ def fetch_post_data(post_url):
             "Title": data.get("Department", "N/A"),
             "Link": "null",
             "Location": data.get("Location", "None"),
-            "Summary": f"Positions: {data.get('Positions', 'None')}\n" \
-                       f"Total Vacancies: {data.get('Total Vacancies', 'None')}\n" \
-                       f"Notification No.: {data.get('Notification No.', 'None')}\n" \
-                       f"Qualification: {data.get('Qualification', 'None')}\n" \
-                       f"Application Procedure: {data.get('Application Procedure', 'None')}",
+            "Summary": f"➡️Positions: {data.get('Positions', 'None')}\n" \
+                       f"➡️Total Vacancies: {data.get('Total Vacancies', 'None')}\n" \
+                       f"👉Notification No.: {data.get('Notification No.', 'None')}\n" \
+                       f"👉Qualification: {data.get('Qualification', 'None')}\n" \
+                       f"👉Application Procedure: {data.get('Application Procedure', 'None')}",
             "Last Date": "Not Disclose"
         }
 
