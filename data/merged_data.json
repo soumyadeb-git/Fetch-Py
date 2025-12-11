@@ -1,14 +1,5 @@
 [
     {
-        "Updated On": "December 10, 2025",
-        "Category": "Recruitment",
-        "Title": "RRC Eastern Railway",
-        "Link": "null",
-        "Location": "Kolkata/West Bengal",
-        "Summary": "Positions: Apprentice\nTotal Vacancies: 3115\nNotification No.: RRC-ER/Act Apprentices/2025-26\nQualification: 10th with NTC\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
         "Updated On": "September 12, 2025",
         "Category": "Recruitment",
         "Title": "Cochin Shipyard Limited",
@@ -396,37 +387,10 @@
     {
         "Updated On": "November 08, 2025",
         "Category": "Recruitment",
-        "Title": "Rajasthan Staff Selection Board",
+        "Title": "RRC Eastern Railway",
         "Link": "null",
-        "Location": "Rajasthan",
-        "Summary": "Positions: Upper Primary School Teacher (Class 6 to 8)\nTotal Vacancies: 2123 Vacancies\nNotification No.: 09/2025\nQualification: Graduation, Post Graduation, Diploma, B.Ed- M.Ed\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "November 08, 2025",
-        "Category": "Recruitment",
-        "Title": "Medical and Health Services Recruitment Board",
-        "Link": "null",
-        "Location": "Andhra Pradesh",
-        "Summary": "Positions: Civil Assistant Surgeons\nTotal Vacancies: 538\nNotification No.: 13/2025\nQualification: MBBS\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "November 08, 2025",
-        "Category": "Recruitment",
-        "Title": "Power Grid Corporation of India Limited",
-        "Link": "null",
-        "Location": "Across India",
-        "Summary": "Positions: Apprentice\nTotal Vacancies: 962\nNotification No.: N/A\nQualification: ITI, B.Sc, DEgree, Diploma, MBA/PG Diploma, LLB\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "November 08, 2025",
-        "Category": "Recruitment",
-        "Title": "Delhi Development Authority",
-        "Link": "null",
-        "Location": "Delhi",
-        "Summary": "Positions: JE, MTS, Patwari, JSA, Mali & Other\nTotal Vacancies: 1732\nNotification No.: 09/2025/Rectt. Cell/Pers./DDA\nQualification: Update Soon\nApplication Procedure: Apply Online",
+        "Location": "Kolkata/West Bengal",
+        "Summary": "Positions: Apprentice\nTotal Vacancies: 3115\nNotification No.: RRC-ER/Act Apprentices/2025-26\nQualification: 10th with NTC\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
@@ -445,6 +409,15 @@
         "Link": "null",
         "Location": "Rajasthan",
         "Summary": "Positions: School Lecturer\nTotal Vacancies: 3225\nNotification No.: 06/2025-26\nQualification: Post Graduate, Graduation\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "November 08, 2025",
+        "Category": "Recruitment",
+        "Title": "Baba Farid University of Health Sciences, Faridkot",
+        "Link": "null",
+        "Location": "Punjab",
+        "Summary": "Positions: Staff Nurse\nTotal Vacancies: 406\nNotification No.: BFU-25/20\nQualification: 12th and Diploma in GNM\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
@@ -1002,12 +975,39 @@
         "Last Date": "Not Disclose"
     },
     {
-        "Updated On": "December 09, 2025",
+        "Updated On": "December 08, 2025",
         "Category": "Recruitment",
-        "Title": "Baba Farid University of Health Sciences, Faridkot",
+        "Title": "Rajasthan Staff Selection Board",
         "Link": "null",
-        "Location": "Punjab",
-        "Summary": "Positions: Staff Nurse\nTotal Vacancies: 406\nNotification No.: BFU-25/20\nQualification: 12th and Diploma in GNM\nApplication Procedure: Apply Online",
+        "Location": "Rajasthan",
+        "Summary": "Positions: Upper Primary School Teacher (Class 6 to 8)\nTotal Vacancies: 2123 Vacancies\nNotification No.: 09/2025\nQualification: Graduation, Post Graduation, Diploma, B.Ed- M.Ed\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "December 08, 2025",
+        "Category": "Recruitment",
+        "Title": "Medical and Health Services Recruitment Board",
+        "Link": "null",
+        "Location": "Andhra Pradesh",
+        "Summary": "Positions: Civil Assistant Surgeons\nTotal Vacancies: 538\nNotification No.: 13/2025\nQualification: MBBS\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "December 08, 2025",
+        "Category": "Recruitment",
+        "Title": "Power Grid Corporation of India Limited",
+        "Link": "null",
+        "Location": "Across India",
+        "Summary": "Positions: Apprentice\nTotal Vacancies: 962\nNotification No.: N/A\nQualification: ITI, B.Sc, DEgree, Diploma, MBA/PG Diploma, LLB\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "December 08, 2025",
+        "Category": "Recruitment",
+        "Title": "Delhi Development Authority",
+        "Link": "null",
+        "Location": "Delhi",
+        "Summary": "Positions: JE, MTS, Patwari, JSA, Mali & Other\nTotal Vacancies: 1732\nNotification No.: 09/2025/Rectt. Cell/Pers./DDA\nQualification: Update Soon\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
