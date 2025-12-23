@@ -340,21 +340,48 @@
         "Last Date": "Not Disclosed"
     },
     {
-        "Updated On": "November 08, 2025",
+        "Updated On": "November 20, 2025",
         "Category": "Recruitment",
-        "Title": "Power Grid Corporation of India Limited",
+        "Title": "Bihar Staff Selection Commission",
         "Link": "null",
-        "Location": "Across India",
-        "Summary": "Positions: Apprentice\nTotal Vacancies: 962\nNotification No.: N/A\nQualification: ITI, B.Sc, DEgree, Diploma, MBA/PG Diploma, LLB\nApplication Procedure: Apply Online",
+        "Location": "Bihar",
+        "Summary": "Positions: Sports Trainer\nTotal Vacancies: 379\nNotification No.: 08/25\nQualification: Graduate, Diploma\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "November 20, 2025",
+        "Category": "Recruitment",
+        "Title": "National Bank for Agriculture and Rural Development",
+        "Link": "null",
+        "Location": "India",
+        "Summary": "Positions: Assistant Manager Grade A\nTotal Vacancies: 91\nNotification No.: 05/ Grade A /2025-26\nQualification: Degree, BBA, PG Diploma/Degree\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "November 20, 2025",
+        "Category": "Recruitment",
+        "Title": "Institute of Banking Personnel Selection",
+        "Link": "null",
+        "Location": "India",
+        "Summary": "Positions: RRB XIV 2025\nTotal Vacancies: 13217\nNotification No.: N/A\nQualification: Bachelor Degree, ICAI, MBA, CA, LLB\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "November 13, 2025",
+        "Category": "Recruitment",
+        "Title": "Uttar Pradesh Public Service Commission",
+        "Link": "null",
+        "Location": "Uttar Pradesh",
+        "Summary": "Positions: Lecturer\nTotal Vacancies: 1516\nNotification No.: A-6/E-1/2025\nQualification: Post Graduation\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
         "Updated On": "November 08, 2025",
         "Category": "Recruitment",
-        "Title": "Integrated Child Development Services Arwal, Bihar",
+        "Title": "Rajasthan Staff Selection Board",
         "Link": "null",
-        "Location": "Arwal/Bihar",
-        "Summary": "Positions: Lady Supervisor\nTotal Vacancies: 22\nNotification No.: 01/2025\nQualification: 10th\nApplication Procedure: Apply Online",
+        "Location": "Rajasthan",
+        "Summary": "Positions: Upper Primary School Teacher (Class 6 to 8)\nTotal Vacancies: 2123 Vacancies\nNotification No.: 09/2025\nQualification: Graduation, Post Graduation, Diploma, B.Ed- M.Ed\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
@@ -914,46 +941,10 @@
     {
         "Updated On": "December 20, 2025",
         "Category": "Recruitment",
-        "Title": "Bihar Staff Selection Commission",
-        "Link": "null",
-        "Location": "Bihar",
-        "Summary": "Positions: Sports Trainer\nTotal Vacancies: 379\nNotification No.: 08/25\nQualification: Graduate, Diploma\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "December 20, 2025",
-        "Category": "Recruitment",
-        "Title": "National Bank for Agriculture and Rural Development",
-        "Link": "null",
-        "Location": "India",
-        "Summary": "Positions: Assistant Manager Grade A\nTotal Vacancies: 91\nNotification No.: 05/ Grade A /2025-26\nQualification: Degree, BBA, PG Diploma/Degree\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "December 20, 2025",
-        "Category": "Recruitment",
-        "Title": "Institute of Banking Personnel Selection",
-        "Link": "null",
-        "Location": "India",
-        "Summary": "Positions: RRB XIV 2025\nTotal Vacancies: 13217\nNotification No.: N/A\nQualification: Bachelor Degree, ICAI, MBA, CA, LLB\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "December 20, 2025",
-        "Category": "Recruitment",
         "Title": "Armed Forces Medical Services",
         "Link": "null",
         "Location": "Delhi",
         "Summary": "Positions: Medical Officer\nTotal Vacancies: 225\nNotification No.: N/A\nQualification: MBBS\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "December 14, 2025",
-        "Category": "Recruitment",
-        "Title": "Uttar Pradesh Public Service Commission",
-        "Link": "null",
-        "Location": "Uttar Pradesh",
-        "Summary": "Positions: Lecturer\nTotal Vacancies: 1516\nNotification No.: A-6/E-1/2025\nQualification: Post Graduation\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
@@ -986,15 +977,6 @@
     {
         "Updated On": "December 08, 2025",
         "Category": "Recruitment",
-        "Title": "Rajasthan Staff Selection Board",
-        "Link": "null",
-        "Location": "Rajasthan",
-        "Summary": "Positions: Upper Primary School Teacher (Class 6 to 8)\nTotal Vacancies: 2123 Vacancies\nNotification No.: 09/2025\nQualification: Graduation, Post Graduation, Diploma, B.Ed- M.Ed\nApplication Procedure: Apply Online",
-        "Last Date": "Not Disclose"
-    },
-    {
-        "Updated On": "December 08, 2025",
-        "Category": "Recruitment",
         "Title": "Medical and Health Services Recruitment Board",
         "Link": "null",
         "Location": "Andhra Pradesh",
@@ -1004,10 +986,28 @@
     {
         "Updated On": "December 08, 2025",
         "Category": "Recruitment",
+        "Title": "Power Grid Corporation of India Limited",
+        "Link": "null",
+        "Location": "Across India",
+        "Summary": "Positions: Apprentice\nTotal Vacancies: 962\nNotification No.: N/A\nQualification: ITI, B.Sc, DEgree, Diploma, MBA/PG Diploma, LLB\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "December 08, 2025",
+        "Category": "Recruitment",
         "Title": "Delhi Development Authority",
         "Link": "null",
         "Location": "Delhi",
         "Summary": "Positions: JE, MTS, Patwari, JSA, Mali & Other\nTotal Vacancies: 1732\nNotification No.: 09/2025/Rectt. Cell/Pers./DDA\nQualification: Update Soon\nApplication Procedure: Apply Online",
+        "Last Date": "Not Disclose"
+    },
+    {
+        "Updated On": "December 08, 2025",
+        "Category": "Recruitment",
+        "Title": "Integrated Child Development Services Arwal, Bihar",
+        "Link": "null",
+        "Location": "Arwal/Bihar",
+        "Summary": "Positions: Lady Supervisor\nTotal Vacancies: 22\nNotification No.: 01/2025\nQualification: 10th\nApplication Procedure: Apply Online",
         "Last Date": "Not Disclose"
     },
     {
